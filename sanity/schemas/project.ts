@@ -18,6 +18,7 @@ const project = {
       name: 'image',
       title: 'Image',
       type: 'image',
+      options: {hotspot: true},
       fields: [
         {
           name: 'alt',
@@ -25,6 +26,12 @@ const project = {
           type: 'string'
         }
       ]
+    },
+    {
+      name: 'tags',
+      title: 'Tags',
+      type: 'array',
+      of: [{type: 'reference', to: {type: 'projectTag'}}],
     },
     {
       name: 'content',
