@@ -3,8 +3,8 @@ import { Nunito_Sans } from 'next/font/google'
 import { Poppins } from 'next/font/google'
 import './globals.css'
 
-import Header from "./components/AppShell/Header.js"
-import Nav from "./components/AppShell/Nav.js"
+import Header from './components/AppShell/Header';
+import Nav from "./components/AppShell/Nav"
 
 const nunito_sans = Nunito_Sans({
   subsets: ['latin'],
@@ -36,13 +36,13 @@ export default function RootLayout({
 
         <div className='flex flex-col md:flex-row'>
 
-          <div className="w-full md:w-[18.75%] md:max-w-screen-2xs border-t md:border-t-0 md:border-r border-white border-opacity-10 fixed z-10 bottom-0 md:top-[69px] md:h-[calc(100vh_-_69px)] md:pt-12 lg:pt-16 md:px-6 bg-navy md:bg-transparent before:absolute before:top-0 before:w-full before:bg-gradient-to-r before:from-purple before:to-pink before:h-px md:before:bg-none">
+          <div className="w-full md:w-[18.75%] md:max-w-xs border-t md:border-t-0 md:border-r border-white border-opacity-10 fixed z-10 bottom-0 md:top-[69px] md:h-[calc(100vh_-_69px)] md:pt-12 lg:pt-16 md:px-6 bg-navy md:bg-transparent before:absolute before:top-0 before:w-full before:bg-gradient-to-r before:from-purple before:to-pink before:h-px md:before:bg-none">
             <div className='w-full md:max-w-44 ml-auto'>
               <Nav />
             </div>
           </div>
 
-          <main className='w-full md:w-[81.25%] md:left-[18.75%] relative lg:pl-20 pt-24 lg:pt-20 pb-24 md:pb-0 px-6 md:p-16 md:top-[69px]'>
+          <main className='w-full md:w-[81.25%] md:left-[18.75%] relative px-6 pb-24 md:p-16 lg:pl-20 xl:pl-32 pt-28 lg:pt-20 md:top-[69px]'>
             <div className="">
               {children}
             </div>

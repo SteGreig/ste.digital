@@ -3,7 +3,7 @@
 import React from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { navLinks } from '@/app/data/navLinks'
+import { navLinks } from '@/app/(site)/data/navLinks'
 
 const Nav = () => {
 

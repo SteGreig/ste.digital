@@ -29,3 +29,7 @@ body {
 :root {
   --header-height: 80px;
 }
+
+.pink-outer-glow {
+  text-shadow: rgba(255,25,191,.3) 0 4px 16px;
+}
