@@ -2,7 +2,7 @@
 const Hero = () => {
   return (
     <div>
-      <p className='text-6xl md:text-7xl lg:text-8xl 2xl:text-[110px] font-bold font-primary'>
+      <p className='text-6xl md:text-7xl lg:text-8xl 2xl:text-[110px] font-bold font-primary mt-4 md:mt-0'>
         <span>Ste</span>
         <span className='bg-gradient-to-br from-purple to-pink text-transparent bg-clip-text pink-outer-glow'>Greig.</span>
       </p>

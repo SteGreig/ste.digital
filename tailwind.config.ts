@@ -71,6 +71,9 @@ const config: Config = {
           950: '#1C0014'
         },
       },
+      hueRotate: {
+        '20': '20deg',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':

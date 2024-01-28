@@ -16,11 +16,11 @@ const Project = (props:any) => {
   return (
     <div className='w-full max-w-[720px]'>
 
-      <h2 className='font-primary font-bold text-5xl mb-4 antialiased'>{props.name}</h2>
+      <h2 className='font-primary font-bold text-3xl md:text-4xl lg:text-5xl mb-4 antialiased'>{props.name}</h2>
 
       <div className='mb-6 font-light'>
         {props.excerpt && (
-          <p className={`${moreActive ? 'hidden' : 'block'}`}>{props.excerpt} <a onClick={readMore} className='bg-gradient-to-br from-purple to-pink text-transparent bg-clip-text font-primary font-medium antialiased' href="#">Read More</a></p>
+          <p className={`${moreActive ? 'hidden' : 'block'}`}>{props.excerpt} <a onClick={readMore} className='bg-gradient-to-br from-purple to-pink text-transparent bg-clip-text font-primary font-medium antialiased whitespace-nowrap' href="#">Read More</a></p>
         )}
         <div className={`${moreActive ? 'block' : 'hidden'} flex flex-col gap-4`}>
           <PortableText value={props.content} />

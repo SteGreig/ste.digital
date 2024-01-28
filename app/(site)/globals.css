@@ -33,3 +33,15 @@ body {
 .pink-outer-glow {
   text-shadow: rgba(255,25,191,.3) 0 4px 16px;
 }
+
+.btn {
+  @apply px-5 py-[10px] rounded-full font-primary font-semibold antialiased bg-gradient-to-br from-purple to-pink transition duration-300 relative;
+}
+
+.btn--outline {
+  @apply duration-700 after:absolute after:left-[2px] after:right-[2px] after:top-[2px] after:bottom-[2px] after:bg-navy after:rounded-full hover:hue-rotate-20;
+}
+
+.btn--outline__text {
+  @apply bg-gradient-to-br from-purple to-pink text-transparent bg-clip-text relative z-10;
+}
