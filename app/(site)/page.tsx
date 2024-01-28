@@ -1,8 +1,7 @@
-import Image from 'next/image'
 import { getProjects } from '@/sanity/sanity-utils'
-import { Project } from '../types/Project';
-import { PortableText } from '@portabletext/react';
+import { Project as ProjectType } from '../types/Project';
 import Hero from './components/Hero';
+import Project from './components/Project';
 
 export default async function Home() {
 
@@ -18,14 +17,18 @@ export default async function Home() {
         <span className='flex-1 h-px bg-white opacity-10 mt-2'></span>
       </div>
 
-      {projects.map((project: Project) => (
-        <div className='mt-16' key={project._id}>
-          <h2 className='font-primary font-bold text-5xl'>{project.name}</h2>
-          <div>
-            <PortableText value={project.content} />
-          </div>
-        </div>
-      ))}
+      <div className='flex flex-col gap-20 mt-16'>
+        {projects.map((project: ProjectType) => (
+          <Project
+            key={project._id}
+            name={project.name}
+            excerpt={project.excerpt}
+            image={project.image}
+            content={project.content}
+            tags={project.tags}
+          />
+        ))}
+      </div>
 
     </>
   )

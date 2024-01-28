@@ -8,13 +8,15 @@ export async function getProjects() {
   });
 
   return client.fetch(
-    groq`*[_type == "project"]{
+    groq`*[_type == "project"] | order(_updatedAt desc){
       _id,
       _createdAt,
       name,
       "slug": slug.current,
       "image": image.asset->url,
-      content
+      content,
+      'tags': tags[]->title,
+      "excerpt": array::join(string::split((pt::text(content)), "")[0..180], "") + "..."
     }`
   )
 }
