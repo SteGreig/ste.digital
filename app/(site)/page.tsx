@@ -21,7 +21,10 @@ export default async function Home() {
         {projects.map((project: ProjectType) => (
           <Project
             key={project._id}
+            _id={project._id}
+            _createdAt={project._createdAt}
             name={project.name}
+            slug={project.slug}
             excerpt={project.excerpt}
             image={project.image}
             content={project.content}

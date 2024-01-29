@@ -3,12 +3,13 @@ import React from 'react'
 import Image from 'next/image'
 import { PortableText } from '@portabletext/react';
 import { useState } from 'react';
+import { Project as ProjectType } from '@/app/types/Project';
 
-const Project = (props:any) => {
+const Project = (props:ProjectType) => {
 
   const [moreActive, setMoreActive] = useState(false);
 
-  function readMore(e) {
+  function readMore(e:any) {
     e.preventDefault();
     setMoreActive((moreActive) => !moreActive);
   }
@@ -20,7 +21,7 @@ const Project = (props:any) => {
 
       <div className='mb-6 font-light'>
         {props.excerpt && (
-          <p className={`${moreActive ? 'hidden' : 'block'}`}>{props.excerpt} <a onClick={readMore} className='bg-gradient-to-br from-purple to-pink text-transparent bg-clip-text font-primary font-medium antialiased whitespace-nowrap' href="#">Read More</a></p>
+          <p className={`${moreActive ? 'hidden' : 'block'}`}>{props.excerpt} <a onClick={readMore} className='bg-gradient-to-br from-purple to-pink text-transparent bg-clip-text font-primary font-medium antialiased whitespace-nowrap transition duration-500 hover:hue-rotate-20 border-b border-transparent hover:border-pink' href="#">Read More</a></p>
         )}
         <div className={`${moreActive ? 'block' : 'hidden'} flex flex-col gap-4`}>
           <PortableText value={props.content} />

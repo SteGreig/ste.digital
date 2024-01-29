@@ -15,6 +15,7 @@ export async function getProjects() {
       "slug": slug.current,
       "image": image.asset->url,
       content,
+      url,
       'tags': tags[]->title,
       "excerpt": array::join(string::split((pt::text(content)), "")[0..180], "") + "..."
     }`

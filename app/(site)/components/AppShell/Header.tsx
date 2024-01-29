@@ -1,5 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
+import EmailBtn from '../EmailBtn'
+
 
 const Header = () => {
   return (
@@ -13,9 +15,7 @@ const Header = () => {
         <span className='bg-gradient-to-br from-purple to-pink text-transparent bg-clip-text pink-outer-glow'>.digital</span>
       </Link>
 
-      <button className='btn btn--outline'>
-        <span className='btn--outline__text'>Get in Touch</span>
-      </button>
+      <EmailBtn />
 
     </header>
   )

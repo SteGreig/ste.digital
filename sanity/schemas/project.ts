@@ -38,7 +38,12 @@ const project = {
       title: 'Content',
       type: 'array',
       of: [{ type: 'block' }]
-    }
+    },
+    {
+      name: 'url',
+      title: 'URL',
+      type: 'string'
+    },
   ],
 }
 
