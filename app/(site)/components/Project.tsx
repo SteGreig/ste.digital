@@ -49,13 +49,13 @@ const Project = (props:ProjectType) => {
 
       {props.url ? (
         <a
-          className={props.image ? 'cursor-none' : 'btn btn--outline'}
+          className={props.image && 'cursor-none'}
           target="_blank"
           href={props.url}
         >
-          {props.image ? (
+          {props.image && (
             <Image
-              className='rounded'
+              className='rounded mb-6'
               src={props.image}
               alt={props.name}
               width='720'
@@ -63,21 +63,25 @@ const Project = (props:ProjectType) => {
               onMouseEnter={() => setTarget(true)}
               onMouseLeave={() => setTarget(null)}
             />
-          ) : (
-            <span className='btn--outline__text inline-flex items-center'>
-              <span>Launch Project</span>
-              <BsRocketTakeoff className="ml-2 text-pink" />
-            </span>
           )}
         </a>
       ) : (
         <Image
-          className='rounded'
+          className='rounded mb-6'
           src={props.image}
           alt={props.name}
           width='720'
           height='540'
         />
+      )}
+
+      {props.url && (
+        <a href={props.url} className="btn btn--outline inline-block">
+          <span className='btn--outline__text inline-flex items-center'>
+            <span>Launch Project</span>
+            <BsRocketTakeoff className="ml-2 text-pink" />
+          </span>
+        </a>
       )}
 
     </div>
