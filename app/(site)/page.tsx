@@ -29,6 +29,7 @@ export default async function Home() {
             image={project.image}
             content={project.content}
             tags={project.tags}
+            url={project.url}
           />
         ))}
       </div>

@@ -45,3 +45,10 @@ body {
 .btn--outline__text {
   @apply bg-gradient-to-br from-purple to-pink text-transparent bg-clip-text relative z-10;
 }
+
+.email-btn:hover + .tooltip,
+.email-btn:focus + .tooltip,
+.email-btn:focus-within + .tooltip,
+.email-btn:active + .tooltip {
+  @apply opacity-100 scale-100 origin-top translate-y-0;
+}

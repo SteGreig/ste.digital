@@ -4,10 +4,13 @@ import Image from 'next/image'
 import { PortableText } from '@portabletext/react';
 import { useState } from 'react';
 import { Project as ProjectType } from '@/app/types/Project';
+import { MouseTracker } from './MouseTracker';
+import { BsRocketTakeoff } from "react-icons/bs";
 
 const Project = (props:ProjectType) => {
 
   const [moreActive, setMoreActive] = useState(false);
+  const [target, setTarget] = useState(null);
 
   function readMore(e:any) {
     e.preventDefault();
@@ -36,7 +39,24 @@ const Project = (props:ProjectType) => {
         </ul>
       )}
 
-      {props.image && (
+      {target && (
+      <MouseTracker className='rounded-full w-32 h-32 bg-gradient-to-br from-purple to-pink flex items-center justify-center flex-col font-primary font-semibold' offset={{ x: -50, y: -50 }}>
+        <span>Launch</span>
+        <span>Project</span>
+        <BsRocketTakeoff className="mt-2 text-xl" />
+        </MouseTracker>
+        )
+      }
+
+      {props.url && (
+        <a
+          className='cursor-none'
+          target="_blank"
+          href={props.url}
+          onMouseEnter={() => setTarget(true)}
+          onMouseLeave={() => setTarget(null)}
+        >
+          {props.image && (
         <Image
           className='rounded'
           src={props.image}
@@ -44,6 +64,8 @@ const Project = (props:ProjectType) => {
           width='720'
           height='540'
         />
+      )}
+        </a>
       )}
 
     </div>
