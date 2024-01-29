@@ -40,23 +40,37 @@ const Project = (props:ProjectType) => {
       )}
 
       {target && (
-      <MouseTracker className='rounded-full w-32 h-32 bg-gradient-to-br from-purple to-pink flex items-center justify-center flex-col font-primary font-semibold' offset={{ x: -50, y: -50 }}>
-        <span>Launch</span>
-        <span>Project</span>
-        <BsRocketTakeoff className="mt-2 text-xl" />
+        <MouseTracker className='rounded-full w-32 h-32 bg-gradient-to-br from-purple to-pink flex items-center justify-center flex-col font-primary font-semibold' offset={{ x: -50, y: -50 }}>
+          <span>Launch</span>
+          <span>Project</span>
+          <BsRocketTakeoff className="mt-2 text-xl" />
         </MouseTracker>
-        )
-      }
+      )}
 
-      {props.url && (
+      {props.url ? (
         <a
-          className='cursor-none'
+          className={props.image ? 'cursor-none' : 'btn btn--outline'}
           target="_blank"
           href={props.url}
-          onMouseEnter={() => setTarget(true)}
-          onMouseLeave={() => setTarget(null)}
         >
-          {props.image && (
+          {props.image ? (
+            <Image
+              className='rounded'
+              src={props.image}
+              alt={props.name}
+              width='720'
+              height='540'
+              onMouseEnter={() => setTarget(true)}
+              onMouseLeave={() => setTarget(null)}
+            />
+          ) : (
+            <span className='btn--outline__text inline-flex items-center'>
+              <span>Launch Project</span>
+              <BsRocketTakeoff className="ml-2 text-pink" />
+            </span>
+          )}
+        </a>
+      ) : (
         <Image
           className='rounded'
           src={props.image}
@@ -64,8 +78,6 @@ const Project = (props:ProjectType) => {
           width='720'
           height='540'
         />
-      )}
-        </a>
       )}
 
     </div>
