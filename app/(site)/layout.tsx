@@ -5,7 +5,10 @@ import './globals.css'
 
 import Header from './components/AppShell/Header';
 import Nav from "./components/AppShell/Nav"
-import ColourChanger from './components/AppShell/ColourChanger';
+
+// Dynamic import to prevent document is not defined error
+import dynamic from 'next/dynamic';
+const ColourChanger = dynamic(() => import('./components/AppShell/ColourChanger'), { ssr: false });
 
 const nunito_sans = Nunito_Sans({
   subsets: ['latin'],
@@ -44,7 +47,7 @@ export default function RootLayout({
             </div>
           </div>
 
-          <main className='w-full md:w-[81.25%] md:left-[18.75%] relative px-6 pb-24 md:p-16 lg:pl-20 xl:pl-32 pt-28 lg:pt-20 md:top-[69px] overflow-hidden'>
+          <main className='w-full md:w-[81.25%] md:left-[18.75%] relative px-6 pb-24 md:p-16 lg:px-20 xl:px-24 2xl:px-32 pt-28 lg:pt-20 md:top-[69px] overflow-hidden'>
             <div className="">
               {children}
             </div>

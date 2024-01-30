@@ -31,6 +31,7 @@ body {
   --hue: 0deg;
   --purple: #B500F5;
   --pink: #FF19BF;
+  --pink-glow: hsla(317, 100%, 55%, 0.3);
 }
 
 .from-purple.to-pink,
@@ -39,7 +40,11 @@ body {
 }
 
 .pink-outer-glow {
-  text-shadow: rgba(255,25,191,.3) 0 4px 16px;
+  text-shadow: var(--pink-glow) 0 4px 16px;
+}
+
+.pink-outer-box-glow {
+  box-shadow: 0 6px 10px var(--pink-glow);
 }
 
 .gradient-text {

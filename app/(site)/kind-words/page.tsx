@@ -10,8 +10,8 @@ const About = () => {
       {kindWords && (
         <ul className='w-full max-w-screen-xl sm:columns-2 md:columns-1 lg:columns-2 2xl:columns-3 gap-x-6 lg:gap-x-8 3xl:gap-x-10'>
           {kindWords.map(item => (
-            <li className='flex w-full 2xl:max-w-md break-inside-avoid mb-6 lg:mb-8 3xl:mb-10 shadow-lg shadow-pink/25'>
-              <figure className='flex flex-col w-full p-6 xl:p-8 rounded relative bg-gradient-to-br from-purple to-pink after:absolute after:top-1 after:left-1 after:right-1 after:bottom-1 after:bg-navy after:rounded'>
+            <li key={item.name} className='flex w-full 2xl:max-w-md break-inside-avoid mb-6 lg:mb-8 3xl:mb-10 pink-outer-box-glow'>
+              <figure className='flex flex-col w-full p-6 xl:p-8 rounded relative bg-gradient-to-br from-purple to-pink after:absolute after:top-[2px] after:left-[2px] after:right-[2px] after:bottom-[2px] after:bg-navy after:rounded'>
                 <blockquote className='relative z-10'>
                   &ldquo;{item.quote}&rdquo;
                 </blockquote>

@@ -1,7 +1,7 @@
 
 const HistoryItem = (props) => {
   return (
-    <li className='flex'>
+    <li key={props.title} className='flex'>
       <p className='font-primary text-xs uppercase tracking-[0.2em] opacity-30 w-28 flex-none'>
         <time dateTime={props.start}>{props.start}</time>
         &ndash;

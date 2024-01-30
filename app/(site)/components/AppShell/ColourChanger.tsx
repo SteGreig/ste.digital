@@ -6,15 +6,21 @@ const ColourChanger = (props) => {
 
   const [input, setInput] = useState(props?.value ?? '');
 
-  document.documentElement.style.setProperty(
-    '--pink',
-    'hsl('+input+'deg, 100%, 60%)'
-  );
-
-  document.documentElement.style.setProperty(
-    '--purple',
-    'hsl('+input+'deg, 90%, 80%)'
-  );
+  if (input) {
+    document.documentElement.style.setProperty(
+      '--pink',
+      'hsl('+input+'deg, 100%, 70%)'
+    );
+    document.documentElement.style.setProperty(
+      '--pink-glow',
+      'hsl('+input+'deg, 100%, 70%, 0.3)'
+    );
+  
+    document.documentElement.style.setProperty(
+      '--purple',
+      'hsl('+input+'deg, 100%, 50%)'
+    );
+  }
 
   return (
     <div className={`${props.classes}`}>

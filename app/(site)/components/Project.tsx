@@ -40,7 +40,7 @@ const Project = (props:ProjectType) => {
       )}
 
       {target && (
-        <MouseTracker className='rounded-full w-32 h-32 bg-gradient-to-br from-purple to-pink flex items-center justify-center flex-col font-primary font-semibold' offset={{ x: -50, y: -50 }}>
+        <MouseTracker className='rounded-full w-32 h-32 bg-gradient-to-br from-purple to-pink flex items-center justify-center flex-col font-primary font-semibold leading-snug' offset={{ x: -50, y: -50 }}>
           <span>Launch</span>
           <span>Project</span>
           <BsRocketTakeoff className="mt-2 text-xl" />
