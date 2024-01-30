@@ -34,6 +34,10 @@ body {
   text-shadow: rgba(255,25,191,.3) 0 4px 16px;
 }
 
+.gradient-text {
+  @apply bg-gradient-to-br from-purple to-pink text-transparent bg-clip-text font-primary font-medium antialiased whitespace-nowrap transition duration-500 hover:hue-rotate-20;
+}
+
 .btn {
   @apply px-5 py-[10px] rounded-full font-primary font-semibold antialiased bg-gradient-to-br from-purple to-pink transition duration-300 relative;
 }

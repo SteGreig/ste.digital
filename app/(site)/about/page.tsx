@@ -2,6 +2,7 @@ import React from 'react'
 import Hero from '../components/Hero';
 import TitleDivider from '../components/TitleDivider';
 import HistoryItem from '../components/HistoryItem';
+import Bio from './Bio';
 
 import { employment } from '../data/employment';
 import { education } from '../data/education';
@@ -13,11 +14,7 @@ const About = () => {
 
       <TitleDivider title='Bio' classes='mt-20 xl:mt-28' />
 
-      <div className='mt-10 md:mt-14 lg:mt-16 max-w-[720px] flex flex-col gap-4 font-light'>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut nisi mattis, rutrum lacus eget, lacinia est. Quisque efficitur justo non auctor aliquet. Aenean maximus venenatis arcu. Nullam interdum erat quam, ultricies dictum leo auctor.</p>
-
-        <p>Curabitur ac leo euismod, congue nisl eu, vehicula eros. Cras odio dolor, sagittis in convallis quis, scelerisque ac nibh. In dignissim elit ac arcu dapibus, tincidunt posuere arcu bibendum. Phasellus eget turpis ac urna tincidunt malesuada eu eget lacus. Mauris sed feugiat diam, in aliquam...</p>
-      </div>
+      <Bio />
 
       <TitleDivider title='Employment History' classes='mt-16 xl:mt-24' />
 

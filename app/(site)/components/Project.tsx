@@ -24,7 +24,7 @@ const Project = (props:ProjectType) => {
 
       <div className='mb-6 font-light'>
         {props.excerpt && (
-          <p className={`${moreActive ? 'hidden' : 'block'}`}>{props.excerpt} <a onClick={readMore} className='bg-gradient-to-br from-purple to-pink text-transparent bg-clip-text font-primary font-medium antialiased whitespace-nowrap transition duration-500 hover:hue-rotate-20 border-b border-transparent hover:border-pink' href="#">Read More</a></p>
+          <p className={`${moreActive ? 'hidden' : 'block'}`}>{props.excerpt} <a onClick={readMore} className='gradient-text border-b border-transparent hover:border-pink' href="#">Read More</a></p>
         )}
         <div className={`${moreActive ? 'block' : 'hidden'} flex flex-col gap-4`}>
           <PortableText value={props.content} />
