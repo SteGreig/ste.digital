@@ -27,6 +27,5 @@ export const kindWords = [
     quote: "Yeah he's alright",
     name: "Hannah Greig",
     position: "Wife",
-    company: "since 2016"
   },
 ]

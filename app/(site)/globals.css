@@ -28,6 +28,14 @@ body {
 
 :root {
   --header-height: 80px;
+  --hue: 0deg;
+  --purple: #B500F5;
+  --pink: #FF19BF;
+}
+
+.from-purple.to-pink,
+.btn {
+  filter: hue-rotate(var(--hue));
 }
 
 .pink-outer-glow {

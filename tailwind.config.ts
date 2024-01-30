@@ -43,13 +43,13 @@ const config: Config = {
           950: '#000000'
         },
         'purple': {
-          DEFAULT: '#B500F5',
+          DEFAULT: 'var(--purple)',
           50: '#F3A6FF',
           100: '#F091FF',
           200: '#EA68FF',
           300: '#E440FF',
           400: '#DF17FF',
-          500: '#B500F5',
+          500: 'var(--purple)',
           600: '#9C00B5',
           700: '#6B007D',
           800: '#3B0045',
@@ -57,13 +57,13 @@ const config: Config = {
           950: '#000000'
         },
         'pink': {
-          DEFAULT: '#FF19BF',
+          DEFAULT: 'var(--pink)',
           50: '#FFD1F2',
           100: '#FFBCEC',
           200: '#FF93E1',
           300: '#FF6BD6',
           400: '#FF42CA',
-          500: '#FF19BF',
+          500: 'var(--pink)',
           600: '#E000A2',
           700: '#A80079',
           800: '#700051',

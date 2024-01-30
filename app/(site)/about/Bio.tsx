@@ -13,7 +13,7 @@ const Bio = () => {
 
   return (
     <div className='mt-10 md:mt-14 lg:mt-16 max-w-[720px] flex flex-col gap-4 font-light'>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut nisi mattis, rutrum lacus eget, lacinia est. Quisque efficitur justo non auctor aliquet. Aenean maximus venenatis arcu. Nullam interdum erat quam, ultricies dictum leo auctor.</p>
+      <p className='font-semibold'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut nisi mattis, rutrum lacus eget, lacinia est. Quisque efficitur justo non auctor aliquet. Aenean maximus venenatis arcu. Nullam interdum erat quam, ultricies dictum leo auctor.</p>
 
       <p>Curabitur ac leo euismod, congue nisl eu, vehicula eros. Cras odio dolor, sagittis in convallis quis, scelerisque ac nibh. In dignissim elit ac arcu dapibus, tincidunt posuere arcu bibendum. Phasellus eget turpis ac urna tincidunt malesuada eu eget lacus. Mauris sed feugiat diam, in aliquam... <a onClick={readMore} className={`gradient-text border-b border-transparent hover:border-pink ${moreActive && 'hidden'}`} href="#">Read More</a></p>
 

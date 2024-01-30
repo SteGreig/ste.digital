@@ -5,6 +5,7 @@ import './globals.css'
 
 import Header from './components/AppShell/Header';
 import Nav from "./components/AppShell/Nav"
+import ColourChanger from './components/AppShell/ColourChanger';
 
 const nunito_sans = Nunito_Sans({
   subsets: ['latin'],
@@ -36,9 +37,10 @@ export default function RootLayout({
 
         <div className='flex flex-col md:flex-row'>
 
-          <div className="w-full md:w-[18.75%] md:max-w-xs border-t md:border-t-0 md:border-r border-white border-opacity-10 fixed z-20 bottom-0 md:top-[69px] md:h-[calc(100vh_-_69px)] md:pt-12 lg:pt-16 md:px-6 bg-navy md:bg-transparent before:absolute before:top-0 before:w-full before:bg-gradient-to-r before:from-purple before:to-pink before:h-px md:before:bg-none">
-            <div className='w-full md:max-w-44 ml-auto'>
+          <div className="flex w-full md:w-[18.75%] md:max-w-xs border-t md:border-t-0 md:border-r border-white border-opacity-10 fixed z-20 bottom-0 md:top-[69px] md:h-[calc(100vh_-_69px)] md:pt-12 lg:pt-16 md:px-6 bg-navy md:bg-transparent before:absolute before:top-0 before:w-full before:bg-gradient-to-r before:from-purple before:to-pink before:h-px md:before:bg-none">
+            <div className='w-full md:max-w-44 ml-auto flex flex-col'>
               <Nav />
+              <ColourChanger classes="mt-auto hidden md:block" />
             </div>
           </div>
 
