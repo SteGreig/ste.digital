@@ -47,11 +47,14 @@ export default function RootLayout({
             <ColourChanger classes="w-full mt-auto hidden lg:block mb-6" />
           </div>
 
-          <main className='w-full md:w-[81.25%] md:left-[18.75%] relative px-6 pb-24 md:p-16 lg:px-20 xl:px-24 2xl:px-32 pt-28 lg:pt-20 md:top-[69px] overflow-hidden'>
-            <div className="">
+          <div className='w-full md:w-[81.25%] md:left-[18.75%] relative md:mt-[69px] overflow-hidden'>
+
+            <main className="p-6 pt-28 md:p-16 md:pb-4 lg:pt-20 lg:px-20 xl:px-24 2xl:px-32">
               {children}
-            </div>
-          </main>
+            </main>
+
+            <footer className='mt-24 2xl:mt-36 text-xs px-6 pb-16 md:pb-4 opacity-40'>The footer I guess</footer>
+          </div>
 
         </div>
         

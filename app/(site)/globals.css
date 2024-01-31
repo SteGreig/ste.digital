@@ -28,18 +28,18 @@ body {
 
 :root {
   --header-height: 80px;
-  --hue: 0deg;
   --purple: #B500F5;
   --pink: #FF19BF;
   --pink-glow: hsla(317, 100%, 55%, 0.3);
   --btn-text-color: #fff;
 }
 
-.from-purple.to-pink,
+/* .from-purple.to-pink,
 .btn {
   filter: hue-rotate(var(--hue));
-}
+} */
 
+/* We use this colour variable to change the text colour of the elements with a full gradient background from white (which suits the default pink/purple) to navy (which suits the other colour options from the ColourChanger) */
 .launch-project,
 .btn:not(.btn--outline),
 .pill {
