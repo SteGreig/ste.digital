@@ -32,11 +32,18 @@ body {
   --purple: #B500F5;
   --pink: #FF19BF;
   --pink-glow: hsla(317, 100%, 55%, 0.3);
+  --btn-text-color: #fff;
 }
 
 .from-purple.to-pink,
 .btn {
   filter: hue-rotate(var(--hue));
+}
+
+.launch-project,
+.btn:not(.btn--outline),
+.pill {
+  color: var(--btn-text-color);
 }
 
 .pink-outer-glow {

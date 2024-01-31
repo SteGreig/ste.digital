@@ -34,13 +34,13 @@ const Project = (props:ProjectType) => {
       {props.tags && (
         <ul className='mb-9 flex gap-2'>
         {props.tags.map(tag => (
-          <li className='text-xs rounded-full font-primary font-medium px-3 py-[6px] bg-gradient-to-br from-purple to-pink' key={tag}>{tag}</li>
+          <li className='pill text-xs rounded-full font-primary font-medium px-3 py-[6px] bg-gradient-to-br from-purple to-pink' key={tag}>{tag}</li>
         ))}
         </ul>
       )}
 
       {target && (
-        <MouseTracker className='rounded-full w-32 h-32 bg-gradient-to-br from-purple to-pink flex items-center justify-center flex-col font-primary font-semibold leading-snug' offset={{ x: -50, y: -50 }}>
+        <MouseTracker className='launch-project rounded-full w-32 h-32 bg-gradient-to-br from-purple to-pink flex items-center justify-center flex-col font-primary font-semibold leading-snug' offset={{ x: -50, y: -50 }}>
           <span>Launch</span>
           <span>Project</span>
           <BsRocketTakeoff className="mt-2 text-xl" />

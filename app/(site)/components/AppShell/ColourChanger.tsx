@@ -13,10 +13,14 @@ const ColourChanger = (props) => {
 
   function changeColour(e) {
     setInput(e.target.value)
+    
+    document.documentElement.style.setProperty('--btn-text-color', '#141A29');
   }
 
   function resetColour() {
     setInput(null);
+
+    document.documentElement.style.setProperty('--btn-text-color', '#ffffff');
   }
 
   if (input) {
