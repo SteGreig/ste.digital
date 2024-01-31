@@ -69,3 +69,27 @@ body {
 .email-btn:active + .tooltip {
   @apply opacity-100 scale-100 origin-top translate-y-0;
 }
+
+
+/* COLOUR CHANGER RANGE SLIDER */
+.colour-slider {
+  @apply appearance-none bg-transparent cursor-pointer w-full;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  @apply bg-gradient-to-br from-purple to-pink h-[2px] rounded-full;
+}
+
+input[type="range"]::-moz-range-track {
+  @apply bg-gradient-to-br from-purple to-pink h-[2px] rounded-full;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  @apply appearance-none h-[18px] w-[18px] bg-navy hover:bg-navy-300 transition duration-300 rounded-full -mt-[7px];
+  border: 2px solid #fff;
+}
+
+input[type="range"]::-moz-range-thumb {
+  @apply appearance-none h-[18px] w-[18px] bg-navy hover:bg-navy-300 transition duration-300 rounded-full;
+  border: 2px solid #fff;
+}

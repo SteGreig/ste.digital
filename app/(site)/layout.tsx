@@ -40,11 +40,11 @@ export default function RootLayout({
 
         <div className='flex flex-col md:flex-row'>
 
-          <div className="flex w-full md:w-[18.75%] md:max-w-xs border-t md:border-t-0 md:border-r border-white border-opacity-10 fixed z-20 bottom-0 md:top-[69px] md:h-[calc(100vh_-_69px)] md:pt-12 lg:pt-16 md:px-6 bg-navy md:bg-transparent before:absolute before:top-0 before:w-full before:bg-gradient-to-r before:from-purple before:to-pink before:h-px md:before:bg-none">
+          <div className="flex flex-wrap w-full md:w-[18.75%] md:max-w-xs border-t md:border-t-0 md:border-r border-white border-opacity-10 fixed z-20 bottom-0 md:top-[69px] md:h-[calc(100vh_-_69px)] md:pt-12 lg:pt-16 md:px-6 bg-navy md:bg-transparent before:absolute before:top-0 before:w-full before:bg-gradient-to-r before:from-purple before:to-pink before:h-px md:before:bg-none">
             <div className='w-full md:max-w-44 ml-auto flex flex-col'>
               <Nav />
-              <ColourChanger classes="mt-auto hidden md:block" />
             </div>
+            <ColourChanger classes="w-full mt-auto hidden lg:block mb-6" />
           </div>
 
           <main className='w-full md:w-[81.25%] md:left-[18.75%] relative px-6 pb-24 md:p-16 lg:px-20 xl:px-24 2xl:px-32 pt-28 lg:pt-20 md:top-[69px] overflow-hidden'>
