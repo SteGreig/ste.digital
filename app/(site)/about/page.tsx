@@ -12,6 +12,8 @@ const About = () => {
     <>
       <Hero image={true} />
 
+      <h1 className='sr-only'>About Me</h1>
+
       <TitleDivider title='Bio' classes='mt-20 xl:mt-28' />
 
       <Bio />

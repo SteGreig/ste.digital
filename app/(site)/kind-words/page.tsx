@@ -5,7 +5,7 @@ const About = () => {
   return (
     <>
       
-      <h1 className='sr-only'></h1>
+      <h1 className='sr-only'>Kind Words</h1>
 
       {kindWords && (
         <ul className='w-full max-w-screen-xl sm:columns-2 md:columns-1 lg:columns-2 2xl:columns-3 gap-x-6 lg:gap-x-8 3xl:gap-x-10'>
