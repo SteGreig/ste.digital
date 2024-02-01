@@ -4,7 +4,7 @@ export const education = [
     end: "2011",
     school: "Nottingham Trent University",
     achievements: [
-      "First Class Honours Degree",
+      "First Class Degree",
       "BA (Hons) Multimedia"
     ]
   },

@@ -9,28 +9,34 @@ const purple = getComputedStyle(document.documentElement).getPropertyValue('--pu
 
 const ColourChanger = (props) => {
 
-  const [input, setInput] = useState(props?.value ?? '');
+  // Get hue value from localStorage if it's been set previously
+  const localHue = window.localStorage.getItem('hue');
 
+  // Set initial hue state to localHue if exists
+  const [hue, setHue] = useState(localHue ? localHue : '');
+
+  // When slider is interacted with:
   function changeColour(e) {
-    setInput(e.target.value)
-    
-    document.documentElement.style.setProperty('--btn-text-color', '#141A29');
+    setHue(e.target.value)
+    window.localStorage.setItem('hue', e.target.value);
   }
 
+  // When reset button is clicked
   function resetColour() {
-    setInput(null);
-
-    document.documentElement.style.setProperty('--btn-text-color', '#ffffff');
+    setHue(null);
+    window.localStorage.removeItem('hue');
   }
 
-  if (input) {
-    document.documentElement.style.setProperty('--pink', 'hsl('+input+'deg, 100%, 70%)');
-    document.documentElement.style.setProperty('--pink-glow', 'hsl('+input+'deg, 100%, 70%, 0.3)');
-    document.documentElement.style.setProperty('--purple', 'hsl('+input+'deg, 100%, 50%)');
+  if (hue) {
+    document.documentElement.style.setProperty('--pink', 'hsl('+hue+'deg, 100%, 70%)');
+    document.documentElement.style.setProperty('--pink-glow', 'hsl('+hue+'deg, 100%, 70%, 0.3)');
+    document.documentElement.style.setProperty('--purple', 'hsl('+hue+'deg, 100%, 50%)');
+    document.documentElement.style.setProperty('--btn-text-color', '#141A29');
   } else {
     document.documentElement.style.setProperty('--pink', pink);
     document.documentElement.style.setProperty('--pink-glow', pinkGlow);
     document.documentElement.style.setProperty('--purple', purple);
+    document.documentElement.style.setProperty('--btn-text-color', '#fff');
   }
 
   return (
@@ -41,7 +47,7 @@ const ColourChanger = (props) => {
       </p>
       <input
         type="range"
-        value={input ? input : 0}
+        value={hue ? hue : 0}
         onInput={changeColour}
         min='0'
         step='1'
