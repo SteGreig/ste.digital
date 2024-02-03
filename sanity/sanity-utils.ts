@@ -22,9 +22,9 @@ export async function getProjects() {
   )
 }
 
-export async function getPosts() {
+export async function getPosts(start: number, end: number) {
   return client.fetch(
-    groq`*[_type == "post"] | order(publishedAt desc){
+    groq`*[_type == "post"] | order(publishedAt desc)[${start}...${end}]{
       _id,
       publishedAt,
       title,
@@ -65,9 +65,9 @@ export async function getBlogCats() {
   )
 }
 
-export async function getPostsByCat(slug: string) {
+export async function getPostsByCat(slug: string, start: number, end: number) {
   return client.fetch(
-    groq`*[_type == "post" && $slug in categories[]->slug.current] | order(publishedAt desc){
+    groq`*[_type == "post" && $slug in categories[]->slug.current] | order(publishedAt desc)[${start}...${end}]{
       _id,
       publishedAt,
       title,
