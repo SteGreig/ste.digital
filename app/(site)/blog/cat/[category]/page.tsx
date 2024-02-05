@@ -1,6 +1,10 @@
-import Link from "next/link";
 import { getPostsByCat } from "@/sanity/sanity-utils";
+import { postsInCatCount } from "@/sanity/sanity-utils";
 import { Post as PostType } from '../../../../types/Post';
+import BlogTeaser from "@/app/(site)/components/BlogTeaser";
+import PaginationBtns from "@/app/(site)/components/PaginationBtns";
+import TitleDivider from "@/app/(site)/components/TitleDivider";
+import unslugify from "@/app/(site)/helpers/unslugify";
 
 type Props = {
   params: { category: string },
@@ -11,7 +15,7 @@ export default async function CatIndex({params, searchParams}: Props) {
 
   const slug = params.category;
 
-  console.log(slug);
+  const catTitle = unslugify(slug);
 
   const limit = 3;
 
@@ -19,39 +23,27 @@ export default async function CatIndex({params, searchParams}: Props) {
 
   const posts = await getPostsByCat(slug, (pageNum-1)*limit, limit*pageNum);
 
-  return (
-    <div>
-      {posts.map((post: PostType) => (
-        <div>
-          <h2>hello {post.title}</h2>
-        </div>
-      ))}
+  const count = await postsInCatCount(slug);
 
-      <div className='flex space-x-6'>
-        {pageNum !== 1 && (
-          <Link
-            href={pageNum === 2 ? '/blog/cat/'+slug : {
-              pathname: '/blog/cat/'+slug,
-              query: {page: pageNum > 1 ? pageNum - 1 : 1 }
-            }}
-          >
-            Previous
-          </Link>
-        )}
-        
-        {posts.length === limit && (
-          <Link
-            href={{
-              pathname: '/blog/cat/'+slug,
-              query: { page: pageNum + 1 }
-            }}
-          >
-            Next
-          </Link>
-        )}
-        
+  return (
+    <>
+
+      <TitleDivider title={`'${catTitle}' - Page ${pageNum} of ${Math.ceil(count/limit)}`} classes='mb-10 2xl:mb-12' />
+
+      <div className='flex flex-wrap w-full max-w-[720px] @container'>
+        {posts.map((post: PostType) => (
+          <BlogTeaser key={post._id} {...post} />
+        ))}
       </div>
-    </div>
+
+      <PaginationBtns
+        limit={limit}
+        pageNum={pageNum}
+        postCount={posts.length}
+        path={`/blog/cat/${slug}`}
+      />
+      
+    </>
   )
 
 }

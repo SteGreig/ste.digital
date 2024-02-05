@@ -1,10 +1,10 @@
-import Link from 'next/link';
 import { getPosts } from '@/sanity/sanity-utils'
+import { postsCount } from '@/sanity/sanity-utils';
 import { Post as PostType } from '../../types/Post';
 import BlogTeaser from '../components/BlogTeaser';
 import BlogCategories from '../components/BlogCategories';
-import { BsArrowRight } from "react-icons/bs";
-import { BsArrowLeft } from "react-icons/bs";
+import PaginationBtns from '../components/PaginationBtns';
+import TitleDivider from "@/app/(site)/components/TitleDivider";
 
 type Props = {
   searchParams: {[key: string] : string | string[] | undefined}
@@ -18,8 +18,12 @@ export default async function BlogIndex({searchParams}:Props) {
 
   const posts = await getPosts((pageNum-1)*limit, limit*pageNum);
 
+  const count = await postsCount();
+
   return (
     <>
+
+      <TitleDivider title={`Page ${pageNum} of ${Math.ceil(count/limit)}`} classes='mb-10 2xl:mb-12' />
 
       <div className='flex flex-wrap w-full max-w-[720px] @container'>
         {posts.map((post: PostType) => (
@@ -27,38 +31,14 @@ export default async function BlogIndex({searchParams}:Props) {
         ))}
       </div>
 
-      <div className='flex w-full max-w-[720px] mt-14 xl:mt-20'>
-        {pageNum !== 1 && (
-          <Link
-            className='flex items-center border-b border-transparent hover:border-pink'
-            href={pageNum === 2 ? '/blog' : {
-              pathname: '/blog',
-              query: {page: pageNum > 1 ? pageNum - 1 : 1 }
-            }}
-          >
-            <BsArrowLeft className='text-pink' />
-            <span className='gradient-text ml-1'>Previous</span>
-          </Link>
-        )}
-        
-        {posts.length === limit && (
-          <Link
-            className='flex items-center border-b border-transparent hover:border-pink ml-auto'
-            href={{
-              pathname: '/blog',
-              query: { page: pageNum + 1 }
-            }}
-          >
-            <span className='gradient-text mr-1'>Next</span>
-            <BsArrowRight className='text-pink' />
-          </Link>
-        )}
-        
-      </div>
+      <PaginationBtns
+        limit={limit}
+        pageNum={pageNum}
+        postCount={posts.length}
+        path='/blog'
+      />
 
       {/* <BlogCategories /> */}
-
-      {/* <LoadMore /> */}
 
     </>
   )

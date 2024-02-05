@@ -80,3 +80,16 @@ export async function getPostsByCat(slug: string, start: number, end: number) {
     { slug }
   )
 }
+
+export async function postsCount() {
+  return client.fetch(
+    groq`count(*[_type == "post"])`
+  )
+}
+
+export async function postsInCatCount(slug: string) {
+  return client.fetch(
+    groq`count(*[_type == "post" && $slug in categories[]->slug.current])`,
+    {slug}
+  )
+}
