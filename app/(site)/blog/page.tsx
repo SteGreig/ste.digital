@@ -1,7 +1,10 @@
 import Link from 'next/link';
 import { getPosts } from '@/sanity/sanity-utils'
 import { Post as PostType } from '../../types/Post';
+import BlogTeaser from '../components/BlogTeaser';
 import BlogCategories from '../components/BlogCategories';
+import { BsArrowRight } from "react-icons/bs";
+import { BsArrowLeft } from "react-icons/bs";
 
 type Props = {
   searchParams: {[key: string] : string | string[] | undefined}
@@ -18,40 +21,40 @@ export default async function BlogIndex({searchParams}:Props) {
   return (
     <>
 
-      <div className=''>
+      <div className='flex flex-wrap w-full max-w-[720px] @container'>
         {posts.map((post: PostType) => (
-          <div>
-            <h2>{post.title}</h2>
-          </div>
+          <BlogTeaser key={post._id} {...post} />
         ))}
       </div>
 
-      <p>{posts.length}</p>
-
-      <div className='flex space-x-6'>
-            {pageNum !== 1 && (
-              <Link
-                href={pageNum === 2 ? '/blog' : {
-                  pathname: '/blog',
-                  query: {page: pageNum > 1 ? pageNum - 1 : 1 }
-                }}
-              >
-                Previous
-              </Link>
-            )}
-            
-            {posts.length === limit && (
-              <Link
-                href={{
-                  pathname: '/blog',
-                  query: { page: pageNum + 1 }
-                }}
-              >
-                Next
-              </Link>
-            )}
-            
-          </div>
+      <div className='flex w-full max-w-[720px] mt-14 xl:mt-20'>
+        {pageNum !== 1 && (
+          <Link
+            className='flex items-center border-b border-transparent hover:border-pink'
+            href={pageNum === 2 ? '/blog' : {
+              pathname: '/blog',
+              query: {page: pageNum > 1 ? pageNum - 1 : 1 }
+            }}
+          >
+            <BsArrowLeft className='text-pink' />
+            <span className='gradient-text ml-1'>Previous</span>
+          </Link>
+        )}
+        
+        {posts.length === limit && (
+          <Link
+            className='flex items-center border-b border-transparent hover:border-pink ml-auto'
+            href={{
+              pathname: '/blog',
+              query: { page: pageNum + 1 }
+            }}
+          >
+            <span className='gradient-text mr-1'>Next</span>
+            <BsArrowRight className='text-pink' />
+          </Link>
+        )}
+        
+      </div>
 
       {/* <BlogCategories /> */}
 
