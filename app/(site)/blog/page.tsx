@@ -2,7 +2,6 @@ import { getPosts } from '@/sanity/sanity-utils'
 import { postsCount } from '@/sanity/sanity-utils';
 import { Post as PostType } from '../../types/Post';
 import BlogTeaser from '../components/BlogTeaser';
-import BlogCategories from '../components/BlogCategories';
 import PaginationBtns from '../components/PaginationBtns';
 import TitleDivider from "@/app/(site)/components/TitleDivider";
 
