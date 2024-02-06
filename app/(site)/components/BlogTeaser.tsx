@@ -13,7 +13,7 @@ const BlogTeaser = (props: PostType) => {
 
       <Link href={link} className='w-1/4 @2xl:w-1/3'>
         <Image
-          className='rounded-t'
+          className='rounded'
           src={props.mainImage ?? 'https://picsum.photos/400/300'}
           alt={props.title}
           width='400'

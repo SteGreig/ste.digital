@@ -1,10 +1,17 @@
 import { createClient, groq } from "next-sanity";
+import imageUrlBuilder from '@sanity/image-url'
 
 const client = createClient({
   projectId: "ujm0yphe",
   dataset: "production",
   apiVersion: "2024-01-18",
 });
+
+// Get a pre-configured url-builder from your sanity client
+const builder = imageUrlBuilder(client);
+export function urlFor(source) {
+  return builder.image(source)
+}
 
 export async function getProjects() {
   return client.fetch(

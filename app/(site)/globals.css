@@ -108,3 +108,34 @@ input[type="range"]::-moz-range-thumb {
   @apply appearance-none h-[18px] w-[18px] bg-navy hover:bg-navy-300 transition duration-300 rounded-full;
   border: 2px solid #fff;
 }
+
+
+/* Blog Article */
+.article p:first-of-type {
+  @apply text-white @xl:text-lg @2xl:text-xl font-semibold;
+}
+
+.article > * + * {
+  @apply mt-6 @xl:mt-8;
+}
+
+.article ul {
+  @apply pl-12;
+}
+
+.article li {
+  @apply py-1 relative;
+}
+
+.article li:before {
+  content: ">";
+  @apply mr-2 text-pink absolute top-1 -left-5 -mt-px;
+}
+
+.article .align-left {
+  @apply w-full @md:float-left @md:max-w-[50%] @md:pr-8 @md:pb-8 @md:pt-1;
+}
+
+.article .align-right {
+  @apply w-full @md:float-right @md:max-w-[50%] @md:pl-8 @md:pb-8 @md:pt-1;
+}
