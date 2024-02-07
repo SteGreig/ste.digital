@@ -11,7 +11,7 @@ export default async function Home() {
   return (
     <>
 
-      <Hero />
+      <Hero image={false} />
 
       <TitleDivider title='Selected Works' classes='mt-20 xl:mt-28' />
 
