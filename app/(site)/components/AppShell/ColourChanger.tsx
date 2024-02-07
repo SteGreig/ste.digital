@@ -7,16 +7,16 @@ const pink = getComputedStyle(document.documentElement).getPropertyValue('--pink
 const pinkGlow = getComputedStyle(document.documentElement).getPropertyValue('--pink-glow');
 const purple = getComputedStyle(document.documentElement).getPropertyValue('--purple');
 
-const ColourChanger = (props) => {
+const ColourChanger = (props: {classes: string}) => {
 
   // Get hue value from localStorage if it's been set previously
   const localHue = window.localStorage.getItem('hue');
 
   // Set initial hue state to localHue if exists
-  const [hue, setHue] = useState(localHue ? localHue : '');
+  const [hue, setHue] = useState(localHue ? localHue : null);
 
   // When slider is interacted with:
-  function changeColour(e) {
+  function changeColour(e: React.ChangeEvent<HTMLInputElement>) {
     setHue(e.target.value)
     window.localStorage.setItem('hue', e.target.value);
   }

@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-const Hero = (props) => {
+const Hero = (props: {image: string}) => {
   return (
     <div className='flex relative max-w-screen-xs sm:max-w-screen-sm lg:max-w-screen-md xl:max-w-screen-lg 3xl:pr-12'>
       <div className='relative z-10'>

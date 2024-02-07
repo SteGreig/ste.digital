@@ -10,7 +10,7 @@ import { BsRocketTakeoff } from "react-icons/bs";
 const Project = (props:ProjectType) => {
 
   const [moreActive, setMoreActive] = useState(false);
-  const [target, setTarget] = useState(null);
+  const [target, setTarget] = useState(false);
 
   function readMore(e:any) {
     e.preventDefault();
@@ -61,7 +61,7 @@ const Project = (props:ProjectType) => {
               width='720'
               height='540'
               onMouseEnter={() => setTarget(true)}
-              onMouseLeave={() => setTarget(null)}
+              onMouseLeave={() => setTarget(false)}
             />
           )}
         </a>

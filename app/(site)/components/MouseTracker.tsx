@@ -1,12 +1,18 @@
 import { useRef, useEffect } from 'react';
 import { createPortal } from 'react-dom';
 
-export const MouseTracker = ({ children, className, offset = { x: 0, y: 0} }) => {
-    const element = useRef({});
+type Props = {
+    children: React.ReactNode,
+    className: string,
+    offset: any
+}
+
+export const MouseTracker = ({ children, className, offset = { x: 0, y: 0} }: Props) => {
+    const element = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
-        function handler(e) {
-            if (element.current) {
+        function handler(e: MouseEvent) {
+            if (element.current instanceof HTMLElement) {
                 const x = e.clientX + offset.x, y = e.clientY + offset.y;
                 element.current.style.transform = `translate(${x}px, ${y}px)`;
                 element.current.style.visibility = 'visible';
