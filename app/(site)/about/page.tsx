@@ -22,7 +22,7 @@ const About = () => {
 
       <ol className='mt-12 xl:mt-14 flex flex-col gap-6 xl:gap-9'>
         {employment.map(job => (
-          <HistoryItem start={job.start} end={job.end} title={job.jobTitle} details={job.company} />
+          <HistoryItem key={job.jobTitle} start={job.start} end={job.end} title={job.jobTitle} details={job.company} />
         ))}
       </ol>
 
@@ -30,7 +30,7 @@ const About = () => {
 
       <ol className='mt-12 xl:mt-14 flex flex-col gap-6 xl:gap-9'>
         {education.map(item => (
-          <HistoryItem start={item.start} end={item.end} title={item.school} details={item.achievements} />
+          <HistoryItem key={item.school} start={item.start} end={item.end} title={item.school} details={item.achievements} />
         ))}
       </ol>
       
