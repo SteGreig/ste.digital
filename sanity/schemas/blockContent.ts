@@ -1,5 +1,3 @@
-import {defineType, defineArrayMember} from 'sanity'
-import Image from 'next/image'
 
 /**
  * This is the schema definition for the rich text fields used for
@@ -11,12 +9,12 @@ import Image from 'next/image'
  *    type: 'blockContent'
  *  }
  */
-export default defineType({
+const blockContent = {
   title: 'Block Content',
   name: 'blockContent',
   type: 'array',
   of: [
-    defineArrayMember({
+    {
       title: 'Block',
       type: 'block',
       // Styles let you set what your user can mark up blocks with. These
@@ -61,11 +59,11 @@ export default defineType({
           },
         ],
       },
-    }),
+    },
     // You can add additional types here. Note that you can't use
     // primitive types such as 'string' and 'number' in the same array
     // as a block type.
-    defineArrayMember({
+    {
       type: 'image',
       options: {hotspot: true},
       fields: [
@@ -75,8 +73,8 @@ export default defineType({
           type: 'string'
         }
       ]
-    }),
-    defineArrayMember({
+    },
+    {
       title: 'Code Block',
       type: 'code',
       options: {
@@ -88,6 +86,8 @@ export default defineType({
           { title: 'CSS', value: 'css' },
         ]
       }
-    })
+    }
   ],
-})
+}
+
+export default blockContent

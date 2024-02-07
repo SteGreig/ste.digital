@@ -1,5 +1,11 @@
+type Props = {
+  title: string,
+  start: string,
+  end: string | undefined,
+  details: Array<string>
+}
 
-const HistoryItem = (props) => {
+const HistoryItem = (props: Props) => {
   return (
     <li key={props.title} className='flex'>
       <p className='font-primary text-xs uppercase tracking-[0.2em] opacity-30 w-28 flex-none'>

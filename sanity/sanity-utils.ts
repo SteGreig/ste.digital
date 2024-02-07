@@ -9,7 +9,7 @@ const client = createClient({
 
 // Get a pre-configured url-builder from your sanity client
 const builder = imageUrlBuilder(client);
-export function urlFor(source) {
+export function urlFor(source: string) {
   return builder.image(source)
 }
 

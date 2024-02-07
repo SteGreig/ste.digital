@@ -12,27 +12,40 @@ import css from 'refractor/lang/css'
 Refractor.registerLanguage(js)
 Refractor.registerLanguage(css)
 
-type Props = {
-  value: PortableTextBlock[]
+type codeProps = {
+  value: {
+    language: string,
+    code: string,
+    highlightedLines: any
+  }
+}
+
+type imageProps = {
+  value: {
+    asset: {
+      _ref: string
+    },
+    alt: string
+  }
 }
 
 const myPortableTextComponents = {
   types: {
-    code: (props: Props) => (
+    code: (props: codeProps) => (
       <Refractor
         className='text-sm'
         language={props.value.language}
         value={props.value.code}
-        markers={props.value.highlightedLines}
+        // markers={props.value.highlightedLines}
       />
     ),
-    image: (props: Props) => (
+    image: (props: imageProps) => (
       <Image src={urlFor(props.value.asset._ref).url()} alt={props.value.alt} width={720} height={540} />
     )
   }
 }
 
-const MyPortableText = (props: Props) => {
+const MyPortableText = (props: {value: PortableTextBlock[]}) => {
   return (
     <PortableText value={props.value} components={myPortableTextComponents} />
   )
