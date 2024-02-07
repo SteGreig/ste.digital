@@ -14,7 +14,7 @@ const HistoryItem = (props) => {
         {props.details && (
           <div className="mt-1">
             {props.details.map(i => (
-              <p className='opacity-70 text-sm xl:text-base'>{i}</p>
+              <p key={i} className='opacity-70 text-sm xl:text-base'>{i}</p>
             ))}
           </div>
         )}
