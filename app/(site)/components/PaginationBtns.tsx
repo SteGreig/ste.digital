@@ -6,13 +6,14 @@ type Props = {
   pageNum: number,
   limit: number,
   postCount: number,
+  totalPostCount: number,
   path: string
 }
 
 const PaginationBtns = (props: Props) => {
 
   return (
-    <div className='flex w-full max-w-[720px] mt-14 xl:mt-20'>
+    <div className='flex w-full max-w-screen-lg mt-4 xl:mt-10 relative'>
       {props.pageNum !== 1 && (
         <Link
           className='flex items-center border-b border-transparent hover:border-pink'
@@ -25,6 +26,8 @@ const PaginationBtns = (props: Props) => {
           <span className='gradient-text ml-1'>Previous</span>
         </Link>
       )}
+
+      <span className='font-primary text-xs uppercase tracking-[0.2em] opacity-30 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2'>Page {props.pageNum} of {Math.ceil(props.totalPostCount/props.limit)}</span>
       
       {props.postCount === props.limit && (
         <Link

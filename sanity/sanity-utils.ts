@@ -39,7 +39,7 @@ export async function getPosts(start: number, end: number) {
       "mainImage": mainImage.asset->url,
       body,
       'categories': categories[]->title,
-      "excerpt": array::join(string::split((pt::text(body)), "")[0..93], "") + "..."
+      "excerpt": array::join(string::split((pt::text(body)), "")[0..120], "") + "..."
     }`
   )
 }
@@ -82,7 +82,7 @@ export async function getPostsByCat(slug: string, start: number, end: number) {
       "mainImage": mainImage.asset->url,
       body,
       'categories': categories[]->title,
-      "excerpt": array::join(string::split((pt::text(body)), "")[0..93], "") + "..."
+      "excerpt": array::join(string::split((pt::text(body)), "")[0..120], "") + "..."
     }`,
     { slug }
   )

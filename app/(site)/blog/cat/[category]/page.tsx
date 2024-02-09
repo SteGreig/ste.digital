@@ -17,7 +17,7 @@ export default async function CatIndex({params, searchParams}: Props) {
 
   const catTitle = unslugify(slug);
 
-  const limit = 3;
+  const limit = 6;
 
   const pageNum = typeof searchParams.page === 'string' ? Number(searchParams.page) : 1;
 
@@ -28,18 +28,21 @@ export default async function CatIndex({params, searchParams}: Props) {
   return (
     <>
 
-      <TitleDivider title={`'${catTitle}' - Page ${pageNum} of ${Math.ceil(count/limit)}`} classes='mb-10 2xl:mb-12' />
+      <TitleDivider title={`${count} Post${count !== 1 ? 's': ''} in '${catTitle}'`} classes='mb-10 2xl:mb-12' maxWidth='max-w-screen-xl' />
 
-      <div className='flex flex-wrap w-full max-w-[720px] @container'>
-        {posts.map((post: PostType) => (
-          <BlogTeaser key={post._id} {...post} />
-        ))}
+      <div className='max-w-screen-xl @container'>
+        <div className='flex flex-wrap w-full @xl:-mx-4 @2xl:-mx-6'>
+          {posts.map((post: PostType) => (
+            <BlogTeaser key={post._id} {...post} />
+          ))}
+        </div>
       </div>
 
       <PaginationBtns
         limit={limit}
         pageNum={pageNum}
         postCount={posts.length}
+        totalPostCount={count}
         path={`/blog/cat/${slug}`}
       />
       

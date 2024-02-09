@@ -81,10 +81,6 @@ a {
   @apply opacity-100 scale-100 origin-top translate-y-0;
 }
 
-.blog-teaser:has(img:hover) h2 a {
-  @apply underline;
-}
-
 
 /* COLOUR CHANGER RANGE SLIDER */
 .colour-slider {
@@ -107,6 +103,10 @@ input[type="range"]::-webkit-slider-thumb {
 input[type="range"]::-moz-range-thumb {
   @apply appearance-none h-[18px] w-[18px] bg-navy hover:bg-navy-300 transition duration-300 rounded-full;
   border: 2px solid #fff;
+}
+
+.blog-teaser:has(.btn:hover) h2 a {
+  @apply underline;
 }
 
 
