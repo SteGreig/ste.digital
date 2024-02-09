@@ -1,9 +1,11 @@
 import React from 'react'
 import { kindWords } from '../data/kindWords'
+import TransitionWrapper from '../components/TransitionWrapper'
+
 
 const About = () => {
   return (
-    <>
+    <TransitionWrapper>
       
       <h1 className='sr-only'>Kind Words</h1>
 
@@ -30,8 +32,7 @@ const About = () => {
         </ul>
       )}
       
-      
-    </>
+    </TransitionWrapper>
   )
 }
 

@@ -1,6 +1,7 @@
 "use client";
 import React from 'react'
 import { useState } from 'react';
+import { LazyMotion, domAnimation, m } from "framer-motion"
 
 // Get initial CSS variable values so we can reset to these
 const pink = getComputedStyle(document.documentElement).getPropertyValue('--pink');
@@ -40,21 +41,23 @@ const ColourChanger = (props: {classes: string}) => {
   }
 
   return (
-    <div className={`${props.classes}`}>
-      <p className='flex items-baseline justify-between'>
-        <span className='gradient-text text-xs'>Change the vibe</span>
-        <button onClick={resetColour} className='border-b border-white opacity-60 hover:opacity-100 border-opacity-60 hover:border-opacity-100 transition duration-300 pb-0 text-[11px]/tight inline-block ml-2 cursor-pointer'>Reset</button>
-      </p>
-      <input
-        type="range"
-        value={hue ? hue : 0}
-        onInput={changeColour}
-        min='0'
-        step='1'
-        max='360'
-        className='colour-slider'
-      />
-    </div>
+    <LazyMotion features={domAnimation}>
+      <m.div initial={{y:100, opacity:0}} animate={{y:0, opacity:1}}  className={`${props.classes}`}>
+        <p className='flex items-baseline justify-between'>
+          <span className='gradient-text text-xs'>Change the vibe</span>
+          <button onClick={resetColour} className='border-b border-white opacity-60 hover:opacity-100 border-opacity-60 hover:border-opacity-100 transition duration-300 pb-0 text-[11px]/tight inline-block ml-2 cursor-pointer'>Reset</button>
+        </p>
+        <input
+          type="range"
+          value={hue ? hue : 0}
+          onInput={changeColour}
+          min='0'
+          step='1'
+          max='360'
+          className='colour-slider'
+        />
+      </m.div>
+    </LazyMotion>
   )
 }
 

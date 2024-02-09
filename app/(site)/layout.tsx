@@ -42,7 +42,7 @@ export default async function RootLayout({
         
         <Header />
 
-        <div className='flex flex-col md:flex-row'>
+        <div className='flex flex-row'>
 
           <div className="flex flex-wrap w-full md:w-[18.75%] md:max-w-xs border-t md:border-t-0 md:border-r border-white border-opacity-10 fixed z-20 bottom-0 md:top-[69px] md:h-[calc(100vh_-_69px)] md:pt-12 lg:pt-16 md:px-6 bg-navy md:bg-transparent before:absolute before:top-0 before:w-full before:bg-gradient-to-r before:from-purple before:to-pink before:h-px md:before:bg-none">
             <div className='w-full md:max-w-44 ml-auto flex flex-col'>
@@ -51,13 +51,13 @@ export default async function RootLayout({
             <ColourChanger classes="w-full mt-auto hidden lg:block mb-6" />
           </div>
 
-          <div className='w-full md:w-[81.25%] md:left-[18.75%] relative md:mt-[69px] overflow-hidden'>
+          <div className='flex flex-col w-full md:w-[81.25%] md:left-[18.75%] relative md:mt-[69px] overflow-hidden'>
 
-            <main className="p-6 pt-28 md:p-16 md:pb-4 lg:pt-20 lg:px-20 xl:px-24 2xl:px-32">
+            <main className="w-full p-6 pt-28 md:p-16 md:pb-4 lg:pt-20 lg:px-20 xl:px-24 2xl:px-32 mb-20 2xl:mb-32">
               {children}
             </main>
 
-            <footer className='mt-24 2xl:mt-36 text-xs px-6 pb-16 md:pb-4 opacity-40'>The footer I guess</footer>
+            <footer className='w-full mt-auto text-xs px-6 pb-16 md:pb-4 opacity-40'>The footer I guess</footer>
           </div>
 
         </div>

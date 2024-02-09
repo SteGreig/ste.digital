@@ -3,6 +3,7 @@ import { postsCount } from '@/sanity/sanity-utils';
 import { Post as PostType } from '../../types/Post';
 import BlogTeaser from '../components/BlogTeaser';
 import PaginationBtns from '../components/PaginationBtns';
+import TransitionWrapper from '../components/TransitionWrapper';
 // import TitleDivider from "@/app/(site)/components/TitleDivider";
 
 type Props = {
@@ -20,7 +21,7 @@ export default async function BlogIndex({searchParams}:Props) {
   const count = await postsCount();
 
   return (
-    <>
+    <TransitionWrapper>
 
       {/* <TitleDivider title={`Page ${pageNum} of ${Math.ceil(count/limit)}`} classes='mb-10 2xl:mb-12' /> */}
 
@@ -42,6 +43,6 @@ export default async function BlogIndex({searchParams}:Props) {
 
       {/* <BlogCategories /> */}
 
-    </>
+    </TransitionWrapper>
   )
 }
