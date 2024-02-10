@@ -17,11 +17,11 @@ const About = () => {
 
         <h1 className='sr-only'>About Me</h1>
 
-        <TitleDivider title='Bio' classes='mt-20 xl:mt-28' />
+        <TitleDivider title='Bio' classes='mt-20 xl:mt-28' headingLevel='h2' />
 
         <Bio />
 
-        <TitleDivider title='Employment History' classes='mt-16 xl:mt-24' />
+        <TitleDivider title='Employment History' classes='mt-16 xl:mt-24' headingLevel='h2' />
 
         <ol className='mt-12 xl:mt-14 flex flex-col gap-6 xl:gap-9'>
           {employment.map(job => (
@@ -29,7 +29,7 @@ const About = () => {
           ))}
         </ol>
 
-        <TitleDivider title='Education' classes='mt-16 xl:mt-24' />
+        <TitleDivider title='Education' classes='mt-16 xl:mt-24' headingLevel='h2' />
 
         <ol className='mt-12 xl:mt-14 flex flex-col gap-6 xl:gap-9'>
           {education.map(item => (

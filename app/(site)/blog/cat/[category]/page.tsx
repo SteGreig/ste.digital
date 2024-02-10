@@ -5,6 +5,7 @@ import BlogTeaser from "@/app/(site)/components/BlogTeaser";
 import PaginationBtns from "@/app/(site)/components/PaginationBtns";
 import TitleDivider from "@/app/(site)/components/TitleDivider";
 import unslugify from "@/app/(site)/helpers/unslugify";
+import TransitionWrapper from "@/app/(site)/components/TransitionWrapper";
 
 type Props = {
   params: { category: string },
@@ -26,7 +27,7 @@ export default async function CatIndex({params, searchParams}: Props) {
   const count = await postsInCatCount(slug);
 
   return (
-    <>
+    <TransitionWrapper>
 
       <TitleDivider title={`${count} Post${count !== 1 ? 's': ''} in '${catTitle}'`} classes='mb-10 2xl:mb-12' maxWidth='max-w-screen-xl' />
 
@@ -46,7 +47,7 @@ export default async function CatIndex({params, searchParams}: Props) {
         path={`/blog/cat/${slug}`}
       />
       
-    </>
+    </TransitionWrapper>
   )
 
 }

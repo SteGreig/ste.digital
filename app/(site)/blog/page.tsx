@@ -23,7 +23,9 @@ export default async function BlogIndex({searchParams}:Props) {
   return (
     <TransitionWrapper>
 
-      {/* <TitleDivider title={`Page ${pageNum} of ${Math.ceil(count/limit)}`} classes='mb-10 2xl:mb-12' /> */}
+      <h1 className='sr-only'>Blog</h1>
+
+      {/* <TitleDivider title={`Page ${pageNum} of ${Math.ceil(count/limit)}`} classes='mb-10 2xl:mb-12' headingLevel='h2' /> */}
 
       <div className='max-w-screen-xl @container'>
         <div className='flex flex-wrap w-full @xl:-mx-4 @2xl:-mx-6'>
@@ -40,8 +42,6 @@ export default async function BlogIndex({searchParams}:Props) {
         totalPostCount={count}
         path='/blog'
       />
-
-      {/* <BlogCategories /> */}
 
     </TransitionWrapper>
   )
