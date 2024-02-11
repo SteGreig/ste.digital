@@ -23,22 +23,23 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: 'Selected Works of Ste Greig - ste.digital',
+  title: {
+    default: 'Selected Works of Ste Greig',
+    template: '%s - ste.digital'
+  },
   description:
     'Selected works of Ste Greig - a front-end developer from Nottingham, UK',
   metadataBase: new URL('https://ste.digital'),
   openGraph: {
-    title: 'Selected Works of Ste Greig - ste.digital',
-    description:
-      'Selected works of Ste Greig - a front-end developer from Nottingham, UK',
-    url: 'https://ste.digital',
-    siteName: 'ste.digital',
     images: {
       url: '/opengraph-image.png',
       width: 1920,
       height: 960,
     },
   },
+  twitter: {
+    card: "summary_large_image"
+  }
 };
 
 

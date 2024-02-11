@@ -1,4 +1,3 @@
-import React from 'react'
 import { Metadata } from 'next';
 import Hero from '../components/Hero';
 import TitleDivider from '../components/TitleDivider';
@@ -10,7 +9,7 @@ import { employment } from '../data/employment';
 import { education } from '../data/education';
 
 export const metadata: Metadata = {
-  title: 'About Ste Greig, a UK based front-end developer - ste.digital',
+  title: 'About Ste Greig',
   description:
     'Bio, employment history and educational achievements of Ste Greig, a front-end developer from Nottingham, UK.',
 };

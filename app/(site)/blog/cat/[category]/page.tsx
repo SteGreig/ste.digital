@@ -1,3 +1,4 @@
+import { Metadata, ResolvingMetadata } from "next";
 import { getPostsByCat } from "@/sanity/sanity-utils";
 import { postsInCatCount } from "@/sanity/sanity-utils";
 import { Post as PostType } from '../../../../types/Post';
@@ -10,6 +11,13 @@ import TransitionWrapper from "@/app/(site)/components/TransitionWrapper";
 type Props = {
   params: { category: string },
   searchParams: {[key: string] : string | string[] | undefined}
+}
+
+export function generateMetadata({ params, searchParams }: Props){
+  return {
+    title: `'${unslugify(params.category)}' Blog Category ${searchParams.page ? 'Page '+searchParams.page : ''}`,
+    description: `Posts categorised as '${unslugify(params.category)}' in the personal blog of creative front-end developer, Ste Greig.`,
+  }
 }
 
 export default async function CatIndex({params, searchParams}: Props) {

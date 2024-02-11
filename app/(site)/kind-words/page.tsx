@@ -1,7 +1,12 @@
-import React from 'react'
+import { Metadata } from 'next'
 import { kindWords } from '../data/kindWords'
 import TransitionWrapper from '../components/TransitionWrapper'
 
+export const metadata: Metadata = {
+  title: 'Kind Words',
+  description:
+    "Kind words about what it's like to work with Ste Greig, from clients, collaborators and managers.",
+};
 
 const About = () => {
   return (

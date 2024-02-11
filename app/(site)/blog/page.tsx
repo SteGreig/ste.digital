@@ -6,13 +6,20 @@ import PaginationBtns from '../components/PaginationBtns';
 import TransitionWrapper from '../components/TransitionWrapper';
 // import TitleDivider from "@/app/(site)/components/TitleDivider";
 
+const limit = 6;
+
 type Props = {
   searchParams: {[key: string] : string | string[] | undefined}
 }
 
-export default async function BlogIndex({searchParams}:Props) {
+export function generateMetadata({ searchParams }: Props){
+  return {
+    title: `Blog ${searchParams.page ? 'Page '+searchParams.page : ''}`,
+    description: "The personal blog of creative front-end developer, Ste Greig. Tips, tricks, how-tos, opinions and personal ramblings.",
+  }
+}
 
-  const limit = 6;
+export default async function BlogIndex({searchParams}:Props) {
 
   const pageNum = typeof searchParams.page === 'string' ? Number(searchParams.page) : 1;
 
