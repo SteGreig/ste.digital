@@ -23,9 +23,23 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: 'ste.digital',
-  description: 'A front-end developer from Nottingham, UK',
-}
+  title: 'Selected Works of Ste Greig - ste.digital',
+  description:
+    'Selected works of Ste Greig - a front-end developer from Nottingham, UK',
+  metadataBase: new URL('https://ste.digital'),
+  openGraph: {
+    title: 'Selected Works of Ste Greig - ste.digital',
+    description:
+      'Selected works of Ste Greig - a front-end developer from Nottingham, UK',
+    url: 'https://ste.digital',
+    siteName: 'ste.digital',
+    images: {
+      url: '/opengraph-image.png',
+      width: 1920,
+      height: 960,
+    },
+  },
+};
 
 
 export default async function RootLayout({

@@ -18,7 +18,7 @@ export default async function Home() {
 
         <TitleDivider title='Selected Works' classes='mt-20 xl:mt-28' />
 
-        <div className='flex flex-col gap-20 mt-10 md:mt-14 lg:mt-16'>
+        <div className='flex flex-col gap-16 md:gap-20 mt-10 md:mt-14 lg:mt-16'>
           {projects.map((project: ProjectType) => (
             <Project
               key={project._id}
