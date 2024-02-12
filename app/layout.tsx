@@ -1,15 +1,15 @@
 import type { Metadata } from 'next'
 import { Nunito_Sans } from 'next/font/google'
 import { Poppins } from 'next/font/google'
-import './globals.css'
+import './(site)/globals.css'
 
-import Header from './components/AppShell/Header';
-import Nav from "./components/AppShell/Nav"
+import Header from './(site)/components/AppShell/Header';
+import Nav from "./(site)/components/AppShell/Nav"
 import { getBlogCats } from '@/sanity/sanity-utils';
 
 // Dynamic import to prevent document is not defined error
 import dynamic from 'next/dynamic';
-const ColourChanger = dynamic(() => import('./components/AppShell/ColourChanger'), { ssr: false });
+const ColourChanger = dynamic(() => import('./(site)/components/AppShell/ColourChanger'), { ssr: false });
 
 const nunito_sans = Nunito_Sans({
   subsets: ['latin'],
@@ -57,7 +57,7 @@ export default async function RootLayout({
         
         <Header />
 
-        <div className='flex flex-row'>
+        <div className='flex flex-row min-h-screen'>
 
           <div className="flex flex-wrap w-full md:w-[18.75%] md:max-w-xs border-t md:border-t-0 md:border-r border-white border-opacity-10 fixed z-20 bottom-0 md:top-[69px] md:h-[calc(100vh_-_69px)] md:pt-12 lg:pt-16 md:px-6 bg-navy md:bg-transparent before:absolute before:top-0 before:w-full before:bg-gradient-to-r before:from-purple before:to-pink before:h-px md:before:bg-none">
             <div className='w-full md:max-w-44 ml-auto flex flex-col'>
