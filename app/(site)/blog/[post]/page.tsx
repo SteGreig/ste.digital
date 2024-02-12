@@ -1,5 +1,4 @@
 import { Metadata } from "next";
-import { postsCount } from '@/sanity/sanity-utils';
 import { getPosts } from '@/sanity/sanity-utils'
 import { getPost } from "@/sanity/sanity-utils";
 import MyPortableText from "../../components/MyPortableText";
@@ -13,8 +12,7 @@ type Props = {
 
 // Generate these posts as static pages (using an array of post slugs) rather than dynamically rendered
 export async function generateStaticParams() {
-  const count = await postsCount();
-  const posts = await getPosts(1, count);
+  const posts = await getPosts(1, 50);
   return posts.map(({slug}:{slug:string}) => slug)
 }
 
