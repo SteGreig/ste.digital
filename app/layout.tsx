@@ -5,6 +5,7 @@ import './(site)/globals.css'
 
 import Header from './(site)/components/AppShell/Header';
 import Nav from "./(site)/components/AppShell/Nav"
+import Footer from './(site)/components/AppShell/Footer';
 import { getBlogCats } from '@/sanity/sanity-utils';
 
 // Dynamic import to prevent document is not defined error
@@ -72,7 +73,7 @@ export default async function RootLayout({
               {children}
             </main>
 
-            <footer className='w-full mt-auto text-xs px-6 pb-16 md:pb-4 opacity-40'>The footer I guess</footer>
+            <Footer />
           </div>
 
         </div>

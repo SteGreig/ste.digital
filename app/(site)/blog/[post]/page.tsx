@@ -12,7 +12,7 @@ type Props = {
 
 // Generate these posts as static pages (using an array of post slugs) rather than dynamically rendered
 export async function generateStaticParams() {
-  const posts = await getPosts(1, 50);
+  const posts = await getPosts(1, 30);
   return posts.map(({slug}:{slug:string}) => slug)
 }
 

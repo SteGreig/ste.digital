@@ -8,6 +8,8 @@ import TitleDivider from "@/app/(site)/components/TitleDivider";
 import unslugify from "@/app/(site)/helpers/unslugify";
 import TransitionWrapper from "@/app/(site)/components/TransitionWrapper";
 
+const limit = 6;
+
 type Props = {
   params: { category: string },
   searchParams: {[key: string] : string | string[] | undefined}
@@ -25,8 +27,6 @@ export default async function CatIndex({params, searchParams}: Props) {
   const slug = params.category;
 
   const catTitle = unslugify(slug);
-
-  const limit = 6;
 
   const pageNum = typeof searchParams.page === 'string' ? Number(searchParams.page) : 1;
 
