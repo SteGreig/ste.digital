@@ -15,8 +15,8 @@ const Nav = (props: Props) => {
 
   const pathname = usePathname()
 
-  const list = { hidden: { opacity: 0 }, show: { opacity: 1, transition: { staggerChildren: 0.05 } } }
-  const item = { hidden: { x: -100, opacity: 0 }, show: {x: 0, opacity:1} }
+  const list = { hidden: { opacity: 0 }, show: { opacity: 1, transition: { staggerChildren: 0.1 } } }
+  const item = { hidden: { x: -100, opacity: 0 }, show: {x: 0, opacity:1, transition: { duration: 0.5, type: "spring" }} }
 
   return (
     <LazyMotion features={domAnimation}>
