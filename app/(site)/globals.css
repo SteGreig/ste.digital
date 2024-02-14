@@ -116,7 +116,7 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .article > * + * {
-  @apply mt-6 @xl:mt-8;
+  @apply mt-6 @xl:mt-10;
 }
 
 .article ul {

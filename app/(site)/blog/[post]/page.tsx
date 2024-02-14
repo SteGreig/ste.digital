@@ -5,6 +5,7 @@ import MyPortableText from "../../components/MyPortableText";
 import TransitionWrapper from "../../components/TransitionWrapper";
 // import Image from 'next/image'
 import './prism.css'
+import DisqusComments from "./DisqusComments";
 
 type Props = {
   params: { post: string }
@@ -42,7 +43,7 @@ export default async function Post({params}: Props) {
   return (
     <TransitionWrapper>
       <div className="w-full max-w-[720px] @container">
-        <article className="@2xl:text-lg text-gray-300 article">
+        <article className="@2xl:text-lg/relaxed text-gray-200 article">
 
           <h1 className="text-3xl @xl:text-4xl @2xl:text-5xl font-primary font-semibold text-white pb-2">{post.title}</h1>
 
@@ -58,6 +59,11 @@ export default async function Post({params}: Props) {
 
           <MyPortableText value={post.body} />
         </article>
+
+        <div className="mt-20">
+          <DisqusComments title={post.title} slug={post.slug} />
+        </div>
+
       </div>
     </TransitionWrapper>
   )
