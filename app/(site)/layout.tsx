@@ -1,16 +1,16 @@
 import type { Metadata } from 'next'
 import { Nunito_Sans } from 'next/font/google'
 import { Poppins } from 'next/font/google'
-import './(site)/globals.css'
+import './globals.css'
 
-import Header from './(site)/components/AppShell/Header';
-import Nav from "./(site)/components/AppShell/Nav"
-import Footer from './(site)/components/AppShell/Footer';
+import Header from './components/AppShell/Header';
+import Nav from "./components/AppShell/Nav"
+import Footer from './components/AppShell/Footer';
 import { getBlogCats } from '@/sanity/sanity-utils';
 
 // Dynamic import to prevent document is not defined error
 import dynamic from 'next/dynamic';
-const ColourChanger = dynamic(() => import('./(site)/components/AppShell/ColourChanger'), { ssr: false });
+const ColourChanger = dynamic(() => import('./components/AppShell/ColourChanger'), { ssr: false });
 
 const nunito_sans = Nunito_Sans({
   subsets: ['latin'],

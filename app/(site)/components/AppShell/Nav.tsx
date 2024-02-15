@@ -30,18 +30,18 @@ const Nav = (props: Props) => {
               </Link>
 
               {pathname.includes('/blog') && i.text === "Blog" && (
-                <ul className='hidden md:flex flex-col -mt-2'>
+                <m.ul initial="hidden" animate="show" variants={list} className='hidden md:flex flex-col -mt-2'>
                   {props.blogCats.map((cat: BlogCatType) => (
-                    <li key={cat._id}>
+                    <m.li variants={item} key={cat._id}>
                       <Link
                         href={`/blog/cat/${cat.slug}`}
                         className={`${pathname === '/blog/cat/'+cat.slug ? 'text-pink hover:text-pink opacity-80 hover:opacity-100' : 'hover:text-white'} py-1 block text-sm text-gray-400`}
                       >
                         {cat.title}
                       </Link>
-                    </li>
+                    </m.li>
                   ))}
-                </ul>
+                </m.ul>
               )}
 
             </m.li>
