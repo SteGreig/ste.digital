@@ -15,6 +15,11 @@ const project = {
       options: { source: 'name' }
     },
     {
+      name: 'publishedAt',
+      title: 'Published at',
+      type: 'datetime',
+    },
+    {
       name: 'image',
       title: 'Image',
       type: 'image',

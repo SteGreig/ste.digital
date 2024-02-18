@@ -15,7 +15,7 @@ export function urlFor(source: string) {
 
 export async function getProjects() {
   return client.fetch(
-    groq`*[_type == "project"] | order(_updatedAt desc){
+    groq`*[_type == "project"] | order(_publishedAt desc){
       _id,
       _createdAt,
       name,
