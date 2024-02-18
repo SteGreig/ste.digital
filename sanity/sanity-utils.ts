@@ -15,9 +15,9 @@ export function urlFor(source: string) {
 
 export async function getProjects() {
   return client.fetch(
-    groq`*[_type == "project"] | order(_publishedAt desc){
+    groq`*[_type == "project"] | order(publishedAt desc){
       _id,
-      _createdAt,
+      publishedAt,
       name,
       "slug": slug.current,
       "image": image.asset->url,
