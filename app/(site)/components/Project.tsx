@@ -84,7 +84,7 @@ const Project = (props:ProjectType) => {
         )}
 
         {props.url && (
-          <a href={props.url} className="btn btn--outline inline-block">
+          <a target="_blank" href={props.url} className="btn btn--outline inline-block">
             <span className='btn--outline__text inline-flex items-center'>
               <span>Launch Project</span>
               <BsRocketTakeoff className="ml-2 text-pink" />

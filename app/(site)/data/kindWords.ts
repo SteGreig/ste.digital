@@ -1,6 +1,12 @@
 export const kindWords = [
   {
-    quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum viverra ante ex, eget bibendum leo blandit quis. Sed porta sollicitudin massa, sit amet pellentesque justo tincidunt non. Suspendisse mollis mauris sed felis vestibulum, id mollis erat sollicitudin. Phasellus eu metus orci. Pellentesque et arcu sapien.",
+    quote: "Stephen is a very reliable, highly skilled front end developer. We have worked with him for three years now, he always makes time to complete our work on schedule, and the quality of coding is excellent and bug free. Stephen will always jump on our project at the drop of a hat, and he is the most reliable dev we have worked with.",
+    name: "Samuel Brown,",
+    position: "CEO Fantasy Football Fix,",
+    company: "Fix has 500k users and is an AI platform for fantasy football"
+  },
+  {
+    quote: "Stephen is a very reliable, highly skilled front end developer. We have worked with him for three years now, he always makes time to complete our work on schedule, and the quality of coding is excellent and bug free. Stephen will always jump on our project at the drop of a hat, and he is the most reliable dev we have worked with.",
     name: "Evi Sianna",
     position: "Content Strategist",
     company: "All Response Media"
@@ -30,7 +36,7 @@ export const kindWords = [
     company: "Wiley"
   },
   {
-    quote: "Very interesting, very useful and very easy to read, well done! An excellent and detailed read, 5 stars!",
+    quote: "Stephen's article is very interesting, very useful and very easy to read, well done! An excellent and detailed read, 5 stars!",
     name: "Dudley Storey",
     position: "Technical Editor for my article on CSS Timing Functions,",
     company: "Smashing Magazine"
