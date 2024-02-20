@@ -25,11 +25,11 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Selected Works of Ste Greig',
+    default: 'Ste Greig, Creative Front-end Developer',
     template: '%s - ste.digital'
   },
   description:
-    'Selected works of Ste Greig - a front-end developer from Nottingham, UK',
+    'Selected works of Ste Greig - a creative front-end developer from Nottingham, UK',
   metadataBase: new URL('https://ste.digital'),
   openGraph: {
     images: {

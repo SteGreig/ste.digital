@@ -13,7 +13,7 @@ const Hero = (props: {image: boolean | undefined}) => {
           </p>
           <p className={`mt-4 lg:mt-2 text-balance max-w-sm ${props.image ? 'lg:max-w-lg' : 'md:max-w-lg'} 2xl:max-w-screen-sm`}>
             <span className='text-sm/normal lg:text-base/relaxed 2xl:text-lg font-semibold font-primary mt-2 2xs:block'>A front-end developer from Nottingham, UK</span>
-            <span className='text-sm/normal 2xl:text-base/normal opacity-60 font-light block md:mt-1'> who orem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur accumsan, lacus scelerisque hendrerit ultrices, massa massa consequat erat.</span>
+            <span className='text-sm/normal 2xl:text-base/normal opacity-60 font-light block md:mt-1'> with a creative background and a keen eye for detail, specialising in implementing designs with a focus on usability, accessibility and performance.</span>
           </p>
         </div>
         {props.image && (
