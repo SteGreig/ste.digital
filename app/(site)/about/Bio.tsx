@@ -26,8 +26,6 @@ const Bio = () => {
           <p>My current focus is on React, JavaScript, TypeScript and Tailwind to name a few, but — having been building websites since the days when we&apos;d add space to layouts by putting an invisible image inside a table-cell — I have a strong knowledge of the core web fundamentals that these new tools ultimately compile down to. Semantic HTML, vanilla JavaScript, an encyclopedic knowledge of CSS, servers, DNS... this foundational knowledge is important in my opinion and can sometimes be too easily overlooked today.</p>
 
           <p>Away from the screen I have an amazing little family; two sons Leo and Olly, and wife Hannah. Being a Dad has its challenges but it&apos;s also the most rewarding thing I can imagine. Those boys are everything to me and I&apos;d do absolutely anything to make sure they&apos;re happy!</p>
-
-          <p>I&apos;m a big sports fan - football (⚽), tennis, snooker, rugby</p>
         </>
       )}
     </div>
