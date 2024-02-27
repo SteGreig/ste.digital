@@ -4,6 +4,7 @@ import Link from 'next/link'
 import EmailBtn from '../EmailBtn'
 import { BsTwitter } from "react-icons/bs";
 import { BsDribbble } from "react-icons/bs";
+import { BsGithub } from "react-icons/bs";
 import { LazyMotion, domAnimation, m } from "framer-motion"
 
 
@@ -24,6 +25,10 @@ const Header = () => {
           <div className='flex items-center gap-1 mr-4 md:mr-6'>
             <a className='opacity-40 hover:opacity-100 transition duration-300 py-2 px-1' target="_blank" rel="noopener noreferrer" href="https://twitter.com/Ste_Greig">
               <BsTwitter className='text-lg' />
+            </a>
+
+            <a className='opacity-40 hover:opacity-100 transition duration-300 py-2 px-1' target="_blank" rel="noopener noreferrer" href="https://github.com/SteGreig">
+              <BsGithub className='text-lg' />
             </a>
 
             <a className='opacity-40 hover:opacity-100 transition duration-300 py-2 px-1' target="_blank" rel="noopener noreferrer" href="https://dribbble.com/ste_greig">

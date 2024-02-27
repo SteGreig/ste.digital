@@ -27,7 +27,7 @@ const Bio = () => {
 
           <h4 className='font-primary mt-2'>👨‍🎓 My First Roles</h4>
 
-          <p>I landed my first junior role in the industry at 19 at Nottingham marketing agency Adtrak, just after my 2nd year of Uni, working part-time during my final year. After 3 years, my now wife and I then headed to New Zealand for a year for a bit of an adventure; we spent a couple of months travelling the whole country in a 20 year old camper, but we also got career relevant jobs in Auckland. I landed my first senior position and embarked on a very productive 10 months, completely transforming the practices of a small web design agency to more modern standards.</p>
+          <p>I landed my first junior role in the industry at 19 at Nottingham marketing agency Adtrak, just after my 2nd year of Uni, working part-time during my final year. After 3 years, my now wife and I then headed to New Zealand for a year for a bit of adventure; we spent a couple of months travelling the whole country in a 20 year old camper, but before that we also got a flat and career relevant jobs in Auckland. I landed my first senior position and embarked on a very productive 10 months, completely transforming the practices of a small web design agency to more modern standards.</p>
 
           <h4 className='font-primary mt-2'>✈️ Coming Full Circle</h4>
           
