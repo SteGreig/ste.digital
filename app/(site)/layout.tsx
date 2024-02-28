@@ -4,13 +4,8 @@ import { Poppins } from 'next/font/google'
 import './globals.css'
 
 import Header from './components/AppShell/Header';
-import Nav from "./components/AppShell/Nav"
 import Footer from './components/AppShell/Footer';
-import { getBlogCats } from '@/sanity/sanity-utils';
-
-// Dynamic import to prevent document is not defined error
-import dynamic from 'next/dynamic';
-const ColourChanger = dynamic(() => import('./components/AppShell/ColourChanger'), { ssr: false });
+import SidePanel from './components/AppShell/SidePanel';
 
 const nunito_sans = Nunito_Sans({
   subsets: ['latin'],
@@ -50,8 +45,6 @@ export default async function RootLayout({
   children: React.ReactNode
 }) {
 
-  const blogCats = await getBlogCats();
-
   return (
     <html lang="en" className='bg-[#141D34]'>
       <body className={`${nunito_sans.variable} ${poppins.variable} font-body bg-gradient-to-br from-[#141D34] to-navy text-white min-h-screen`}>
@@ -60,12 +53,7 @@ export default async function RootLayout({
 
         <div className='flex flex-row min-h-screen'>
 
-          <div className="flex flex-wrap w-full md:w-[18.75%] md:max-w-xs border-t md:border-t-0 md:border-r border-white border-opacity-10 fixed z-20 bottom-0 md:top-[69px] md:h-[calc(100vh_-_69px)] md:pt-12 lg:pt-16 md:px-6 bg-navy md:bg-transparent before:absolute before:top-0 before:w-full before:bg-gradient-to-r before:from-purple before:to-pink before:h-px md:before:bg-none">
-            <div className='w-full md:max-w-44 ml-auto flex flex-col'>
-              <Nav blogCats={blogCats} />
-            </div>
-            <ColourChanger classes="w-full mt-auto hidden lg:block mb-6" />
-          </div>
+          <SidePanel />
 
           <div className='flex flex-col w-full md:w-[81.25%] md:left-[18.75%] relative md:mt-[69px] overflow-hidden'>
 
