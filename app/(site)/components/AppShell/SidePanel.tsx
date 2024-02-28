@@ -12,7 +12,7 @@ const SidePanel = async () => {
   return (
     <div className="flex flex-wrap w-full md:w-[18.75%] md:max-w-xs border-t md:border-t-0 md:border-r border-white border-opacity-10 fixed z-20 bottom-0 md:top-[69px] md:h-[calc(100vh_-_69px)] md:px-6 bg-navy md:bg-transparent md:bg-gradient-to-t md:from-[#141D34] before:absolute before:top-0 before:w-full before:bg-gradient-to-r before:from-purple before:to-pink before:h-px md:before:bg-none">
 
-      <div className='w-full md:max-w-44 ml-auto flex flex-col md:overflow-y-scroll overflow-x-hidden hide-scrollbar md:h-[82%] md:pt-12 lg:pt-16 pb-10'>
+      <div className='w-full md:max-w-44 ml-auto flex flex-col md:overflow-y-scroll overflow-x-hidden hide-scrollbar md:h-[82%] md:pt-12 lg:pt-16 md:pb-10'>
 
         <Nav blogCats={blogCats} />
 
