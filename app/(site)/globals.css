@@ -125,7 +125,37 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .article > * + * {
-  @apply mt-6 @xl:mt-10;
+  @apply mt-6 @xl:mt-8;
+}
+
+.article > figure {
+  @apply my-10;
+}
+
+.article > figure + h2 {
+  @apply mt-16;
+}
+
+.article > h2 + *,
+.article > h3 + *,
+.article > h4 + *,
+.article > h5 + * {
+  @apply mt-4 @xl:mt-6;
+}
+
+.article h2,
+.article h3,
+.article h4,
+.article h5 {
+  @apply font-semibold font-primary text-white mt-10 @xl:mt-12;
+}
+
+.article h2 {
+  @apply text-2xl @xl:text-3xl bg-gradient-to-br from-purple to-pink text-transparent bg-clip-text font-primary antialiased whitespace-nowrap transition duration-500 hover:hue-rotate-20;
+}
+
+.article h3 {
+  @apply text-xl @xl:text-2xl;
 }
 
 .article ul {
@@ -147,4 +177,16 @@ input[type="range"]::-moz-range-thumb {
 
 .article .align-right {
   @apply w-full @md:float-right @md:max-w-[50%] @md:pl-8 @md:pb-8 @md:pt-1;
+}
+
+.article img {
+  @apply rounded;
+}
+
+.article a {
+  @apply underline decoration-pink hover:text-pink;
+}
+
+.article code:not(pre code) {
+  @apply bg-black bg-opacity-30 rounded p-1 text-sm text-gray-400;
 }

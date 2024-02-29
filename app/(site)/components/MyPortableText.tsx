@@ -4,6 +4,7 @@ import { PortableTextBlock } from "sanity";
 import Refractor from 'react-refractor'
 import Image from 'next/image'
 import { urlFor } from '@/sanity/sanity-utils'
+import decodeSanityAsset from '../helpers/decodeSanityAsset';
 
 // Load any languages you want to use from `refractor`
 import js from 'refractor/lang/javascript'
@@ -32,15 +33,24 @@ type imageProps = {
 const myPortableTextComponents = {
   types: {
     code: (props: codeProps) => (
-      <Refractor
-        className='text-sm'
-        language={props.value.language}
-        value={props.value.code}
-        // markers={props.value.highlightedLines}
-      />
+      <figure>
+        <Refractor
+          className='text-sm'
+          language={props.value.language}
+          value={props.value.code}
+          // markers={props.value.highlightedLines}
+        />
+      </figure>
     ),
     image: (props: imageProps) => (
-      <Image src={urlFor(props.value.asset._ref).url()} alt={props.value.alt} width={720} height={540} />
+      <figure>
+        <Image
+          src={urlFor(props.value.asset._ref).url()}
+          alt={props.value.alt}
+          width={decodeSanityAsset(props.value.asset._ref).dimensions.width}
+          height={decodeSanityAsset(props.value.asset._ref).dimensions.height}
+        />
+      </figure>
     )
   }
 }
