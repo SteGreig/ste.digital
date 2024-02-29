@@ -18,22 +18,22 @@ export const kindWords = [
     company: "AUTO1 Group"
   },
   {
-    quote: "The Technical Editor and I agree that the content looks great and it's a pleasure to read. I suspect you'll breeze through the author review - this is really one of the cleanest edits I've seen in ages!",
+    quote: "The Technical Editor and I agree that the content looks great and it's a pleasure to read. This is really one of the cleanest edits I've seen in ages!",
     name: "Sara Schlaer",
     position: "Senior Project Editor for my book (CSS3 Pushing the Limits),",
     company: "Wiley"
-  },
-  {
-    quote: "I've had the pleasure of working with and managing Ste for a number of years, and I have to say he has been one of the best employees I've ever had the privilege of working with. His attitude and knowledge, along with his ability to deliver as well as challenge the status-quo, make Ste an exceptional worker and culture-add to any team, and I would highly recommend him to any employer.",
-    name: "Dan Farrow",
-    position: "Manager for 8 years",
-    company: "@Adtrak"
   },
   {
     quote: "Ste has worked with me on a number of websites over the years all the way through from design and concept, to construction and post build technical support. All of which has been exceptional and time sensitive issues have been dealt with and resolved extremely quickly. I would definitely recommend Ste for anyone who needs a bespoke and personal approach to their website and design needs.",
     name: "Chris Smith",
     position: "Chris Smith Photography",
     company: "Freelance client"
+  },
+  {
+    quote: "I've had the pleasure of working with and managing Ste for a number of years, and I have to say he has been one of the best employees I've ever had the privilege of working with. His attitude and knowledge, along with his ability to deliver as well as challenge the status-quo, make Ste an exceptional worker and culture-add to any team, and I would highly recommend him to any employer.",
+    name: "Dan Farrow",
+    position: "Manager for 8 years",
+    company: "@Adtrak"
   },
   {
     quote: "Stephen's article is very interesting, very useful and very easy to read, well done! An excellent and detailed read, 5 stars!",
