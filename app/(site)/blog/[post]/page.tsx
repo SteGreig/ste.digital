@@ -40,10 +40,15 @@ export default async function Post({params}: Props) {
 
   const post = await getPost(slug);
 
+  const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  const date = new Date(post.publishedAt);
+
   return (
     <TransitionWrapper>
       <div className="w-full max-w-[720px] @container">
         <article className="@2xl:text-lg/relaxed text-gray-200 article">
+
+        <span className='font-primary text-xs uppercase tracking-[0.2em] opacity-30 mb-2 block'>Posted on <time className="" dateTime=''>{date.getDate()} {months[date.getMonth()]} {date.getFullYear()}</time></span>
 
           <h1 className="text-3xl @xl:text-4xl @2xl:text-5xl font-primary font-semibold text-white pb-2">{post.title}</h1>
 
