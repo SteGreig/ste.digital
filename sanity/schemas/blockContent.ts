@@ -86,7 +86,24 @@ const blockContent = {
           { title: 'CSS', value: 'css' },
         ]
       }
-    }
+    },
+    {
+      title: 'Embed',
+      name: 'embed',
+      type: 'object',
+      fields: [
+        {
+          name: 'url',
+          title: 'URL',
+          type: 'url'
+        },
+        {
+          name: 'title',
+          title: 'Title',
+          type: 'string'
+        }
+      ]
+    },
   ],
 }
 

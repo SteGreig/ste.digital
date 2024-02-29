@@ -30,6 +30,13 @@ type imageProps = {
   }
 }
 
+type embedProps = {
+  value: {
+    url: string,
+    title: string,
+  }
+}
+
 const myPortableTextComponents = {
   types: {
     code: (props: codeProps) => (
@@ -50,6 +57,11 @@ const myPortableTextComponents = {
           width={decodeSanityAsset(props.value.asset._ref).dimensions.width}
           height={decodeSanityAsset(props.value.asset._ref).dimensions.height}
         />
+      </figure>
+    ),
+    embed: (props: embedProps) => (
+      <figure>
+        <iframe height="400" className='w-full' title={props.value.title} src={props.value.url} loading="lazy"></iframe>
       </figure>
     )
   }
