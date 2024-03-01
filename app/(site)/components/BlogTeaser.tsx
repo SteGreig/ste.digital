@@ -29,7 +29,7 @@ const BlogTeaser = (props: PostType) => {
           <Link href={link} className='hover:underline decoration-pink'>{props.title}</Link>
         </h2>
 
-        <p className='text-sm @lg:text-base mt-2 @sm:mt-3 mb-5 @xl:block text-gray-400'>{props.excerpt}</p>
+        <p className='text-sm @lg:text-base 3xl:text-base mt-2 @sm:mt-3 mb-5 @xl:block text-gray-400'>{props.excerpt}</p>
 
         <Link
           href={link}
