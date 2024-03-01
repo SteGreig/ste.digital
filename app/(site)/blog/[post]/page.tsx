@@ -65,7 +65,7 @@ export default async function Post({params}: Props) {
           <MyPortableText value={post.body} />
         </article>
 
-        <div className="mt-20">
+        <div className="mt-20 p-4 lg:p-10 2xl:p-12 bg-navy-600 bg-opacity-50 rounded">
           <DisqusComments title={post.title} slug={post.slug} />
         </div>
 

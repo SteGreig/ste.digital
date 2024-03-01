@@ -5,6 +5,7 @@ import Refractor from 'react-refractor'
 import Image from 'next/image'
 import { urlFor } from '@/sanity/sanity-utils'
 import decodeSanityAsset from '../helpers/decodeSanityAsset';
+import { BsFillInfoCircleFill } from "react-icons/bs";
 
 // Load any languages you want to use from `refractor`
 import js from 'refractor/lang/javascript'
@@ -34,6 +35,16 @@ type embedProps = {
   value: {
     url: string,
     title: string,
+    height: number
+  }
+}
+
+type noteProps = {
+  value: {
+    title: string,
+    note: string,
+    linktext: string,
+    url: string
   }
 }
 
@@ -61,8 +72,20 @@ const myPortableTextComponents = {
     ),
     embed: (props: embedProps) => (
       <figure>
-        <iframe height="400" className='w-full' title={props.value.title} src={props.value.url} loading="lazy"></iframe>
+        <iframe height={props.value.height ?? '400'} className='w-full' title={props.value.title} src={props.value.url} loading="lazy"></iframe>
       </figure>
+    ),
+    note: (props: noteProps) => (
+      <aside className="rounded bg-navy-600 bg-opacity-50 border-l-8 border-pink p-6">
+        <p className="font-primary font-semibold text-lg mb-4 flex items-center">
+          <BsFillInfoCircleFill />
+          <span className='ml-2'>{props.value.title ?? 'Note'}</span>
+        </p>
+        <p className='text-base text-gray-400'>{props.value.note}</p>
+        {props.value.url && (
+          <a className='text-base text-pink hover:hue-rotate-20' href={props.value.url}>{props.value.linktext}</a>
+        )}
+      </aside>
     )
   }
 }

@@ -101,7 +101,39 @@ const blockContent = {
           name: 'title',
           title: 'Title',
           type: 'string'
+        },
+        {
+          name: 'height',
+          title: 'Height',
+          type: 'number'
         }
+      ]
+    },
+    {
+      title: 'Note',
+      name: 'note',
+      type: 'object',
+      fields: [
+        {
+          name: 'title',
+          title: 'Title',
+          type: 'string'
+        },
+        {
+          name: 'note',
+          title: 'Note',
+          type: 'text'
+        },
+        {
+          name: 'linktext',
+          title: 'Link Text',
+          type: 'string'
+        },
+        {
+          name: 'url',
+          title: 'Link URL',
+          type: 'url'
+        },
       ]
     },
   ],
