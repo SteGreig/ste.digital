@@ -6,7 +6,7 @@ import PaginationBtns from '../components/PaginationBtns';
 import TransitionWrapper from '../components/TransitionWrapper';
 // import TitleDivider from "@/app/(site)/components/TitleDivider";
 
-const limit = 6;
+const limit = 12;
 
 type Props = {
   searchParams: {[key: string] : string | string[] | undefined}

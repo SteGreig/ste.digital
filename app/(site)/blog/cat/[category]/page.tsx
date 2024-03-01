@@ -8,7 +8,7 @@ import TitleDivider from "@/app/(site)/components/TitleDivider";
 import unslugify from "@/app/(site)/helpers/unslugify";
 import TransitionWrapper from "@/app/(site)/components/TransitionWrapper";
 
-const limit = 6;
+const limit = 12;
 
 type Props = {
   params: { category: string },
