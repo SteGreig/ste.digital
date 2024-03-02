@@ -71,6 +71,11 @@ const blockContent = {
           name: 'alt',
           title: 'Alt',
           type: 'string'
+        },
+        {
+          name: 'caption',
+          title: 'Caption',
+          type: 'string'
         }
       ]
     },

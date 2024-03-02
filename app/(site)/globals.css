@@ -121,7 +121,7 @@ input[type="range"]::-moz-range-thumb {
 
 /* Blog Article */
 .article p:first-of-type {
-  @apply text-white @xl:text-lg @2xl:text-xl font-semibold;
+  @apply text-white @2xl:text-lg font-semibold;
 }
 
 .article > * + * {
@@ -152,7 +152,7 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .article h2 {
-  @apply text-2xl @xl:text-3xl text-pink border-b border-pink;
+  @apply relative text-2xl @xl:text-3xl text-white underline decoration-pink;
 }
 
 .article h3 {
@@ -198,6 +198,10 @@ input[type="range"]::-moz-range-thumb {
 
 .article code:not(pre code) {
   @apply bg-black bg-opacity-30 rounded p-1 text-sm text-gray-400;
+}
+
+.article blockquote {
+  @apply border-l-4 border-gray-500 text-gray-400 pl-5;
 }
 
 #reactions__container {

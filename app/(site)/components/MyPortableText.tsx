@@ -27,7 +27,8 @@ type imageProps = {
     asset: {
       _ref: string
     },
-    alt: string
+    alt: string,
+    caption: string
   }
 }
 
@@ -68,6 +69,9 @@ const myPortableTextComponents = {
           width={decodeSanityAsset(props.value.asset._ref).dimensions.width}
           height={decodeSanityAsset(props.value.asset._ref).dimensions.height}
         />
+        {props.value.caption && (
+          <figcaption className='text-base text-gray-400 mt-1 block'>{props.value.caption}</figcaption>
+        )}
       </figure>
     ),
     embed: (props: embedProps) => (
