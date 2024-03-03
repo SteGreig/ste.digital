@@ -70,7 +70,7 @@ const myPortableTextComponents = {
           height={decodeSanityAsset(props.value.asset._ref).dimensions.height}
         />
         {props.value.caption && (
-          <figcaption className='text-base text-gray-400 mt-1 block'>{props.value.caption}</figcaption>
+          <figcaption className='text-base text-gray-400 mt-2 block'>{props.value.caption}</figcaption>
         )}
       </figure>
     ),
