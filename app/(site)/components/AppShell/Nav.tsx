@@ -31,7 +31,7 @@ const Nav = (props: Props) => {
 
               {pathname.includes('/blog') && i.text === "Blog" && (
                 <m.ul initial="hidden" animate="show" variants={list} className='hidden md:flex flex-col -mt-2'>
-                  {props.blogCats.map((cat: BlogCatType) => (
+                  {props.blogCats.sort((a, b) => a.title.localeCompare(b.title)).map((cat: BlogCatType) => (
                     <m.li variants={item} key={cat._id}>
                       <Link
                         href={`/blog/cat/${cat.slug}`}
