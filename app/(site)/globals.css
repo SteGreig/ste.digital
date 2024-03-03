@@ -125,7 +125,7 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .article > * + * {
-  @apply mt-6 @xl:mt-8;
+  @apply mt-6;
 }
 
 .article > figure,
@@ -143,6 +143,7 @@ input[type="range"]::-moz-range-thumb {
   @apply mt-4 @xl:mt-6;
 }
 
+.article > h4 + *,
 .article > h5 + * {
   @apply mt-2;
 }
@@ -180,7 +181,7 @@ input[type="range"]::-moz-range-thumb {
 
 .article li:before {
   content: "";
-  @apply mr-2 text-pink absolute top-4 -left-5 w-2 h-2 border rounded-full border-pink;
+  @apply mr-2 text-pink absolute top-3 -left-5 w-2 h-2 border rounded-full border-pink;
 }
 
 .article .align-left {

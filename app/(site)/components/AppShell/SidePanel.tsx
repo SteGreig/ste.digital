@@ -14,7 +14,7 @@ const SidePanel = async () => {
 
       <div className='w-full md:max-w-44 ml-auto flex flex-col md:overflow-y-scroll overflow-x-hidden hide-scrollbar md:h-[82%] md:pt-12 lg:pt-16 md:pb-10'>
 
-        <Nav blogCats={blogCats} />
+        <Nav blogCats={blogCats.sort()} />
 
       </div>
 

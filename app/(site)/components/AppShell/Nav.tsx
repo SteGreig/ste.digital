@@ -20,7 +20,7 @@ const Nav = (props: Props) => {
 
   return (
     <LazyMotion features={domAnimation}>
-      <nav>
+      <nav className='md:pb-5'>
         
         <m.ul initial="hidden" animate="show" variants={list} className='flex md:flex-col justify-around md:justify-start'>
           {navLinks.map(i => (
