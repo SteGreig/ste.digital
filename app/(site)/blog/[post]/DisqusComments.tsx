@@ -14,7 +14,7 @@ const DisqusComments = (props: {title: string, slug: string}) => {
   }
 
   return (
-    <DiscussionEmbed shortname='ste-digital' config={disqusConfig} />
+    <DiscussionEmbed shortname='tangledindesign' config={disqusConfig} />
   )
 }
 
