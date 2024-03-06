@@ -17,11 +17,12 @@ const Footer = async () => {
   const topTrack = tracks.toptracks.track[0];
 
   return (
-    <footer className="w-full mt-auto text-xs px-6 pb-16 md:pb-4">
+    <footer className="w-full mt-auto text-xs px-6 pb-16 md:pb-4 flex flex-col sm:flex-row gap-4 sm:justify-between">
       <div className="flex items-center">
         <BsMusicNoteBeamed className="mr-2" />
         <p className="text-gray-400"><span className="block sm:inline">My most played track this week is </span> <strong className="text-gray-200 font-semibold">{topTrack.name}</strong> <span>by</span> <strong className="text-gray-200 font-semibold">{topTrack.artist.name}</strong></p>
       </div>
+      <p className="text-gray-500">Built with Next.js + Sanity</p>
     </footer>
   )
 }
