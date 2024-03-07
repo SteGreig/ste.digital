@@ -55,7 +55,7 @@ const Bio = () => {
 
           <h4 className='font-primary mt-2'>⚡ Motivators</h4>
 
-          <p>In terms of what makes me tick, I love challenges and problem solving. If I can turn something into a challenge it unlocks a real drive and determinedness within, no matter how trivial. Whether it be completing X amount of tasks in a week, watching X amount of films in a month or running X amount of miles in a year. This strategy is basically how I keep my life on track and moving forward!</p>
+          <p>In terms of what makes me tick, I love challenges and problem solving. If I can turn something into a challenge it unlocks a real drive and determinedness within, no matter how trivial. Whether it be completing X amount of tasks in a week, watching Y amount of films in a month or running Z amount of miles in a year. This strategy is basically how I keep my life on track and moving forward!</p>
           
           <p>Most who know me know I&apos;m very content with my own company, but I&apos;m a big fan of a social gathering too, particularly when it involves a pub or two! I&apos;m also a fairly opinionated liberal who sometimes gets a bit too disheartened with the current effectiveness of divisive politics.</p>
 
