@@ -23,14 +23,7 @@ export async function generateMetadata({params}: Props): Promise<Metadata> {
   const post = await getPost(slug);
   return {
     title: `${post.title}`,
-    description: `${post.excerpt}`,
-    openGraph: {
-      images: [
-        {
-          url: post.mainImage
-        }
-      ]
-    }
+    description: `${post.excerpt}`
   }
 }
 
