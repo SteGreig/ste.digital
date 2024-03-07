@@ -5,7 +5,7 @@ import { LazyMotion, domAnimation, m } from "framer-motion"
 const Hero = (props: {image: boolean | undefined}) => {
   return (
     <LazyMotion features={domAnimation}>
-      <div className='flex relative max-w-screen-xs sm:max-w-screen-sm lg:max-w-screen-md xl:max-w-screen-lg 3xl:pr-12'>
+      <div className='flex relative z-10 max-w-screen-xs sm:max-w-screen-sm lg:max-w-screen-md xl:max-w-screen-lg 3xl:pr-12'>
         <div className='relative z-10'>
           <p className='text-6xl md:text-7xl lg:text-8xl 2xl:text-[110px] font-bold font-primary mt-4 md:mt-0'>
             <span>Ste</span>

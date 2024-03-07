@@ -34,12 +34,12 @@ const EmailBtn = () => {
         {copied ? (
           <>
             <BsCheckLg className='text-pink' />
-            <span className='inline-block ml-1 font-medium'>Copied hi@ste.digital</span>
+            <span className='inline-block ml-1 font-medium'>Copied hi＠ste․digital</span>
           </>
         ) : (
           <>
             <BsCopy className='text-pink' />
-            <span className='inline-block ml-1 font-medium'>Copy hi@ste.digital</span>
+            <span className='inline-block ml-1 font-medium'>Copy hi＠ste․digital</span>
           </>
         )}
       </span>

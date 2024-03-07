@@ -42,7 +42,9 @@ const Project = (props:ProjectType) => {
         {props.tags && (
           <ul className='mb-9 flex gap-2'>
           {props.tags.map(tag => (
-            <li className='pill text-xs rounded-full font-primary font-medium px-3 py-[6px] bg-gradient-to-br from-purple to-pink' key={tag}>{tag}</li>
+            <li className='btn btn--outline text-xs after:left-px after:top-px after:bottom-px after:right-px px-4 py-2' key={tag}>
+              <span className='btn--outline__text'>{tag}</span>
+            </li>
           ))}
           </ul>
         )}
@@ -84,10 +86,10 @@ const Project = (props:ProjectType) => {
         )}
 
         {props.url && (
-          <a target="_blank" href={props.url} className="btn btn--outline inline-block">
-            <span className='btn--outline__text inline-flex items-center'>
+          <a target="_blank" href={props.url} className="btn inline-block">
+            <span className=' inline-flex items-center'>
               <span>Launch Project</span>
-              <BsRocketTakeoff className="ml-2 text-pink" />
+              <BsRocketTakeoff className="ml-2" />
             </span>
           </a>
         )}
