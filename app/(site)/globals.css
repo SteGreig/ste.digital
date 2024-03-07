@@ -71,7 +71,7 @@ a {
 }
 
 .btn {
-  @apply px-5 py-[10px] rounded-full font-primary font-semibold antialiased bg-gradient-to-br from-purple to-pink transition duration-300 relative;
+  @apply px-5 py-[10px] rounded-full font-primary font-semibold antialiased bg-gradient-to-br from-purple to-pink transition duration-500 relative hover:hue-rotate-20;
 }
 
 .btn--outline {
@@ -80,6 +80,10 @@ a {
 
 .btn--outline__text {
   @apply bg-gradient-to-br from-purple to-pink text-transparent bg-clip-text relative z-10;
+}
+
+.rocket-btn:hover svg {
+  @apply translate-x-6 -translate-y-6;
 }
 
 .email-btn:hover + .tooltip,
