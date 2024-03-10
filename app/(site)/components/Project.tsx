@@ -32,7 +32,7 @@ const Project = (props:ProjectType) => {
 
         <div className='mb-6 font-light'>
           {props.excerpt && (
-            <p className={`${moreActive ? 'hidden' : 'block'}`}>{props.excerpt} <a onClick={readMore} className='gradient-text border-b border-transparent hover:border-pink' href="#">Read More</a></p>
+            <p className={`${moreActive ? 'hidden' : 'block'}`}>{props.excerpt} <button onClick={readMore} className='gradient-text border-b border-transparent hover:border-pink'>Read More</button></p>
           )}
           <div className={`${moreActive ? 'block' : 'hidden'} flex flex-col gap-4`}>
             <PortableText value={props.content} />
