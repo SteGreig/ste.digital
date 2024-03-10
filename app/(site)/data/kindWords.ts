@@ -48,6 +48,12 @@ export const kindWords = [
     company: "Smashing Magazine"
   },
   {
+    quote: "As a brand agency we need an experienced and reliable virtual team that we can call in at short notice to meet the needs of the project. We've worked with Ste on several web builds as well as web audits. It's been a seamless process each time, with good communication and I know that the deliverables are technically accurate and built with consideration for the end client and their users.",
+    name: "Sarah Shaw",
+    position: "Managing Director",
+    company: "Honed Creative"
+  },
+  {
     quote: "Yeah he's alright",
     name: "Hannah Greig",
     position: "Wife",
