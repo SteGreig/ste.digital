@@ -17,7 +17,7 @@ const Hero = (props: {image: boolean | undefined}) => {
         </div>
         {props.image && (
           <m.div initial={{opacity:0}} animate={{opacity:1}} className='absolute -top-4 lg:-top-8 -right-14 sm:right-0 md:-right-12 lg:-right-32 xl:-right-6 2xl:-right-12 3xl:right-0 aspect-square flex-none rounded-full ml-auto w-1/3 xs:w-2/5 lg:w-80 xl:w-[350px] p-[2px] sm:p-[5px] bg-gradient-to-br from-purple to-pink'>
-            <Image className='rounded-full object-cover w-full h-full bg-navy' src='/profile.png' alt="Ste Greig profile picture" width='351' height='351' />
+            <Image className='rounded-full object-cover w-full h-full bg-navy' src='/profile.png' alt="Ste with son, Leo" width='351' height='351' />
           </m.div>
         )}
       </div>

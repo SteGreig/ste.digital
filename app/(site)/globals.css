@@ -123,7 +123,11 @@ input[type="range"]::-moz-range-thumb {
 
 
 /* Blog Article */
-.article p:first-of-type {
+.article {
+  @apply text-base/relaxed text-gray-200;
+}
+
+.article:not(.article--normal-first-p) p:first-of-type {
   @apply text-white @2xl:text-lg font-semibold;
 }
 

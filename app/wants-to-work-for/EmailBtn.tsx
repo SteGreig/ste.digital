@@ -5,7 +5,7 @@ import { BsCopy } from "react-icons/bs";
 import { BsCheckLg } from "react-icons/bs";
 import { useState } from 'react';
 
-const EmailBtn = () => {
+const EmailBtn = (props: {btnText?:string}) => {
 
   const [copied, setCopied] = useState(false);
 
@@ -28,7 +28,7 @@ const EmailBtn = () => {
     <div className='relative'>
       <button className='btn btn--outline email-btn' onClick={handleClick}>
         <BsEnvelope className='lg:hidden fill-pink relative z-10' />
-        <span className='btn--outline__text hidden lg:inline text-sm'>Get in Touch</span>
+        <span className='btn--outline__text hidden lg:inline text-sm'>{props.btnText ? props.btnText : 'Get in Touch'}</span>
       </button>
       <span className='tooltip absolute top-full right-0 mt-2 text-gray-300 whitespace-nowrap px-3 py-2 text-xs rounded-full bg-navy-600 flex items-center opacity-0 pointer-events-none transition duration-200 scale-75 -translate-y-2'>
         {copied ? (
