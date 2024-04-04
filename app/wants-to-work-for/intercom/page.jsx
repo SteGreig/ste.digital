@@ -1,15 +1,18 @@
 import { Metadata } from 'next';
 import Hero from '../Hero';
 import Image from 'next/image'
+import ContentOneCol from '../ContentOneCol'
+import ContentTwoCol from '../ContentTwoCol'
 import CopyWrapper from '../CopyWrapper'
 import EmailBtn from '../EmailBtn'
+import ProjectImg from '../ProjectImg'
 import TitleDivider from '../../(site)/components/TitleDivider';
 import HistoryItem from '../../(site)/components/HistoryItem';
 import TransitionWrapper from '../../(site)/components/TransitionWrapper';
-import Project from '../../(site)/components/Project';
 
 import { employment } from '../../(site)/data/employment';
 import { education } from '../../(site)/data/education';
+import { kindWords } from '../../(site)/data/kindWords'
 
 export const metadata = {
   title: "Ste Greig - Application for Web Engineer at Intercom",
@@ -23,13 +26,13 @@ const JobApp = () => {
   return (
     <TransitionWrapper>
 
-      <section className="w-full max-w-[900px] mx-auto px-4 lg:px-0 pb-12 xl:pb-20">
+      <div className='w-full max-w-[900px] mx-auto px-4 lg:px-0 pb-12 xl:pb-20'>
 
         <Hero image={true} />
 
         <h1 className='sr-only'>Intercom Application</h1>
 
-        <hr className='w-10/12 border-0 h-px bg-gradient-to-br from-purple to-pink mt-14 mb-14' />
+        <hr className='w-10/12 border-0 h-px bg-white opacity-10 mt-14 mb-14' />
 
         <div className='article max-w-screen-sm'>
 
@@ -39,10 +42,10 @@ const JobApp = () => {
 
         </div>
 
-      </section>
+      </div>
 
 
-      <section className='py-12 xl:py-20 border-t border-white border-opacity-10 px-4 lg:px-0'>
+      <ContentOneCol>
 
         <div className="max-w-[900px] mx-auto">
 
@@ -68,73 +71,53 @@ const JobApp = () => {
 
         </div>
 
-      </section>
+      </ContentOneCol>
 
 
-      <section className="border-t border-white border-opacity-10 mx-auto flex flex-col lg:flex-row lg:items-start opacity-90">
+      <ContentTwoCol
+        imgSrc="/application/css3-ptl.webp"
+        imgAlt="My book, CSS3 Pushing the Limits"
+        imgCaption='My book, CSS3 Pushing the Limits'
+      >
+        <CopyWrapper heading="2. Technical Writer" classes="md:m-auto" width="max-w-[500px]">
+          <p>To touch more on my love of CSS, this really manifested during my early years of employment when I was a very earnest blogger, regularly posting tips, tutorials and experimental demos using all the fancy new features that came under the umbrella of “CSS3”.</p>
+          
+          <p>It was this activity that caught the attention of global publishers Wiley, who approached me with an offer to write an extensive book on advanced CSS3. And after several months of very hard work and very late nights, <span className='text-pink font-bold'>CSS3 Pushing the Limits</span> - totalling 384 pages - <span className='text-pink font-bold'>was published in late 2013</span>.</p>
 
-        <div className="lg:w-1/2 py-12 xl:py-20 flex px-4 lg:order-1">
+          <p>The book received favourable reviews, and despite its age would still hold some weight today due to the cutting edge nature of the material, with the likes of Grid, Flexbox, Keyframe Animation and Custom Properties covered in detail.</p>
 
-          <CopyWrapper heading="2. Technical Writer" classes="md:m-auto" width="max-w-[500px]">
-            <p>To touch more on my love of CSS, this really manifested during my early years of employment when I was a very earnest blogger, regularly posting tips, tutorials and experimental demos using all the fancy new features that came under the umbrella of “CSS3”.</p>
-            
-            <p>It was this activity that caught the attention of global publishers Wiley, who approached me with an offer to write an extensive book on advanced CSS3. And after several months of very hard work and very late nights, <span className='text-pink font-bold'>CSS3 Pushing the Limits</span> - totalling 384 pages - <span className='text-pink font-bold'>was published in late 2013</span>.</p>
-
-            <p>The book received favourable reviews, and despite its age would still hold some weight today due to the cutting edge nature of the material, with the likes of Grid, Flexbox, Keyframe Animation and Custom Properties covered in detail.</p>
-
-            <p>I've also been <span className='text-pink font-bold'>published by Smashing Magazine</span>, writing a chapter on the intricacies of CSS Timing Functions for their book on animation.</p>
-          </CopyWrapper>
-        </div>
-
-        <figure className="lg:w-1/2 py-12 xl:py-20 px-10">
-          <Image
-            className='rounded mb-6 object-cover'
-            src='/application/css3-ptl.webp'
-            alt='My book, CSS3 Pushing the Limits'
-            width='1000'
-            height='1172'
-          />
-        </figure>
-
-      </section>
-      
-
-      <section className="border-t border-white border-opacity-10 mx-auto flex flex-col lg:flex-row lg:items-start opacity-90">
-
-        <div className="lg:w-1/2 py-12 xl:py-20 flex px-4">
-          <CopyWrapper heading="3. The Past, Present &amp; Beyond" classes="md:m-auto" width="max-w-[500px]">
-            <p>I've held senior positions at small studios in Auckland, New Zealand, and in Cardiff, Wales, but I've spent the last eight years working at Nottingham based marketing agency, Adtrak.</p>
-            
-            <p>My day-to-day focus has been building websites - a mix of <span className='text-pink font-bold'>lead-generation and ecommerce</span> - and working closely with experienced marketers to ensure they're finely tuned to rank for appropriate search terms, and to convert.</p>
-
-            <p>I've enjoyed my time at Adtrak immensely, and it's been a very comfortable place to work whilst I've settled down, got married, and adjusted to being a dad of two amazing young boys!</p>
-
-            <p className='font-primary text-3xl/tight font-semibold text-white xl:-mx-10 my-10'>But now, I'm ready to take the next step in my career. I feel I have a lot to contribute as an engineer and believe that my skillset can help bridge the gap between design and code.</p>
-
-            <p>The site builds at Adtrak have typically used WordPress, but using a combination of Gutenberg, Timber and Twig for templating, which is more akin to the component/prop based model of more modern front-end frameworks.</p>
-
-            <p>Outside of work, I'm very driven and motivated to learn new things, regularly building tools and projects to enhance my skills. My focus for the last few years has been on <span className='text-pink font-bold'>React</span>, with considerable experience using <span className='text-pink font-bold'>Next</span>, <span className='text-pink font-bold'>Astro</span> and <span className='text-pink font-bold'>Gatsby</span>.</p>
-          </CopyWrapper>
-        </div>
-
-        <figure className="lg:w-1/2 flex py-12 xl:py-20 px-10">
-          <Image
-            className='rounded mb-6 object-cover'
-            src='/application/family.png'
-            alt='Me with my wife Hannah and two sons, Leo and Olly'
-            width='1000'
-            height='1172'
-          />
-        </figure>
-
-      </section>
+          <p>I've also been <span className='text-pink font-bold'>published by Smashing Magazine</span>, writing a chapter on the intricacies of CSS Timing Functions for their book on animation.</p>
+        </CopyWrapper>
+      </ContentTwoCol>
 
 
-      <section className='py-12 xl:py-20 border-t border-white border-opacity-10 px-4 lg:px-0'>
+      <ContentTwoCol
+        imgSrc="/application/family.png"
+        imgAlt="Me with my wife Hannah and two sons, Leo and Olly"
+        imgCaption='Me with my wife Hannah and two sons, Leo (6) and Olly (2)'
+        imgOrder={2}
+      >
+        <CopyWrapper heading="3. The Past, Present &amp; Beyond" classes="md:m-auto" width="max-w-[500px]">
+          <p>I've held senior positions at small studios in Auckland, New Zealand, and in Cardiff, Wales, but I've spent the last eight years working at Nottingham based marketing agency, Adtrak.</p>
+          
+          <p>My day-to-day focus has been building websites - a mix of <span className='text-pink font-bold'>lead-generation and ecommerce</span> - and working closely with experienced marketers to ensure they're finely tuned to rank for appropriate search terms, and to convert.</p>
+
+          <p>I've enjoyed my time at Adtrak immensely, and it's been a very comfortable place to work whilst I've settled down, got married, and adjusted to being a dad of two amazing young boys!</p>
+
+          <p className='font-primary text-3xl/tight font-semibold text-white xl:-mx-10 my-10'>But now, I'm ready to take the next step in my career. I feel I have a lot to contribute as an engineer and believe that my skillset can help bridge the gap between design and code.</p>
+
+          <p>The site builds at Adtrak have typically used WordPress, but using a combination of Gutenberg, Timber and Twig for templating, which is more akin to the component/prop based model of more modern front-end frameworks.</p>
+
+          <p>Outside of work, I'm very driven and motivated to learn new things, regularly building tools and projects to enhance my skills. My focus for the last few years has been on <span className='text-pink font-bold'>React</span>, with considerable experience using <span className='text-pink font-bold'>Next</span>, <span className='text-pink font-bold'>Astro</span> and <span className='text-pink font-bold'>Gatsby</span>.</p>
+        </CopyWrapper>
+      </ContentTwoCol>
+
+
+      <ContentOneCol>
 
         <div className="max-w-[900px] mx-auto">
 
-          <CopyWrapper heading="4. My Work">
+          <CopyWrapper heading="4. Quality Output">
             <p>One of my side projects, built in React (Gatsby), has been very successful, pulling in 12 million users in a single year, despite zero financial investment on marketing. The project, messivsronaldo.app, combined my love of sports, statistics, and development to form a very energising side-hustle that was immeasurably beneficial to my personal development.</p>
 
             <p>I've also recently launched Top Scorers Club, another football based app built in Astro. Without going into too much detail about the data side, the site makes creative use of the Google Sheets API, auto-updates and costs nothing to run.</p>
@@ -142,27 +125,27 @@ const JobApp = () => {
 
         </div>
 
-        <div className='flex justify-center my-8 xl:my-14 px-4'>
+        <div className='flex flex-wrap justify-center my-8 xl:my-16 px-4'>
 
-          <figure className="px-4">
-            <Image
-              className='rounded mb-6 object-cover mx-auto'
-              src='/application/messi-vs-ronaldo.webp'
-              alt='Messi vs Ronaldo app screenshot'
-              width='1000'
-              height='1172'
-            />
-          </figure>
+          <ProjectImg
+            imgSrc='/application/messi-vs-ronaldo.webp'
+            imgAlt='Messi vs Ronaldo app screenshot'
+            imgWidth={1600}
+            imgHeight={1200}
+            caption="One of my side projects built in React, messivsronaldo.app"
+            link="https://www.messivsronaldo.app/"
+            figureClasses="px-4 w-1/2"
+          />
 
-          <figure className="px-4">
-            <Image
-              className='rounded mb-6 object-cover mx-auto'
-              src='/application/top-scorers-club.webp'
-              alt='Top Scorers Club app screenshot'
-              width='1000'
-              height='1172'
-            />
-          </figure>
+          <ProjectImg
+            imgSrc='/application/top-scorers-club.webp'
+            imgAlt='Top Scorers Club app screenshot'
+            imgWidth={1600}
+            imgHeight={1200}
+            caption="A recently launched side project built with Astro, topscorers.club"
+            link="https://www.topscorers.club/"
+            figureClasses="px-4 w-1/2"
+          />
 
         </div>
 
@@ -174,10 +157,77 @@ const JobApp = () => {
 
         </div>
 
-      </section>
+        <div className='flex flex-wrap justify-center mt-8 xl:mt-16 px-4'>
+
+          <ProjectImg
+            imgSrc='/application/doughnotts.webp'
+            imgAlt='Doughnotts website screenshot'
+            caption="doughnottsofficial.com"
+            link="https://www.doughnottsofficial.com/"
+            figureClasses="p-3 w-1/4"
+          />
+
+          <ProjectImg
+            imgSrc='/application/ctc.jpg'
+            imgAlt='CTC Training website screenshot'
+            caption="ctccourses.org"
+            link="https://ctccourses.org/"
+            figureClasses="p-3 w-1/4"
+          />
+
+          <ProjectImg
+            imgSrc='/application/ducklings.webp'
+            imgAlt='Ducklings Nursery website screenshot'
+            caption="ducklingsnursery.org.uk"
+            link="https://www.ducklingsnursery.org.uk/"
+            figureClasses="p-3 w-1/4"
+          />
+
+          <ProjectImg
+            imgSrc='/application/woolfox.jpg'
+            imgAlt='Woolfox website screenshot'
+            caption="woolfox.uk"
+            link="https://www.woolfox.uk/"
+            figureClasses="p-3 w-1/4"
+          />
+
+          <ProjectImg
+            imgSrc='/application/london-penthouse.jpg'
+            imgAlt='London Penthouse website screenshot'
+            caption="londonpenthouse.com"
+            link="https://www.londonpenthouse.com/projects/queens-wood-apartments/"
+            figureClasses="p-3 w-1/4"
+          />
+
+          <ProjectImg
+            imgSrc='/application/moot.jpg'
+            imgAlt='Moot 4x4 website screenshot'
+            caption="moot4x4.com (wip)"
+            figureClasses="p-3 w-1/4"
+          />
+
+          <ProjectImg
+            imgSrc='/application/als.jpg'
+            imgAlt='Artificial Lawn Supply website screenshot'
+            caption="artificiallawnsupply.co.uk"
+            link="https://www.artificiallawnsupply.co.uk/"
+            figureClasses="p-3 w-1/4"
+          />
+
+          <ProjectImg
+            imgSrc='/application/doormatic.jpg'
+            imgAlt='Doormatic Garage Doors website screenshot'
+            caption="doormaticgaragedoors.co.uk"
+            link="https://www.doormaticgaragedoors.co.uk/"
+            figureClasses="p-3 w-1/4"
+          />
+
+        </div>
+
+      </ContentOneCol>
 
 
-      <section className='py-12 xl:py-20 border-t border-white border-opacity-10 px-4 lg:px-0'>
+      <ContentOneCol>
 
         <div className="max-w-[900px] mx-auto">
 
@@ -191,39 +241,85 @@ const JobApp = () => {
 
         </div>
 
-        <div className='flex justify-center my-8 xl:my-14 px-4'>
+        <div className='flex flex-wrap justify-center mt-8 xl:mt-14 px-4'>
 
-          <figure className="px-4">
-            <Image
-              className='rounded mb-6 object-cover mx-auto'
-              src='/application/messi-vs-ronaldo.webp'
-              alt='Messi vs Ronaldo app screenshot'
-              width='1000'
-              height='1172'
-            />
-          </figure>
+          <ProjectImg
+            imgSrc='/application/cwv.jpg'
+            imgAlt='Core Web Vitals cheatsheet preview'
+            caption="My practical Core Web Vitals Cheatsheet"
+            link="/demos/core-web-vitals-cheatsheet.pdf"
+            figureClasses="p-4 w-1/3"
+          />
 
-          <figure className="px-4">
-            <Image
-              className='rounded mb-6 object-cover mx-auto'
-              src='/application/top-scorers-club.webp'
-              alt='Top Scorers Club app screenshot'
-              width='1000'
-              height='1172'
-            />
-          </figure>
+          <ProjectImg
+            imgSrc='/application/js-training.jpg'
+            imgAlt='Breakdown of my JavaScript fundamentals course'
+            caption="A breakdown of the sessions for my JavaScript fundamentals series"
+            link="/demos/core-web-vitals-cheatsheet.pdf"
+            figureClasses="p-4 w-1/3"
+          />
+
+          <ProjectImg
+            imgSrc='/application/css-animation-playground.jpg'
+            imgAlt='CSS Animation Playground screenshot'
+            caption="My custom built CSS Keyframe Animation playground"
+            link="/demos/core-web-vitals-cheatsheet.pdf"
+            figureClasses="p-4 w-1/3"
+          />
+
+          <ProjectImg
+            imgSrc='/application/ultimate-css-selectors-cheatsheet.jpg'
+            imgAlt='CSS Selectors cheatsheet preview'
+            caption="My very comprehensive CSS Selectors Cheatsheet"
+            link="/demos/the-ultimate-css-selectors-cheatsheet.pdf"
+            figureClasses="p-4 w-1/3"
+          />
+
+          <ProjectImg
+            imgSrc='/application/flexbox-cheatsheet.jpg'
+            imgAlt='Flexbox cheatsheet preview'
+            caption="My simple Flexbox Cheatsheet"
+            link="/demos/flexbox-cheatsheet.pdf"
+            figureClasses="p-4 w-1/3"
+          />
+
+          <ProjectImg
+            imgSrc='/application/css3-training-2011.jpg'
+            imgAlt='Preview of CSS3 training slides'
+            caption="My first ever training session on CSS3 in 2011"
+            link="https://codepen.io/stephengreig/pen/GRLgejd"
+            figureClasses="p-4 w-1/3"
+          />
+
 
         </div>
 
-      </section>
+      </ContentOneCol>
 
 
-      <section className='py-12 xl:py-20 border-t border-white border-opacity-10 px-4 lg:px-0'>
+      <ContentOneCol>
 
         <div className="max-w-[900px] mx-auto">
 
           <CopyWrapper heading="6. Kind Words">
             <p>I've always enjoyed good relationships with my colleagues and managers; Dan, my manager for several years at Adtrak, was kind ennough to provide a very generous reference.</p>
+
+            {kindWords.filter(i => i.name === 'Dan Farrow').map(item => (
+              <figure className='flex flex-col w-full p-6 xl:p-8 rounded relative bg-gradient-to-br from-purple to-pink after:absolute after:top-[2px] after:left-[2px] after:right-[2px] after:bottom-[2px] after:bg-navy after:rounded'>
+                <blockquote className='relative z-10 border-none testimonial text-gray-400'>
+                  &ldquo;{item.quote}&rdquo;
+                </blockquote>
+                <figcaption className='relative z-10 mt-auto'>
+                  <span className='block mt-5 font-primary'>{item.name}</span>
+                  {item.position && (
+                    <span className='block opacity-60 text-sm'>{item.position}</span>
+                  )}
+                  {item.company && (
+                    <span className='block opacity-60 text-sm'>{item.company}</span>
+                  )}
+                </figcaption>
+              </figure>
+            ))}
 
             <p>And I'm sure my current managers, Kelly Jordan and Dave Prosser, would also be more than happy to provide a reference for me if you'd like to get in touch.</p>
 
@@ -232,31 +328,30 @@ const JobApp = () => {
 
         </div>
 
-        <div className='flex justify-center my-8 xl:my-14 px-4'>
+        {kindWords && (
+          <ul className='w-full max-w-screen-2xl mx-auto flex flex-wrap justify-center mt-8 xl:mt-14 px-4'>
+            {kindWords.filter(i => i.type === 'freelance').map(item => (
+              <li key={item.name} className='flex w-full sm:w-1/2 lg:w-1/3 p-4'>
+                <figure className='flex flex-col w-full p-6 xl:p-8 rounded relative bg-gradient-to-br from-purple to-pink after:absolute after:top-[2px] after:left-[2px] after:right-[2px] after:bottom-[2px] after:bg-navy after:rounded'>
+                  <blockquote className='relative z-10 text-gray-400'>
+                    &ldquo;{item.quote}&rdquo;
+                  </blockquote>
+                  <figcaption className='relative z-10 mt-auto'>
+                    <span className='block mt-5 font-primary'>{item.name}</span>
+                    {item.position && (
+                      <span className='block opacity-60 text-sm'>{item.position}</span>
+                    )}
+                    {item.company && (
+                      <span className='block opacity-60 text-sm'>{item.company}</span>
+                    )}
+                  </figcaption>
+                </figure>
+              </li>
+            ))}
+          </ul>
+        )}
 
-          <figure className="px-4">
-            <Image
-              className='rounded mb-6 object-cover mx-auto'
-              src='/application/messi-vs-ronaldo.webp'
-              alt='Messi vs Ronaldo app screenshot'
-              width='1000'
-              height='1172'
-            />
-          </figure>
-
-          <figure className="px-4">
-            <Image
-              className='rounded mb-6 object-cover mx-auto'
-              src='/application/top-scorers-club.webp'
-              alt='Top Scorers Club app screenshot'
-              width='1000'
-              height='1172'
-            />
-          </figure>
-
-        </div>
-
-      </section>
+      </ContentOneCol>
 
 
       <section className='py-12 xl:py-20 xl:pb-32 border-t border-white border-opacity-10 px-4 lg:px-0'>
