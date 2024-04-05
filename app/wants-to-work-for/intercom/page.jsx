@@ -10,6 +10,10 @@ import TitleDivider from '../../(site)/components/TitleDivider';
 import HistoryItem from '../../(site)/components/HistoryItem';
 import TransitionWrapper from '../../(site)/components/TransitionWrapper';
 
+// Dynamic import to prevent document is not defined error
+import dynamic from 'next/dynamic';
+const ColourChanger = dynamic(() => import('../../(site)/components/AppShell/ColourChanger'), { ssr: false });
+
 import { employment } from '../../(site)/data/employment';
 import { education } from '../../(site)/data/education';
 import { kindWords } from '../../(site)/data/kindWords'
@@ -39,6 +43,8 @@ const JobApp = () => {
           <p className='text-xl font-bold'>Hi! My name's Stephen (most people call me Ste) and I'm a creative front-end developer based in Nottingham, UK.</p>
 
           <p>After reading through the description for this role and watching Eoghan speak about the company, I felt it sounded a perfect fit for me, so I'd love to be considered and given the opportunity to work with you! I realise that this is a rather substantial application, but if you could have a quick scroll and a brief look at what I have to offer, I'd be extremely grateful.</p>
+
+          <ColourChanger classes="w-full mt-12 hidden lg:block" />
 
         </div>
 
@@ -371,7 +377,7 @@ const JobApp = () => {
               <div className='relative inline-flex'>
                 <EmailBtn showFull={true} btnText='Copy Email Address' />
               </div>
-              <p class="w-full sm:w-auto">Or call me on: <a className='font-semibold' href="tel:+447539614552">+44 (0) 753 9614 552</a></p>
+              <p className="w-full sm:w-auto">Or call me on: <a className='font-semibold' href="tel:+447539614552">+44 (0) 753 9614 552</a></p>
             </div>
           </CopyWrapper>
 
