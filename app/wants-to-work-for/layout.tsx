@@ -37,7 +37,7 @@ export default async function RootLayout({
 
         <Header />
         
-        <main className="w-full mt-20 pt-20">
+        <main className="w-full mt-20 pt-12 lg:pt-20 overflow-hidden">
           {children}
         </main>
         

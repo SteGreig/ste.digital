@@ -32,7 +32,7 @@ const JobApp = () => {
 
         <h1 className='sr-only'>Intercom Application</h1>
 
-        <hr className='w-10/12 border-0 h-px bg-white opacity-10 mt-14 mb-14' />
+        <hr className='w-full lg:w-10/12 border-0 h-px bg-white opacity-10 mt-12 mb-12' />
 
         <div className='article max-w-screen-sm'>
 
@@ -57,8 +57,8 @@ const JobApp = () => {
 
         </div>
 
-        <div className='w-11/12 max-w-screen-lg mx-auto py-8 xl:py-14'>
-          <p className='font-primary text-5xl/tight font-semibold'>But <span className="text-pink">my real speciality lies in UI engineering</span>; implementing designs with meticulous care and precision.</p>
+        <div className='w-full max-w-screen-lg mx-auto py-8 lg:py-14 lg:px-4'>
+          <p className='font-primary text-3xl/snug md:text-4xl/snug lg:text-5xl/snug font-semibold'>But <span className="text-pink">my real speciality lies in UI engineering</span>; implementing designs with meticulous care and precision.</p>
         </div>
 
         <div className="max-w-[900px] mx-auto">
@@ -104,7 +104,7 @@ const JobApp = () => {
 
           <p>I've enjoyed my time at Adtrak immensely, and it's been a very comfortable place to work whilst I've settled down, got married, and adjusted to being a dad of two amazing young boys!</p>
 
-          <p className='font-primary text-3xl/tight font-semibold text-white xl:-mx-10 my-10'>But now, I'm ready to take the next step in my career. I feel I have a lot to contribute as an engineer and believe that my skillset can help bridge the gap between design and code.</p>
+          <p className='font-primary text-2xl/snug xl:text-3xl/snug font-semibold text-white xl:-mx-10 my-8 lg:my-10'>But now, I'm ready to take the next step in my career. I feel I have a lot to contribute as an engineer and believe that my skillset can help bridge the gap between design and code.</p>
 
           <p>The site builds at Adtrak have typically used WordPress, but using a combination of Gutenberg, Timber and Twig for templating, which is more akin to the component/prop based model of more modern front-end frameworks.</p>
 
@@ -125,7 +125,7 @@ const JobApp = () => {
 
         </div>
 
-        <div className='flex flex-wrap justify-center my-8 xl:my-16 px-4'>
+        <div className='flex flex-wrap justify-center my-8 xl:my-16 lg:px-4'>
 
           <ProjectImg
             imgSrc='/application/messi-vs-ronaldo.webp'
@@ -134,7 +134,7 @@ const JobApp = () => {
             imgHeight={1200}
             caption="One of my side projects built in React, messivsronaldo.app"
             link="https://www.messivsronaldo.app/"
-            figureClasses="px-4 w-1/2"
+            figureClasses="py-4 md:py-0 md:px-4 w-full md:w-1/2"
           />
 
           <ProjectImg
@@ -144,7 +144,7 @@ const JobApp = () => {
             imgHeight={1200}
             caption="A recently launched side project built with Astro, topscorers.club"
             link="https://www.topscorers.club/"
-            figureClasses="px-4 w-1/2"
+            figureClasses="py-4 md:py-0 md:px-4 w-full md:w-1/2"
           />
 
         </div>
@@ -157,14 +157,14 @@ const JobApp = () => {
 
         </div>
 
-        <div className='flex flex-wrap justify-center mt-8 xl:mt-16 px-4'>
+        <div className='flex flex-wrap justify-center mt-8 xl:mt-16 lg:px-4 -mx-2 lg:mx-0'>
 
           <ProjectImg
             imgSrc='/application/doughnotts.webp'
             imgAlt='Doughnotts website screenshot'
             caption="doughnottsofficial.com"
             link="https://www.doughnottsofficial.com/"
-            figureClasses="p-3 w-1/4"
+            figureClasses="p-2 md:p-3 w-1/2 md:w-1/3 lg:w-1/4"
           />
 
           <ProjectImg
@@ -172,7 +172,7 @@ const JobApp = () => {
             imgAlt='CTC Training website screenshot'
             caption="ctccourses.org"
             link="https://ctccourses.org/"
-            figureClasses="p-3 w-1/4"
+            figureClasses="p-2 md:p-3 w-1/2 md:w-1/3 lg:w-1/4"
           />
 
           <ProjectImg
@@ -180,7 +180,7 @@ const JobApp = () => {
             imgAlt='Ducklings Nursery website screenshot'
             caption="ducklingsnursery.org.uk"
             link="https://www.ducklingsnursery.org.uk/"
-            figureClasses="p-3 w-1/4"
+            figureClasses="p-2 md:p-3 w-1/2 md:w-1/3 lg:w-1/4"
           />
 
           <ProjectImg
@@ -188,7 +188,7 @@ const JobApp = () => {
             imgAlt='Woolfox website screenshot'
             caption="woolfox.uk"
             link="https://www.woolfox.uk/"
-            figureClasses="p-3 w-1/4"
+            figureClasses="p-2 md:p-3 w-1/2 md:w-1/3 lg:w-1/4"
           />
 
           <ProjectImg
@@ -196,14 +196,14 @@ const JobApp = () => {
             imgAlt='London Penthouse website screenshot'
             caption="londonpenthouse.com"
             link="https://www.londonpenthouse.com/projects/queens-wood-apartments/"
-            figureClasses="p-3 w-1/4"
+            figureClasses="p-2 md:p-3 w-1/2 md:w-1/3 lg:w-1/4"
           />
 
           <ProjectImg
             imgSrc='/application/moot.jpg'
             imgAlt='Moot 4x4 website screenshot'
             caption="moot4x4.com (wip)"
-            figureClasses="p-3 w-1/4"
+            figureClasses="p-2 md:p-3 w-1/2 md:w-1/3 lg:w-1/4"
           />
 
           <ProjectImg
@@ -211,7 +211,7 @@ const JobApp = () => {
             imgAlt='Artificial Lawn Supply website screenshot'
             caption="artificiallawnsupply.co.uk"
             link="https://www.artificiallawnsupply.co.uk/"
-            figureClasses="p-3 w-1/4"
+            figureClasses="p-2 md:p-3 w-1/2 md:w-1/3 lg:w-1/4"
           />
 
           <ProjectImg
@@ -219,7 +219,7 @@ const JobApp = () => {
             imgAlt='Doormatic Garage Doors website screenshot'
             caption="doormaticgaragedoors.co.uk"
             link="https://www.doormaticgaragedoors.co.uk/"
-            figureClasses="p-3 w-1/4"
+            figureClasses="p-2 md:p-3 w-1/2 md:w-1/3 lg:w-1/4"
           />
 
         </div>
@@ -241,14 +241,14 @@ const JobApp = () => {
 
         </div>
 
-        <div className='flex flex-wrap justify-center mt-8 xl:mt-14 px-4'>
+        <div className='flex flex-wrap justify-center mt-8 xl:mt-16 lg:px-4 -mx-2 lg:mx-0'>
 
           <ProjectImg
             imgSrc='/application/cwv.jpg'
             imgAlt='Core Web Vitals cheatsheet preview'
             caption="My practical Core Web Vitals Cheatsheet"
             link="/demos/core-web-vitals-cheatsheet.pdf"
-            figureClasses="p-4 w-1/3"
+            figureClasses="p-2 md:p-3 w-1/2 md:w-1/3"
           />
 
           <ProjectImg
@@ -256,7 +256,7 @@ const JobApp = () => {
             imgAlt='Breakdown of my JavaScript fundamentals course'
             caption="A breakdown of the sessions for my JavaScript fundamentals series"
             link="/demos/core-web-vitals-cheatsheet.pdf"
-            figureClasses="p-4 w-1/3"
+            figureClasses="p-2 md:p-3 w-1/2 md:w-1/3"
           />
 
           <ProjectImg
@@ -264,7 +264,7 @@ const JobApp = () => {
             imgAlt='CSS Animation Playground screenshot'
             caption="My custom built CSS Keyframe Animation playground"
             link="/demos/core-web-vitals-cheatsheet.pdf"
-            figureClasses="p-4 w-1/3"
+            figureClasses="p-2 md:p-3 w-1/2 md:w-1/3"
           />
 
           <ProjectImg
@@ -272,7 +272,7 @@ const JobApp = () => {
             imgAlt='CSS Selectors cheatsheet preview'
             caption="My very comprehensive CSS Selectors Cheatsheet"
             link="/demos/the-ultimate-css-selectors-cheatsheet.pdf"
-            figureClasses="p-4 w-1/3"
+            figureClasses="p-2 md:p-3 w-1/2 md:w-1/3"
           />
 
           <ProjectImg
@@ -280,7 +280,7 @@ const JobApp = () => {
             imgAlt='Flexbox cheatsheet preview'
             caption="My simple Flexbox Cheatsheet"
             link="/demos/flexbox-cheatsheet.pdf"
-            figureClasses="p-4 w-1/3"
+            figureClasses="p-2 md:p-3 w-1/2 md:w-1/3"
           />
 
           <ProjectImg
@@ -288,7 +288,7 @@ const JobApp = () => {
             imgAlt='Preview of CSS3 training slides'
             caption="My first ever training session on CSS3 in 2011"
             link="https://codepen.io/stephengreig/pen/GRLgejd"
-            figureClasses="p-4 w-1/3"
+            figureClasses="p-2 md:p-3 w-1/2 md:w-1/3"
           />
 
 
@@ -329,9 +329,9 @@ const JobApp = () => {
         </div>
 
         {kindWords && (
-          <ul className='w-full max-w-screen-2xl mx-auto flex flex-wrap justify-center mt-8 xl:mt-14 px-4'>
+          <ul className='w-full max-w-screen-2xl mx-auto flex flex-wrap justify-center mt-8 xl:mt-14 lg:px-4'>
             {kindWords.filter(i => i.type === 'freelance').map(item => (
-              <li key={item.name} className='flex w-full sm:w-1/2 lg:w-1/3 p-4'>
+              <li key={item.name} className='flex w-full sm:w-1/2 lg:w-1/3 py-2 sm:p-4'>
                 <figure className='flex flex-col w-full p-6 xl:p-8 rounded relative bg-gradient-to-br from-purple to-pink after:absolute after:top-[2px] after:left-[2px] after:right-[2px] after:bottom-[2px] after:bg-navy after:rounded'>
                   <blockquote className='relative z-10 text-gray-400'>
                     &ldquo;{item.quote}&rdquo;
@@ -359,7 +359,7 @@ const JobApp = () => {
         <div className="max-w-[900px] mx-auto">
 
           <div className='mb-6'>
-            <p className='font-primary text-8xl/tight font-semibold gradient-text'>Thank You!</p>
+            <p className='font-primary text-6xl lg:text-8xl/tight font-semibold gradient-text whitespace-normal'>Thank You!</p>
           </div>
 
           <CopyWrapper>
@@ -367,11 +367,11 @@ const JobApp = () => {
 
             <p>I hope this has given you an insight into my work, my experience and my ambitions. Intercom seems like a great place to work, and I'd love to join your cause - if you think I'd be a good fit for your team, you can reach out below!</p>
 
-            <div className='flex items-center mt-10 gap-6'>
+            <div className='flex flex-wrap items-center mt-10 gap-6'>
               <div className='relative inline-flex'>
-                <EmailBtn btnText='Copy Email Address' />
+                <EmailBtn showFull={true} btnText='Copy Email Address' />
               </div>
-              <p>Or call me on: <a className='font-semibold' href="tel:+447539614552">+44 (0) 753 9614 552</a></p>
+              <p class="w-full sm:w-auto">Or call me on: <a className='font-semibold' href="tel:+447539614552">+44 (0) 753 9614 552</a></p>
             </div>
           </CopyWrapper>
 

@@ -15,7 +15,7 @@ const ContentTwoCol = (props: Props) => {
         {props.children}
       </div>
 
-      <figure className={`lg:w-1/2 p-10 border-white border-opacity-10 flex flex-col ${props.imgOrder !== 2 && 'border-r items-end'}`}>
+      <figure className={`lg:w-1/2 px-4 pb-10 lg:p-10 border-white border-opacity-10 flex flex-col ${props.imgOrder !== 2 && 'lg:border-r lg:items-end'}`}>
         <Image
           className='rounded object-cover flex-1'
           src={props.imgSrc}
