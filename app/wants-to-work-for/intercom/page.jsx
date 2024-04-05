@@ -125,7 +125,7 @@ const JobApp = () => {
 
         </div>
 
-        <div className='flex flex-wrap justify-center my-8 xl:my-16 lg:px-4'>
+        <div className='flex flex-wrap justify-center my-8 md:my-16 lg:px-4 2xl:px-2'>
 
           <ProjectImg
             imgSrc='/application/messi-vs-ronaldo.webp'
@@ -134,7 +134,7 @@ const JobApp = () => {
             imgHeight={1200}
             caption="One of my side projects built in React, messivsronaldo.app"
             link="https://www.messivsronaldo.app/"
-            figureClasses="py-4 md:py-0 md:px-4 w-full md:w-1/2"
+            figureClasses="py-4 md:py-0 md:px-4 2xl:px-5 w-full md:w-1/2"
           />
 
           <ProjectImg
@@ -144,7 +144,7 @@ const JobApp = () => {
             imgHeight={1200}
             caption="A recently launched side project built with Astro, topscorers.club"
             link="https://www.topscorers.club/"
-            figureClasses="py-4 md:py-0 md:px-4 w-full md:w-1/2"
+            figureClasses="py-4 md:py-0 md:px-4 2xl:px-5 w-full md:w-1/2"
           />
 
         </div>
@@ -157,7 +157,7 @@ const JobApp = () => {
 
         </div>
 
-        <div className='flex flex-wrap justify-center mt-8 xl:mt-16 lg:px-4 -mx-2 lg:mx-0'>
+        <div className='flex flex-wrap justify-center mt-8 md:mt-16 lg:px-4 -mx-2 lg:mx-0'>
 
           <ProjectImg
             imgSrc='/application/doughnotts.webp'
@@ -248,7 +248,7 @@ const JobApp = () => {
             imgAlt='Core Web Vitals cheatsheet preview'
             caption="My practical Core Web Vitals Cheatsheet"
             link="/demos/core-web-vitals-cheatsheet.pdf"
-            figureClasses="p-2 md:p-3 w-1/2 md:w-1/3"
+            figureClasses="p-2 md:p-3 lg:p-4 w-1/2 md:w-1/3"
           />
 
           <ProjectImg
@@ -256,7 +256,7 @@ const JobApp = () => {
             imgAlt='Breakdown of my JavaScript fundamentals course'
             caption="A breakdown of the sessions for my JavaScript fundamentals series"
             link="/demos/core-web-vitals-cheatsheet.pdf"
-            figureClasses="p-2 md:p-3 w-1/2 md:w-1/3"
+            figureClasses="p-2 md:p-3 lg:p-4 w-1/2 md:w-1/3"
           />
 
           <ProjectImg
@@ -264,7 +264,7 @@ const JobApp = () => {
             imgAlt='CSS Animation Playground screenshot'
             caption="My custom built CSS Keyframe Animation playground"
             link="/demos/core-web-vitals-cheatsheet.pdf"
-            figureClasses="p-2 md:p-3 w-1/2 md:w-1/3"
+            figureClasses="p-2 md:p-3 lg:p-4 w-1/2 md:w-1/3"
           />
 
           <ProjectImg
@@ -272,7 +272,7 @@ const JobApp = () => {
             imgAlt='CSS Selectors cheatsheet preview'
             caption="My very comprehensive CSS Selectors Cheatsheet"
             link="/demos/the-ultimate-css-selectors-cheatsheet.pdf"
-            figureClasses="p-2 md:p-3 w-1/2 md:w-1/3"
+            figureClasses="p-2 md:p-3 lg:p-4 w-1/2 md:w-1/3"
           />
 
           <ProjectImg
@@ -280,7 +280,7 @@ const JobApp = () => {
             imgAlt='Flexbox cheatsheet preview'
             caption="My simple Flexbox Cheatsheet"
             link="/demos/flexbox-cheatsheet.pdf"
-            figureClasses="p-2 md:p-3 w-1/2 md:w-1/3"
+            figureClasses="p-2 md:p-3 lg:p-4 w-1/2 md:w-1/3"
           />
 
           <ProjectImg
@@ -288,7 +288,7 @@ const JobApp = () => {
             imgAlt='Preview of CSS3 training slides'
             caption="My first ever training session on CSS3 in 2011"
             link="https://codepen.io/stephengreig/pen/GRLgejd"
-            figureClasses="p-2 md:p-3 w-1/2 md:w-1/3"
+            figureClasses="p-2 md:p-3 lg:p-4 w-1/2 md:w-1/3"
           />
 
 
