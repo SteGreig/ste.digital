@@ -6,6 +6,7 @@ import ContentTwoCol from '../ContentTwoCol'
 import CopyWrapper from '../CopyWrapper'
 import EmailBtn from '../EmailBtn'
 import ProjectImg from '../ProjectImg'
+import Nutshell from '../Nutshell'
 import TitleDivider from '../../(site)/components/TitleDivider';
 import HistoryItem from '../../(site)/components/HistoryItem';
 import TransitionWrapper from '../../(site)/components/TransitionWrapper';
@@ -49,6 +50,9 @@ const JobApp = () => {
         </div>
 
       </div>
+
+
+      <Nutshell />
 
 
       <ContentOneCol>

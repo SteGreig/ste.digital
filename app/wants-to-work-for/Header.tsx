@@ -46,7 +46,7 @@ const Header = () => {
         initial={{opacity:0, y:30}}
         animate={{opacity:1, y:0}}
         transition={{duration: .5, delay: 1}}
-        className='mx-auto text-white flex items-center justify-center fixed bottom-0 md:bottom-auto md:top-1 left-0 md:left-1/2 w-full md:w-60 md:-ml-[120px] bg-navy md:bg-transparent p-4 z-50 before:absolute before:top-0 before:w-full before:bg-gradient-to-r before:from-purple before:to-pink before:h-px md:before:bg-none'
+        className='mx-auto text-white flex items-center justify-center fixed bottom-0 md:bottom-auto md:top-1 left-0 md:left-1/2 w-full md:w-60 md:-ml-[120px] bg-navy md:bg-transparent p-4 z-30 before:absolute before:top-0 before:w-full before:bg-gradient-to-r before:from-purple before:to-pink before:h-px md:before:bg-none'
       >
         <p className='font-primary font-semibold'>Hey,</p>
         <Image className='w-32 brightness-100 invert ml-3' src='/application/intercom-logo.svg' alt="Intercom Logo" width={144} height={29} />

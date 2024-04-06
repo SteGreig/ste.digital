@@ -219,4 +219,20 @@ input[type="range"]::-moz-range-thumb {
   display: none !important;
 }
 
+.fadeInUp {
+  animation: fadeInUp .5s forwards;
+  visibility: visible !important;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @tailwind utilities;
