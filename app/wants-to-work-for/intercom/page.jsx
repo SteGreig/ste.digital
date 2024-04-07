@@ -265,7 +265,7 @@ const JobApp = () => {
             imgSrc='/application/js-training.jpg'
             imgAlt='Breakdown of my JavaScript fundamentals course'
             caption="A breakdown of the sessions for my JavaScript fundamentals series"
-            link="/demos/core-web-vitals-cheatsheet.pdf"
+            link="https://github.com/SteGreig/js-training"
             figureClasses="p-2 md:p-3 lg:p-4 w-1/2 md:w-1/3"
           />
 
@@ -273,7 +273,7 @@ const JobApp = () => {
             imgSrc='/application/css-animation-playground.jpg'
             imgAlt='CSS Animation Playground screenshot'
             caption="My custom built CSS Keyframe Animation playground"
-            link="/demos/core-web-vitals-cheatsheet.pdf"
+            link="https://css-animation-playground.vercel.app/"
             figureClasses="p-2 md:p-3 lg:p-4 w-1/2 md:w-1/3"
           />
 

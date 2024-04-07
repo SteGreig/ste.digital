@@ -34,9 +34,9 @@ const Nutshell = () => {
           <p>Just in case you're put off by the size of the scroll bar...</p>
           <ul>
             <li>Creating for the web since mid 2000s</li>
-            <li>Done both design and front-end for much of my career</li>
+            <li>Held "hybrid" roles (design and front-end) for much of my career</li>
             <li>Speciality is UI engineering</li>
-            <li>Last few years focus has been on React, Next.js, Astro and JavaScript/TypeScript</li>
+            <li>Last few years, my focus has been on React, Next.js, Astro and JavaScript/TypeScript</li>
             <li>Author of CSS3 Pushing the Limits, substantial book on advanced CSS</li>
             <li>Very strong all round knowledge from years of marketing agency experience (SEO, CRO, A/B testing, page speed, DNS etc.)</li>
             <li>Have been heavily involved in training and upskilling colleagues on areas such as page speed / CWV, CSS and JavaScript</li>
