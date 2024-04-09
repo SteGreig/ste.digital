@@ -36,6 +36,7 @@ const ProjectImg = (props: Props) => {
             className='cursor-none'
             target="_blank"
             href={props.link}
+            rel="nofollow"
           >
             <Image
               className='rounded'

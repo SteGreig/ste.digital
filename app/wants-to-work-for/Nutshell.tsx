@@ -40,6 +40,7 @@ const Nutshell = () => {
             <li>Author of CSS3 Pushing the Limits, substantial book on advanced CSS</li>
             <li>Very strong all round knowledge from years of marketing agency experience (SEO, CRO, A/B testing, page speed, DNS etc.)</li>
             <li>Have been heavily involved in training and upskilling colleagues on areas such as page speed / CWV, CSS and JavaScript</li>
+            <li>Extremely adaptable to new technologies and a very fast learner</li>
           </ul>
           <p>For more context and work examples, please scroll on!</p>
         </div>

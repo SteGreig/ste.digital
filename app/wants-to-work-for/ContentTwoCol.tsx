@@ -20,8 +20,8 @@ const ContentTwoCol = (props: Props) => {
           className='rounded object-cover flex-1'
           src={props.imgSrc}
           alt={props.imgAlt}
-          width='1000'
-          height='1172'
+          width={1000}
+          height={1172}
         />
         {props.imgCaption && (
           <figcaption className='mt-3 text-gray-500 text-sm'>{props.imgCaption}</figcaption>

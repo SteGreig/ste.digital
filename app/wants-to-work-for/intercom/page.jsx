@@ -60,9 +60,9 @@ const JobApp = () => {
         <div className="max-w-[900px] mx-auto">
 
           <CopyWrapper heading="1. Introduction">
-            <p>My path towards a career on the web began in the mid 2000s in the same way as many others (via a dodgy copy of Adobe Photoshop!), but I landed my first full-time Web Designer role in 2010, a year before I graduated from University with a <span className='text-pink font-bold'>First Class degree</span>. So I've been working in the industry for 14 years now, with experience in both a freelance and agency context.</p>
+            <p>My path towards a career on the web began in the mid 2000s in the same way as many others (via a dodgy copy of Adobe Photoshop!), but I landed my first full-time Web Designer role in 2010, a year before I graduated from University with a <span className='font-bold text-white'>First Class degree</span>. So I've been working in the industry for 14 years now, with experience in both a freelance and agency context.</p>
 
-            <p>I'm a bit of a <span className='text-pink font-bold'>web all-rounder</span>, spending most of my career to date both designing and building full sites, apps and tools for a vast array of clients. I'm very much used to wearing many hats, I'm very comfortable managing my own projects, and my years of experience working alongside marketers on lead-gen websites means I have a wealth of knowledge about SEO, CRO and A/B Testing. I've also done considerable research into page speed/performance, and have an intricate knowledge of Google's PageSpeed Insights!</p>
+            <p>I'm a bit of a <span className='font-bold text-white'>web all-rounder</span>, spending most of my career to date both designing and building full sites, apps and tools for a vast array of clients. I'm very much used to wearing many hats, I'm very comfortable managing my own projects, and my years of experience working alongside marketers on lead-gen websites means I have a wealth of knowledge about SEO, CRO and A/B Testing. I've also done considerable research into page speed/performance, and have an intricate knowledge of Google's PageSpeed Insights!</p>
           </CopyWrapper>
 
         </div>
@@ -92,11 +92,11 @@ const JobApp = () => {
         <CopyWrapper heading="2. Technical Writer" classes="md:m-auto" width="max-w-[500px]">
           <p>To touch more on my love of CSS, this really manifested during my early years of employment when I was a very earnest blogger, regularly posting tips, tutorials and experimental demos using all the fancy new features that came under the umbrella of “CSS3”.</p>
           
-          <p>It was this activity that caught the attention of global publishers Wiley, who approached me with an offer to write an extensive book on advanced CSS3. And after several months of very hard work and very late nights, <span className='text-pink font-bold'>CSS3 Pushing the Limits</span> - totalling 384 pages - <span className='text-pink font-bold'>was published in late 2013</span>.</p>
+          <p>It was this activity that caught the attention of global publishers Wiley, who approached me with an offer to write an extensive book on advanced CSS3. And after several months of very hard work and very late nights, <a target="_blank" href="https://www.wiley.com/en-gb/CSS3+Pushing+the+Limits-p-9781118652633">CSS3 Pushing the Limits</a> - totalling 384 pages - was published in late 2013.</p>
 
           <p>The book received favourable reviews, and despite its age would still hold some weight today due to the cutting edge nature of the material, with the likes of Grid, Flexbox, Keyframe Animation and Custom Properties covered in detail.</p>
 
-          <p>I've also been <span className='text-pink font-bold'>published by Smashing Magazine</span>, writing a chapter on the intricacies of CSS Timing Functions for their book on animation.</p>
+          <p>I've also been <a href="https://www.smashingmagazine.com/2014/04/understanding-css-timing-functions/">published by Smashing Magazine</a>, writing a chapter on the intricacies of CSS Timing Functions for their book on animation.</p>
         </CopyWrapper>
       </ContentTwoCol>
 
@@ -110,7 +110,7 @@ const JobApp = () => {
         <CopyWrapper heading="3. The Past, Present &amp; Beyond" classes="md:m-auto" width="max-w-[500px]">
           <p>I've held senior positions at small studios in Auckland, New Zealand, and in Cardiff, Wales, but I've spent the last eight years working at Nottingham based marketing agency, Adtrak.</p>
           
-          <p>My day-to-day focus has been building websites - a mix of <span className='text-pink font-bold'>lead-generation and ecommerce</span> - and working closely with experienced marketers to ensure they're finely tuned to rank for appropriate search terms, and to convert.</p>
+          <p>My day-to-day focus has been building websites - a mix of <span className='font-bold text-white'>lead-generation and ecommerce</span> - and working closely with experienced marketers to ensure they're finely tuned to rank for appropriate search terms, and to convert.</p>
 
           <p>I've enjoyed my time at Adtrak immensely, and it's been a very comfortable place to work whilst I've settled down, got married, and adjusted to being a dad of two amazing young boys!</p>
 
@@ -118,7 +118,7 @@ const JobApp = () => {
 
           <p>The site builds at Adtrak have typically used WordPress, but using a combination of Gutenberg, Timber and Twig for templating, which is more akin to the component/prop based model of more modern front-end frameworks.</p>
 
-          <p>Outside of work, I'm very driven and motivated to learn new things, regularly building tools and projects to enhance my skills. My focus for the last few years has been on <span className='text-pink font-bold'>React</span>, with considerable experience using <span className='text-pink font-bold'>Next</span>, <span className='text-pink font-bold'>Astro</span> and <span className='text-pink font-bold'>Gatsby</span>.</p>
+          <p>Outside of work, I'm <span className='font-bold text-white'>very driven and motivated</span> to learn new things, regularly building tools and projects to enhance my skills. My focus for the last few years has been on <span className='font-bold text-white'>React</span>, with considerable experience using <span className='font-bold text-white'>Next</span>, <span className='font-bold text-white'>Astro</span> and <span className='font-bold text-white'>Gatsby</span>.</p>
         </CopyWrapper>
       </ContentTwoCol>
 
@@ -242,11 +242,11 @@ const JobApp = () => {
         <div className="max-w-[900px] mx-auto">
 
           <CopyWrapper heading="5. Teacher">
-            <p>As well as client work, I've also always been heavily involved in training and upskilling the rest of the 20+ strong web team.</p>
+            <p>As well as client work, I've also always been heavily involved in training and upskilling the rest of the 20+ strong web team at Adtrak.</p>
 
             <p>This passion for sharing knowledge has been present from the outset, holding my first training session on CSS3 as a fresh-faced junior in 2011, back when implementing rounded corners without images was still a novelty!</p>
 
-            <p>Other training highlights include a 4-part, 6 hour course on JavaScript fundamentals, a custom-built CSS animation playground (with accompanying training session), training sessions and accompanying cheatsheets on Flexbox, advanced CSS selectors and Core Web Vitals, and multiple sessions on page speed.</p>
+            <p>Some of my <a target="_blank" href="https://github.com/SteGreig/training-materials">training highlights</a> include a 4-part, 6 hour course on JavaScript fundamentals, a custom-built CSS animation playground (with accompanying training session), training sessions and accompanying cheatsheets on Flexbox, advanced CSS selectors and Core Web Vitals, and multiple sessions on page speed.</p>
           </CopyWrapper>
 
         </div>
@@ -316,7 +316,7 @@ const JobApp = () => {
 
             {kindWords.filter(i => i.name === 'Dan Farrow').map(item => (
               <figure key={item.name} className='flex flex-col w-full p-6 xl:p-8 rounded relative bg-gradient-to-br from-purple to-pink after:absolute after:top-[2px] after:left-[2px] after:right-[2px] after:bottom-[2px] after:bg-navy after:rounded'>
-                <blockquote className='relative z-10 border-none testimonial text-gray-400'>
+                <blockquote className='relative z-10 border-none testimonial text-gray-300'>
                   &ldquo;{item.quote}&rdquo;
                 </blockquote>
                 <figcaption className='relative z-10 mt-auto'>
@@ -331,7 +331,7 @@ const JobApp = () => {
               </figure>
             ))}
 
-            <p>And I'm sure my current managers, Kelly Jordan and Dave Prosser, would also be more than happy to provide a reference for me if you'd like to get in touch.</p>
+            <p>And I'm sure my current managers, <a href="mailto:kelly.jordan@adtrak.co.uk">Kelly Jordan</a> and <a href="mailto:dave.prosser@adtrak.co.uk">Dave Prosser</a>, would also be more than happy to provide a reference for me if you'd like to get in touch.</p>
 
             <p>Finally, although much of my extra-curricular activity is spent on side-projects and my own personal development, I've also established a number of strong freelance relationships over the years, completing work for a number of major brands, such as PepsiCo, SunLife, Virgin Media, Expedia and Allianz.</p>
           </CopyWrapper>
@@ -343,7 +343,7 @@ const JobApp = () => {
             {kindWords.filter(i => i.type === 'freelance').map(item => (
               <li key={item.name} className='flex w-full sm:w-1/2 lg:w-1/3 py-2 sm:p-4'>
                 <figure className='flex flex-col w-full p-6 xl:p-8 rounded relative bg-gradient-to-br from-purple to-pink after:absolute after:top-[2px] after:left-[2px] after:right-[2px] after:bottom-[2px] after:bg-navy after:rounded'>
-                  <blockquote className='relative z-10 text-gray-400'>
+                  <blockquote className='relative z-10 text-gray-300'>
                     &ldquo;{item.quote}&rdquo;
                   </blockquote>
                   <figcaption className='relative z-10 mt-auto'>
