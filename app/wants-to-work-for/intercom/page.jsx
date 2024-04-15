@@ -59,10 +59,14 @@ const JobApp = () => {
 
         <div className="max-w-[900px] mx-auto">
 
-          <CopyWrapper heading="1. Introduction">
-            <p>My path towards a career on the web began in the mid 2000s in the same way as many others (via a dodgy copy of Adobe Photoshop!), but I landed my first full-time Web Designer role in 2010, a year before I graduated from University with a <span className='font-bold text-white'>First Class degree</span>. So I've been working in the industry for 14 years now, with experience in both a freelance and agency context.</p>
+          <CopyWrapper heading="What Am I Good At?" subHeading='An overview of my skills'>
+            <p>I'm very big on the fundamentals. An intricate understanding of HTML semantics, an encyclopedic knowledge of CSS, a granular grasp of vanilla JavaScript... it's this strong foundational knowledge &#8212; from almost 20 years of creating for the web &#8212; that my front-end development skills are built upon.</p>
 
-            <p>I'm a bit of a <span className='font-bold text-white'>web all-rounder</span>, spending most of my career to date both designing and building full sites, apps and tools for a vast array of clients. I'm very much used to wearing many hats, I'm very comfortable managing my own projects, and my years of experience working alongside marketers on lead-gen websites means I have a wealth of knowledge about SEO, CRO and A/B Testing. I've also done considerable research into page speed/performance, and have an intricate knowledge of Google's PageSpeed Insights!</p>
+            <p>My focus for the last few years has been on React, JavaScript / TypeScript, Next.js and more recently Astro. My personal website was built using Next.js, and I have a side-project built in Gatsby which serves millions of users a year.</p>
+
+            <p>To expand further, I'm really a bit of a <span className='font-bold text-white'>web all-rounder</span>, mainly thanks to my years of experience working alongside marketers on lead-gen and ecom websites.</p>
+            
+            <p>I'm very much used to wearing many hats, I'm very comfortable managing my own projects, I have a wealth of knowledge about SEO, CRO and A/B Testing, and I've also done considerable research into page speed and Google's Core Web Vitals.</p>
           </CopyWrapper>
 
         </div>
@@ -77,6 +81,8 @@ const JobApp = () => {
             <p>This has stemmed from an early passion for design that soon gave way to a love of CSS, and eventually JavaScript. My front-end skills are heavily influenced by this creative background; my knowledge of basic design principles, UX, typography, colour theory, grid systems and more.</p>
 
             <p>I strongly believe this makes me a better front-end developer, and this skillset also means I can run with text-based instructions alone if needed.</p>
+
+            <p>In terms of soft skills, my organisational qualities and ability to own and manage my projects and time is consistently praised, along with my communication skills; particularly written, which leads us nicely into the next section.</p>
           </CopyWrapper>
 
         </div>
@@ -89,7 +95,7 @@ const JobApp = () => {
         imgAlt="My book, CSS3 Pushing the Limits"
         imgCaption='My book, CSS3 Pushing the Limits'
       >
-        <CopyWrapper heading="2. Technical Writer" classes="md:m-auto" width="max-w-[500px]">
+        <CopyWrapper heading="Technical Writing" subHeading="A recognised industry expert" classes="md:m-auto" width="max-w-[500px]">
           <p>To touch more on my love of CSS, this really manifested during my early years of employment when I was a very earnest blogger, regularly posting tips, tutorials and experimental demos using all the fancy new features that came under the umbrella of “CSS3”.</p>
           
           <p>It was this activity that caught the attention of global publishers Wiley, who approached me with an offer to write an extensive book on advanced CSS3. And after several months of very hard work and very late nights, <a target="_blank" href="https://www.wiley.com/en-gb/CSS3+Pushing+the+Limits-p-9781118652633">CSS3 Pushing the Limits</a> - totalling 384 pages - was published in late 2013.</p>
@@ -107,7 +113,9 @@ const JobApp = () => {
         imgCaption='Me with my wife Hannah and two sons, Leo (6) and Olly (2)'
         imgOrder={2}
       >
-        <CopyWrapper heading="3. The Past, Present &amp; Beyond" classes="md:m-auto" width="max-w-[500px]">
+        <CopyWrapper heading="My Journey" subHeading='The past, present and beyond' classes="md:m-auto" width="max-w-[500px]">
+          <p>My path towards a career on the web began in the mid 2000s in the same way as many others (via a dodgy copy of Adobe Photoshop!), but I landed my first full-time Web Designer role in 2010, a year before I graduated from University with a <span className='font-bold text-white'>First Class degree</span>.</p>
+
           <p>I've held senior positions at small studios in Auckland, New Zealand, and in Cardiff, Wales, but I've spent the last eight years working at Nottingham based marketing agency, Adtrak.</p>
           
           <p>My day-to-day focus has been building websites - a mix of <span className='font-bold text-white'>lead-generation and ecommerce</span> - and working closely with experienced marketers to ensure they're finely tuned to rank for appropriate search terms, and to convert.</p>
@@ -118,7 +126,7 @@ const JobApp = () => {
 
           <p>The site builds at Adtrak have typically used WordPress, but using a combination of Gutenberg, Timber and Twig for templating, which is more akin to the component/prop based model of more modern front-end frameworks.</p>
 
-          <p>Outside of work, I'm <span className='font-bold text-white'>very driven and motivated</span> to learn new things, regularly building tools and projects to enhance my skills. My focus for the last few years has been on <span className='font-bold text-white'>React</span>, with considerable experience using <span className='font-bold text-white'>Next</span>, <span className='font-bold text-white'>Astro</span> and <span className='font-bold text-white'>Gatsby</span>.</p>
+          <p>Outside of work, I'm <span className='font-bold text-white'>very driven and motivated</span> to learn new things, constantly looking to upskill by building new tools and projects. As previously mentioned, my focus for the last few years has been on <span className='font-bold text-white'>React</span>, with considerable experience using <span className='font-bold text-white'>Next</span>, <span className='font-bold text-white'>Astro</span> and <span className='font-bold text-white'>Gatsby</span>.</p>
         </CopyWrapper>
       </ContentTwoCol>
 
@@ -127,8 +135,8 @@ const JobApp = () => {
 
         <div className="max-w-[900px] mx-auto">
 
-          <CopyWrapper heading="4. Quality Output">
-            <p>One of my side projects, built in React (Gatsby), has been very successful, pulling in 12 million users in a single year, despite zero financial investment on marketing. The project, messivsronaldo.app, combined my love of sports, statistics, and development to form a very energising side-hustle that was immeasurably beneficial to my personal development.</p>
+          <CopyWrapper heading="Quality Output" subHeading='A showcase of my work'>
+            <p>One of my side projects, built in React (Gatsby), has been very successful, pulling in 12 million users in a single year, despite zero financial investment on marketing. The project, messivsronaldo.app (excuse the ads!), combined my love of sports, statistics, and development to form a very energising side-hustle that was immeasurably beneficial to my personal development.</p>
 
             <p>I've also recently launched Top Scorers Club, another football based app built in Astro. Without going into too much detail about the data side, the site makes creative use of the Google Sheets API, auto-updates and costs nothing to run.</p>
           </CopyWrapper>
@@ -241,7 +249,7 @@ const JobApp = () => {
 
         <div className="max-w-[900px] mx-auto">
 
-          <CopyWrapper heading="5. Teacher">
+          <CopyWrapper heading="Natural Teacher" subHeading="An experienced trainer">
             <p>As well as client work, I've also always been heavily involved in training and upskilling the rest of the 20+ strong web team at Adtrak.</p>
 
             <p>This passion for sharing knowledge has been present from the outset, holding my first training session on CSS3 as a fresh-faced junior in 2011, back when implementing rounded corners without images was still a novelty!</p>
@@ -311,7 +319,7 @@ const JobApp = () => {
 
         <div className="max-w-[900px] mx-auto">
 
-          <CopyWrapper heading="6. Kind Words">
+          <CopyWrapper heading="Kind Words" subHeading='A pleasure to work with apparently'>
             <p>I've always enjoyed good relationships with my colleagues and managers; Dan, my manager for several years at Adtrak, was kind ennough to provide a very generous reference.</p>
 
             {kindWords.filter(i => i.name === 'Dan Farrow').map(item => (

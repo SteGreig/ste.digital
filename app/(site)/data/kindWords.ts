@@ -30,15 +30,13 @@ export const kindWords = [
     quote: "I have worked with Ste across a variety of projects over many years and he is one of the best out there. Not only is his work outstanding resulting in happy clients, he is patient and his creative mind made it very easy to work with and get the results we were looking for. He is highly professional and goes down to all minor details to get the project over the line. Ste is very reliable and I would highly recommend him to anyone looking for web development services!",
     name: "Evi Sianna",
     position: "Senior Content Specialist",
-    company: "All Response Media",
-    type: "freelance"
+    company: "All Response Media"
   },
   {
     quote: "Ste has worked with me on a number of websites over the years all the way through from design and concept, to construction and post build technical support. All of which has been exceptional and time sensitive issues have been dealt with and resolved extremely quickly. I would definitely recommend Ste for anyone who needs a bespoke and personal approach to their website and design needs.",
     name: "Chris Smith",
     position: "Chris Smith Photography",
-    company: "Freelance client",
-    type: "freelance"
+    company: "Freelance client"
   },
   {
     quote: "I've had the pleasure of working with and managing Ste for a number of years, and I have to say he has been one of the best employees I've ever had the privilege of working with. His attitude and knowledge, along with his ability to deliver as well as challenge the status-quo, make Ste an exceptional worker and culture-add to any team, and I would highly recommend him to any employer.",
@@ -56,8 +54,7 @@ export const kindWords = [
     quote: "As a brand agency we need an experienced and reliable virtual team that we can call in at short notice to meet the needs of the project. We've worked with Ste on several web builds as well as web audits. It's been a seamless process each time, with good communication and I know that the deliverables are technically accurate and built with consideration for the end client and their users.",
     name: "Sarah Shaw",
     position: "Managing Director",
-    company: "Honed Creative",
-    type: "freelance"
+    company: "Honed Creative"
   },
   {
     quote: "Yeah he's alright",

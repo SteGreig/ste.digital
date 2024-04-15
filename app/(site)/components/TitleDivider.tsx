@@ -14,6 +14,8 @@ const TitleDivider = (props: Props) => {
         <h2 className={headingClasses}>{props.title}</h2>
       ) : props.headingLevel === 'h3' ? (
         <h3 className={headingClasses}>{props.title}</h3>
+      ) : props.headingLevel === 'span' ? (
+        <span className={headingClasses}>{props.title}</span>
       ) : (
         <h1 className={headingClasses}>{props.title}</h1>
       )}
