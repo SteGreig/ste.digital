@@ -60,13 +60,13 @@ const JobApp = () => {
         <div className="max-w-[900px] mx-auto">
 
           <CopyWrapper heading="What Am I Good At?" subHeading='An overview of my skills'>
-            <p>I'm very big on the fundamentals. An intricate understanding of HTML semantics, an encyclopedic knowledge of CSS, a granular grasp of vanilla JavaScript... it's this strong foundational knowledge &#8212; from almost 20 years of creating for the web &#8212; that my front-end development skills are built upon.</p>
+            <p>I'm very big on the fundamentals. An intricate understanding of <span className='highlight-text'>HTML semantics</span>, an encyclopedic knowledge of <span className='highlight-text'>CSS</span>, a granular grasp of <span className='highlight-text'>vanilla JavaScript</span>... it's this strong foundational knowledge &#8212; from almost 20 years of creating for the web &#8212; that my front-end development skills are built upon.</p>
 
-            <p>My focus for the last few years has been on React, JavaScript / TypeScript, Next.js and more recently Astro. My personal website was built using Next.js, and I have a side-project built in Gatsby which serves millions of users a year.</p>
+            <p>My focus for the last few years has been on <span className='highlight-text'>React</span>, <span className='highlight-text'>JavaScript</span> / <span className='highlight-text'>TypeScript</span>, <span className='highlight-text'>Next.js</span> and more recently <span className='highlight-text'>Astro</span>. My personal website was built using Next.js, and I have a side-project built in Gatsby which serves millions of users a year.</p>
 
-            <p>To expand further, I'm really a bit of a <span className='font-bold text-white'>web all-rounder</span>, mainly thanks to my years of experience working alongside marketers on lead-gen and ecom websites.</p>
+            <p>To expand further, I'm really a bit of a <span className='highlight-text'>web all-rounder</span>, mainly thanks to my years of experience working alongside marketers on lead-gen and ecom websites.</p>
             
-            <p>I'm very much used to wearing many hats, I'm very comfortable managing my own projects, I have a wealth of knowledge about SEO, CRO and A/B Testing, and I've also done considerable research into page speed and Google's Core Web Vitals.</p>
+            <p>I'm very much used to wearing many hats, I'm very comfortable managing my own projects, I have a wealth of knowledge around <span className='highlight-text'>SEO</span>, <span className='highlight-text'>CRO</span> and <span className='highlight-text'>A/B Testing</span>, and I've also done considerable research into <span className='highlight-text'>page speed</span> and Google's <span className='highlight-text'>Core Web Vitals</span>.</p>
           </CopyWrapper>
 
         </div>
@@ -78,7 +78,7 @@ const JobApp = () => {
         <div className="max-w-[900px] mx-auto">
 
           <CopyWrapper classes="article--normal-first-p">
-            <p>This has stemmed from an early passion for design that soon gave way to a love of CSS, and eventually JavaScript. My front-end skills are heavily influenced by this creative background; my knowledge of basic design principles, UX, typography, colour theory, grid systems and more.</p>
+            <p>This has stemmed from an early <span className='highlight-text'>passion for design</span> that soon gave way to a love of CSS, and eventually JavaScript. My front-end skills are heavily influenced by this creative background; my knowledge of basic design principles, UX, typography, colour theory, grid systems and more.</p>
 
             <p>I strongly believe this makes me a better front-end developer, and this skillset also means I can run with text-based instructions alone if needed.</p>
 
@@ -114,11 +114,11 @@ const JobApp = () => {
         imgOrder={2}
       >
         <CopyWrapper heading="My Journey" subHeading='The past, present and beyond' classes="md:m-auto" width="max-w-[500px]">
-          <p>My path towards a career on the web began in the mid 2000s in the same way as many others (via a dodgy copy of Adobe Photoshop!), but I landed my first full-time Web Designer role in 2010, a year before I graduated from University with a <span className='font-bold text-white'>First Class degree</span>.</p>
+          <p>My path towards a career on the web began in the mid 2000s in the same way as many others (via a dodgy copy of Adobe Photoshop!), but I landed my first full-time Web Designer role in 2010, a year before I graduated from University with a <span className='highlight-text'>First Class degree</span>.</p>
 
           <p>I've held senior positions at small studios in Auckland, New Zealand, and in Cardiff, Wales, but I've spent the last eight years working at Nottingham based marketing agency, Adtrak.</p>
           
-          <p>My day-to-day focus has been building websites - a mix of <span className='font-bold text-white'>lead-generation and ecommerce</span> - and working closely with experienced marketers to ensure they're finely tuned to rank for appropriate search terms, and to convert.</p>
+          <p>My day-to-day focus has been building websites - a mix of <span className='highlight-text'>lead-generation and ecommerce</span> - and working closely with experienced marketers to ensure they're finely tuned to rank for appropriate search terms, and to convert.</p>
 
           <p>I've enjoyed my time at Adtrak immensely, and it's been a very comfortable place to work whilst I've settled down, got married, and adjusted to being a dad of two amazing young boys!</p>
 
@@ -126,7 +126,7 @@ const JobApp = () => {
 
           <p>The site builds at Adtrak have typically used WordPress, but using a combination of Gutenberg, Timber and Twig for templating, which is more akin to the component/prop based model of more modern front-end frameworks.</p>
 
-          <p>Outside of work, I'm <span className='font-bold text-white'>very driven and motivated</span> to learn new things, constantly looking to upskill by building new tools and projects. As previously mentioned, my focus for the last few years has been on <span className='font-bold text-white'>React</span>, with considerable experience using <span className='font-bold text-white'>Next</span>, <span className='font-bold text-white'>Astro</span> and <span className='font-bold text-white'>Gatsby</span>.</p>
+          <p>Outside of work, I'm <span className='highlight-text'>very driven and motivated</span> to learn new things, constantly looking to upskill by building new tools and projects. As previously mentioned, my focus for the last few years has been on <span className='highlight-text'>React</span>, with considerable experience using <span className='highlight-text'>Next</span>, <span className='highlight-text'>Astro</span> and <span className='highlight-text'>Gatsby</span>.</p>
         </CopyWrapper>
       </ContentTwoCol>
 
@@ -136,9 +136,9 @@ const JobApp = () => {
         <div className="max-w-[900px] mx-auto">
 
           <CopyWrapper heading="Quality Output" subHeading='A showcase of my work'>
-            <p>One of my side projects, built in React (Gatsby), has been very successful, pulling in 12 million users in a single year, despite zero financial investment on marketing. The project, messivsronaldo.app (excuse the ads!), combined my love of sports, statistics, and development to form a very energising side-hustle that was immeasurably beneficial to my personal development.</p>
+            <p>One of my side projects, built in React (Gatsby), has been very successful, pulling in 12 million users in a single year, despite zero financial investment on marketing. The project, <a target="_blank" href="https://www.messivsronaldo.app/">messivsronaldo.app</a> (excuse the ads!), combined my love of sports, statistics, and development to form a very energising side-hustle that was immeasurably beneficial to my personal development.</p>
 
-            <p>I've also recently launched Top Scorers Club, another football based app built in Astro. Without going into too much detail about the data side, the site makes creative use of the Google Sheets API, auto-updates and costs nothing to run.</p>
+            <p>I've also recently launched <a target="_blank" href="https://www.topscorers.club/">Top Scorers Club</a>, another football based app built in Astro. Without going into too much detail about the data side, the site makes creative use of the Google Sheets API, auto-updates and costs nothing to run.</p>
           </CopyWrapper>
 
         </div>
@@ -254,7 +254,7 @@ const JobApp = () => {
 
             <p>This passion for sharing knowledge has been present from the outset, holding my first training session on CSS3 as a fresh-faced junior in 2011, back when implementing rounded corners without images was still a novelty!</p>
 
-            <p>Some of my <a target="_blank" href="https://github.com/SteGreig/training-materials">training highlights</a> include a 4-part, 6 hour course on JavaScript fundamentals, a custom-built CSS animation playground (with accompanying training session), training sessions and accompanying cheatsheets on Flexbox, advanced CSS selectors and Core Web Vitals, and multiple sessions on page speed.</p>
+            <p>Some of my <a target="_blank" href="https://github.com/SteGreig/training-materials">training highlights</a> include a 4-part, 6 hour course on <span className="highlight-text">JavaScript fundamentals</span>, a custom-built <span className="highlight-text">CSS animation playground</span> (with accompanying training session), training sessions and accompanying cheatsheets on <span className="highlight-text">Flexbox</span>, <span className="highlight-text">advanced CSS selectors</span> and <span className="highlight-text">Core Web Vitals</span>, and multiple sessions on <span className="highlight-text">page speed</span>.</p>
           </CopyWrapper>
 
         </div>

@@ -204,7 +204,7 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .article a {
-  @apply underline text-pink hover:hue-rotate-20;
+  @apply underline text-pink font-semibold hover:hue-rotate-20;
 }
 
 .article code:not(pre code) {
@@ -213,6 +213,14 @@ input[type="range"]::-moz-range-thumb {
 
 .article blockquote:not(.testimonial) {
   @apply border-l-4 border-gray-500 text-gray-400 pl-5;
+}
+
+.article .highlight-text {
+  @apply transition duration-700 opacity-100;
+}
+
+.article:hover .highlight-text {
+  @apply text-pink;
 }
 
 #reactions__container {
