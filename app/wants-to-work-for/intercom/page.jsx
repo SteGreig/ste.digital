@@ -60,9 +60,9 @@ const JobApp = () => {
         <div className="max-w-[900px] mx-auto">
 
           <CopyWrapper heading="What Am I Good At?" subHeading='An overview of my skills'>
-            <p>I'm very big on the fundamentals. An intricate understanding of <span className='highlight-text'>HTML semantics</span>, an encyclopedic knowledge of <span className='highlight-text'>CSS</span>, a granular grasp of <span className='highlight-text'>vanilla JavaScript</span>... it's this strong foundational knowledge &#8212; from almost 20 years of creating for the web &#8212; that my front-end development skills are built upon.</p>
+            <p>Firstly, I'm very big on the fundamentals. I have an intricate understanding of <span className='highlight-text'>HTML semantics</span>, an encyclopedic knowledge of <span className='highlight-text'>CSS</span>, and a granular grasp of <span className='highlight-text'>vanilla JavaScript</span>. It's this strong foundational knowledge &#8212; from almost 20 years of creating for the web &#8212; that my front-end development skills are built upon.</p>
 
-            <p>My focus for the last few years has been on <span className='highlight-text'>React</span>, <span className='highlight-text'>JavaScript</span> / <span className='highlight-text'>TypeScript</span>, <span className='highlight-text'>Next.js</span> and more recently <span className='highlight-text'>Astro</span>. My personal website was built using Next.js, and I have a side-project built in Gatsby which serves millions of users a year.</p>
+            <p>My focus for the last few years has been on <span className='highlight-text'>React</span>, <span className='highlight-text'>JavaScript</span> / <span className='highlight-text'>TypeScript</span>, <span className='highlight-text'>Next.js</span> and more recently <span className='highlight-text'>Astro</span>. My personal website was built using Next, and I have a side-project built in Gatsby which serves millions of users a year.</p>
 
             <p>To expand further, I'm really a bit of a <span className='highlight-text'>web all-rounder</span>, mainly thanks to my years of experience working alongside marketers on lead-gen and ecom websites.</p>
             
@@ -80,7 +80,7 @@ const JobApp = () => {
           <CopyWrapper classes="article--normal-first-p">
             <p>This has stemmed from an early <span className='highlight-text'>passion for design</span> that soon gave way to a love of CSS, and eventually JavaScript. My front-end skills are heavily influenced by this creative background; my knowledge of basic design principles, UX, typography, colour theory, grid systems and more.</p>
 
-            <p>I strongly believe this makes me a better front-end developer, and this skillset also means I can run with text-based instructions alone if needed.</p>
+            <p>I strongly believe this makes me a better front-end developer, and this skillset also means I can run with text-based briefs alone if needed.</p>
 
             <p>In terms of soft skills, my organisational qualities and ability to own and manage my projects and time is consistently praised, along with my communication skills; particularly written, which leads us nicely into the next section.</p>
           </CopyWrapper>
@@ -133,17 +133,19 @@ const JobApp = () => {
 
       <ContentOneCol>
 
-        <div className="max-w-[900px] mx-auto">
+        <div className="max-w-[600px] mx-auto">
 
           <CopyWrapper heading="Quality Output" subHeading='A showcase of my work'>
-            <p>One of my side projects, built in React (Gatsby), has been very successful, pulling in 12 million users in a single year, despite zero financial investment on marketing. The project, <a target="_blank" href="https://www.messivsronaldo.app/">messivsronaldo.app</a> (excuse the ads!), combined my love of sports, statistics, and development to form a very energising side-hustle that was immeasurably beneficial to my personal development.</p>
+            <p>One of my side projects, built in React (Gatsby), has been very successful, pulling in 12 <em>million</em> users in a single year, despite zero financial investment on marketing.</p>
+            
+            <p>The project, <a target="_blank" href="https://www.messivsronaldo.app/">messivsronaldo.app</a> (excuse the ads!), combined my love of sports, statistics, and development to form a very energising side-hustle that was immeasurably beneficial to my personal development.</p>
 
             <p>I've also recently launched <a target="_blank" href="https://www.topscorers.club/">Top Scorers Club</a>, another football based app built in Astro. Without going into too much detail about the data side, the site makes creative use of the Google Sheets API, auto-updates and costs nothing to run.</p>
           </CopyWrapper>
 
         </div>
 
-        <div className='flex flex-wrap justify-center my-8 md:my-16 lg:px-4 2xl:px-2'>
+        <div className='project-list flex flex-wrap justify-center my-8 md:my-16 lg:px-4 2xl:px-2'>
 
           <ProjectImg
             imgSrc='/application/messi-vs-ronaldo.webp'
@@ -167,7 +169,7 @@ const JobApp = () => {
 
         </div>
 
-        <div className="max-w-[900px] mx-auto">
+        <div className="max-w-[600px] mx-auto">
 
           <CopyWrapper classes="article--normal-first-p">
             <p>And here are a handful of my favourite projects from my time at Adtrak, all of which I both designed and coded from the ground up.</p>
@@ -175,7 +177,7 @@ const JobApp = () => {
 
         </div>
 
-        <div className='flex flex-wrap justify-center mt-8 md:mt-16 lg:px-4 -mx-2 lg:mx-0'>
+        <div className='project-list flex flex-wrap justify-center mt-8 md:mt-16 lg:px-4 -mx-2 lg:mx-0'>
 
           <ProjectImg
             imgSrc='/application/doughnotts.webp'
@@ -247,9 +249,9 @@ const JobApp = () => {
 
       <ContentOneCol>
 
-        <div className="max-w-[900px] mx-auto">
+        <div className="max-w-[600px] mx-auto">
 
-          <CopyWrapper heading="Natural Teacher" subHeading="An experienced trainer">
+          <CopyWrapper heading="Natural Teacher" subHeading="Considerable training experience">
             <p>As well as client work, I've also always been heavily involved in training and upskilling the rest of the 20+ strong web team at Adtrak.</p>
 
             <p>This passion for sharing knowledge has been present from the outset, holding my first training session on CSS3 as a fresh-faced junior in 2011, back when implementing rounded corners without images was still a novelty!</p>
@@ -259,7 +261,7 @@ const JobApp = () => {
 
         </div>
 
-        <div className='flex flex-wrap justify-center mt-8 xl:mt-16 lg:px-4 -mx-2 lg:mx-0'>
+        <div className='project-list flex flex-wrap justify-center mt-8 xl:mt-16 lg:px-4 -mx-2 lg:mx-0'>
 
           <ProjectImg
             imgSrc='/application/cwv.jpg'
@@ -317,9 +319,9 @@ const JobApp = () => {
 
       <ContentOneCol>
 
-        <div className="max-w-[900px] mx-auto">
+        <div className="max-w-[600px] mx-auto">
 
-          <CopyWrapper heading="Kind Words" subHeading='A pleasure to work with apparently'>
+          <CopyWrapper heading="Kind Words" subHeading="What it's like to work with me">
             <p>I've always enjoyed good relationships with my colleagues and managers; Dan, my manager for several years at Adtrak, was kind ennough to provide a very generous reference.</p>
 
             {kindWords.filter(i => i.name === 'Dan Farrow').map(item => (
@@ -330,7 +332,7 @@ const JobApp = () => {
                 <figcaption className='relative z-10 mt-auto'>
                   <span className='block mt-5 font-primary'>{item.name}</span>
                   {item.position && (
-                    <span className='block opacity-60 text-sm'>{item.position}</span>
+                    <span className='block opacity-60 text-sm mt-1'>{item.position}</span>
                   )}
                   {item.company && (
                     <span className='block opacity-60 text-sm'>{item.company}</span>
@@ -357,7 +359,7 @@ const JobApp = () => {
                   <figcaption className='relative z-10 mt-auto'>
                     <span className='block mt-5 font-primary'>{item.name}</span>
                     {item.position && (
-                      <span className='block opacity-60 text-sm'>{item.position}</span>
+                      <span className='block opacity-60 text-sm mt-1'>{item.position}</span>
                     )}
                     {item.company && (
                       <span className='block opacity-60 text-sm'>{item.company}</span>
@@ -372,9 +374,9 @@ const JobApp = () => {
       </ContentOneCol>
 
 
-      <section className='py-12 xl:py-20 xl:pb-32 border-t border-white border-opacity-10 px-4 lg:px-0'>
+      <section className='pt-12 pb-28 md:pb-12 xl:py-20 xl:pb-32 border-t border-white border-opacity-10 px-4 lg:px-0'>
 
-        <div className="max-w-[900px] mx-auto">
+        <div className="max-w-[600px] mx-auto">
 
           <div className='mb-6'>
             <p className='font-primary text-6xl lg:text-8xl/tight font-semibold gradient-text whitespace-normal'>Thank You!</p>

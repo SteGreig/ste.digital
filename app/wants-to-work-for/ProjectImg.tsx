@@ -30,7 +30,7 @@ const ProjectImg = (props: Props) => {
         </MouseTracker>
       )}
 
-      <figure className={props.figureClasses}>
+      <figure className={`${props.figureClasses} transition duration-300`}>
         {props.link ? (
           <a
             className='cursor-none'

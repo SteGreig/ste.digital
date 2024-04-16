@@ -216,11 +216,11 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .article .highlight-text {
-  @apply transition duration-700 opacity-100;
+  @apply transition duration-700;
 }
 
 .article:hover .highlight-text {
-  @apply text-pink;
+  @apply text-white bg-navy-300;
 }
 
 #reactions__container {
@@ -241,6 +241,11 @@ input[type="range"]::-moz-range-thumb {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.project-list:has(img:hover) figure:not(:hover) {
+  filter: grayscale(1) brightness(.7) blur(0.7px);
+  opacity: .7;
 }
 
 @tailwind utilities;
