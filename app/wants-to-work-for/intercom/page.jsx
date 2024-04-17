@@ -322,7 +322,7 @@ const JobApp = () => {
         <div className="max-w-[600px] mx-auto">
 
           <CopyWrapper heading="Kind Words" subHeading="What it's like to work with me">
-            <p>I've always enjoyed good relationships with my colleagues and managers; Dan, my manager for several years at Adtrak, was kind ennough to provide a very generous reference.</p>
+            <p>I've always enjoyed good relationships with my colleagues and managers; Dan, my manager for several years at Adtrak, was kind enough to provide a very generous reference.</p>
 
             {kindWords.filter(i => i.name === 'Dan Farrow').map(item => (
               <figure key={item.name} className='flex flex-col w-full p-6 xl:p-8 rounded relative bg-gradient-to-br from-purple to-pink after:absolute after:top-[2px] after:left-[2px] after:right-[2px] after:bottom-[2px] after:bg-navy after:rounded'>
