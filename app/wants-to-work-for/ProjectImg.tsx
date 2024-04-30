@@ -6,7 +6,7 @@ import { MouseTracker } from '../(site)/components/MouseTracker';
 import { BsRocketTakeoff } from "react-icons/bs";
 
 type Props = {
-  children: React.ReactNode,
+  children?: React.ReactNode,
   link?: string,
   imgSrc: string,
   imgAlt: string,
