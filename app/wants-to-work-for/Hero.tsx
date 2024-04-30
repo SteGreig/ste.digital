@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import { LazyMotion, domAnimation, m } from "framer-motion"
 
-const Hero = (props: {image: boolean | undefined}) => {
+const Hero = (props: {image: boolean | undefined, tagline: string}) => {
   return (
     <LazyMotion features={domAnimation}>
       <div className='flex relative z-10 max-w-screen-xs md:max-w-screen-sm lg:max-w-screen-md xl:max-w-screen-lg 3xl:pr-12'>
@@ -12,7 +12,7 @@ const Hero = (props: {image: boolean | undefined}) => {
             <span className='bg-gradient-to-br from-purple to-pink text-transparent bg-clip-text pink-outer-glow'>Greig.</span>
           </p>
           <p className={`mt-4 lg:mt-2 text-balance max-w-sm ${props.image ? 'lg:max-w-lg' : 'md:max-w-lg'} 2xl:max-w-screen-sm`}>
-            <span className='text-sm/normal lg:text-base/relaxed 2xl:text-xl font-semibold font-primary mt-2 2xs:block'>wants to be a Web Engineer at Intercom!</span>
+            <span className='text-xs/normal lg:text-sm/relaxed 2xl:text-[17px] font-semibold font-primary mt-2 2xs:block'>{props.tagline}</span>
           </p>
         </div>
         {props.image && (

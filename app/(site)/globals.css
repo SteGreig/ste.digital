@@ -243,6 +243,21 @@ input[type="range"]::-moz-range-thumb {
   }
 }
 
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hey-company {
+  animation: fadeInDown .5s 1s both;
+}
+
 .project-list:has(img:hover) figure:not(:hover) {
   filter: grayscale(1) brightness(.7) blur(0.7px);
   opacity: .7;
