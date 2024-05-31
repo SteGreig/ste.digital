@@ -21,7 +21,7 @@ export function generateMetadata({ searchParams }: Props){
 
 export default async function BlogIndex({searchParams}:Props) {
 
-  const pageNum = typeof searchParams.page === 'string' ? Number(searchParams.page) : 1;
+  const pageNum = Number(searchParams?.page) || 1;
 
   const posts = await getPosts((pageNum-1)*limit, limit*pageNum);
 
