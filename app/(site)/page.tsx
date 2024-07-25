@@ -1,24 +1,21 @@
-import { getProjects } from '@/sanity/sanity-utils'
-import { Project as ProjectType } from '../types/Project';
-import Hero from './components/Hero';
-import Project from './components/Project';
-import TitleDivider from './components/TitleDivider';
-import TransitionWrapper from './components/TransitionWrapper';
+import { getProjects } from "@/sanity/sanity-utils";
+import { Project as ProjectType } from "../types/Project";
+import Hero from "./components/Hero";
+import Project from "./components/Project";
+import TitleDivider from "./components/TitleDivider";
+import TransitionWrapper from "./components/TransitionWrapper";
 
 export default async function Home() {
-
   const projects = await getProjects();
 
   return (
     <>
-
       <Hero image={false} />
 
       <TransitionWrapper>
+        <TitleDivider title="Selected Works" classes="mt-20 xl:mt-28" />
 
-        <TitleDivider title='Selected Works' classes='mt-20 xl:mt-28' />
-
-        <div className='flex flex-col gap-16 md:gap-20 mt-10 md:mt-14 lg:mt-16'>
+        <div className="flex flex-col gap-16 md:gap-20 mt-10 md:mt-14 lg:mt-16">
           {projects.map((project: ProjectType) => (
             <Project
               key={project._id}
@@ -35,7 +32,6 @@ export default async function Home() {
           ))}
         </div>
       </TransitionWrapper>
-
     </>
-  )
+  );
 }
