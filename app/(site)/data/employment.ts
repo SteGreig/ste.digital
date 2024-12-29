@@ -1,6 +1,15 @@
 export const employment = [
   {
+    start: "2025",
+    jobTitle: "Senior Front-end Engineer (contract)",
+    company: [
+      "Intercom",
+      "London, UK"
+    ]
+  },
+  {
     start: "2015",
+    end: "2024",
     jobTitle: "Senior Web Designer",
     company: [
       "Adtrak",
