@@ -1,9 +1,9 @@
 export const employment = [
   {
     start: "2025",
-    jobTitle: "Senior Front-end Engineer (contract)",
+    jobTitle: "Senior Front-end Engineer",
     company: [
-      "Intercom",
+      "Intercom (contract)",
       "London, UK"
     ]
   },
