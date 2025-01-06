@@ -31,13 +31,13 @@ const Bio = () => {
 
           <h4 className='font-primary mt-2'>✈️ Coming Full Circle</h4>
           
-          <p>Back in the UK we lived in South Wales for a short stint where I took on another senior UI/front-end role at small agency WebBox Digital, before we eventually decided to move back to Nottingham. And that&apos;s where my career came full circle as I headed back to Adtrak! There&apos;s a special culture at Adtrak, which is why I&apos;ve spent over a decade of my career there, and I&apos;ve made what I hope will be some lifelong friends in the process.</p>
+          <p>Back in the UK we lived in South Wales for a short stint where I took on another senior UI/front-end role at small agency WebBox Digital, before we eventually decided to move back to Nottingham. And that&apos;s where my career came full circle as I headed back to Adtrak! There&apos;s a special culture at Adtrak, which is why I spent over a decade of my career there, and made what I hope will be some lifelong friends in the process.</p>
 
-          <h4 className='font-primary mt-2'>💫 The Future</h4>
+          <h4 className='font-primary mt-2'>💫 Next Steps and Beyond</h4>
 
-          <p>I&apos;ve always been a &quot;hybrid&quot; in the web industry, performing both design and front-end dev duties in all of my professional roles to date. However, despite initially seeing myself as more of a designer, I started to lean increasingly more into development, to the extent that this has now been my primary focus for the last decade or so. As the web industry has matured, the hybrid role has been left behind somewhat as people increasingly look to specialise, but I think a design background can be a huge advantage in an engineering role, which will undoubtedly be my next step.</p>
+          <p>As of January 2025, I'm excited to embark on a new venture as a Senior Front-end Engineer at Intercom! After initially starting out in the industry as very much a hybrid designer/developer, my career has increasingly leaned towards development, and a purely engineering role feels a natural next step for me.</p>
 
-          <p>My current focus is Next.js, Astro, React, JavaScript and TypeScript to name a few, but having been building websites since the mid 2000s, I have a strong knowledge of the core web fundamentals that these new tools ultimately compile down to. Semantic HTML, vanilla JavaScript, an encyclopedic knowledge of CSS, servers, DNS, SEO, page speed... I think the importance of this foundational knowledge can be too easily overlooked today as we lose sight of what actually gets shipped to the browser.</p>
+          <p>Generally speaking, my current area of focus is Next.js, Astro, React, JavaScript and TypeScript, as well as a keen interest in the latest, cutting edge features in CSS. But having been building websites since the mid 2000s, I also have a strong knowledge of the core web fundamentals that these new tools ultimately compile down to. Semantic HTML, vanilla JavaScript, an encyclopedic knowledge of CSS, servers, DNS, SEO, page speed... I think the importance of this foundational knowledge can be too easily overlooked today as we lose sight of what actually gets shipped to the browser.</p>
 
           <h3 className='mt-6 font-primary text-2xl'>👨‍👩‍👦‍👦 Personal Life</h3>
 
