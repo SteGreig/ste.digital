@@ -124,7 +124,7 @@ input[type="range"]::-moz-range-thumb {
 
 /* Blog Article */
 .article {
-  @apply text-base/relaxed text-gray-100 mx-auto;
+  @apply text-base/relaxed text-gray-100;
 }
 
 .article:not(.article--normal-first-p) p:first-of-type {
@@ -163,7 +163,7 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .article h2 {
-  @apply relative text-2xl @xl:text-3xl text-white border-t border-white/20 pt-8;
+  @apply relative text-2xl @xl:text-3xl text-white border-t border-white/20 pt-8 @xl:pt-12;
 }
 
 .article h3 {

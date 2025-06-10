@@ -50,7 +50,7 @@ export default async function Post({ params }: Props) {
 
   return (
     <TransitionWrapper>
-      <div className="w-full max-w-[720px] @container">
+      <div className="w-full max-w-screen-md mx-auto @container">
         <article className="text-base/relaxed text-gray-200 article">
           <span className="font-primary text-xs uppercase tracking-[0.2em] opacity-30 mb-2 block">
             Posted on{" "}

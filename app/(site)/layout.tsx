@@ -53,7 +53,7 @@ export default async function RootLayout({
         <div className="flex flex-row min-h-screen">
           <SidePanel />
 
-          <div className="flex flex-col w-full md:w-[81.25%] md:left-[18.75%] relative md:mt-[69px] overflow-hidden">
+          <div className="flex flex-col w-full md:w-[81.25%] md:left-[18.75%] 3xl:left-[320px] relative md:mt-[69px] overflow-hidden">
             <main className="w-full p-6 pt-28 md:p-16 md:pb-4 lg:pt-20 lg:px-20 xl:px-24 2xl:px-32 mb-20 2xl:mb-32">
               {children}
             </main>
