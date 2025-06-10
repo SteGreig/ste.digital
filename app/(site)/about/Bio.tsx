@@ -35,9 +35,9 @@ const Bio = () => {
 
           <h4 className='font-primary mt-2'>💫 Next Steps and Beyond</h4>
 
-          <p>As of January 2025, I&apos;m excited to embark on a new venture as a Senior Front-end Engineer at Intercom! After initially starting out in the industry as very much a hybrid designer/developer, my career has increasingly leaned towards development, and a purely engineering role feels a natural next step for me.</p>
+          <p>As of January 2025, I&apos;m excited to embark on a new venture as a Senior Front-end Engineer at Intercom! After initially starting out in the industry as very much a hybrid designer/developer, my career has increasingly leaned more towards development, and a purely engineering role feels a natural next step for me.</p>
 
-          <p>Generally speaking, my current area of focus is Next.js, Astro, React, JavaScript and TypeScript, as well as a keen interest in the latest, cutting edge features in CSS. But having been building websites since the mid 2000s, I also have a strong knowledge of the core web fundamentals that these new tools ultimately compile down to. Semantic HTML, vanilla JavaScript, an encyclopedic knowledge of CSS, servers, DNS, SEO, page speed... I think the importance of this foundational knowledge can be too easily overlooked today as we lose sight of what actually gets shipped to the browser.</p>
+          <p>Generally speaking, my current area of focus is Next.js, Astro, React, JavaScript and TypeScript, and I always maintain a keen interest in the latest, cutting edge features in CSS. But having been building websites since the mid 2000s, I also have a strong knowledge of the core web fundamentals that these new tools ultimately compile down to. Semantic HTML, vanilla JavaScript, an encyclopedic knowledge of CSS, servers, DNS, SEO, page speed... I think the importance of this foundational knowledge can be too easily overlooked today as we lose sight of what actually gets shipped to the browser.</p>
 
           <h3 className='mt-6 font-primary text-2xl'>👨‍👩‍👦‍👦 Personal Life</h3>
 
