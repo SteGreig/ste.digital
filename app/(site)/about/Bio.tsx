@@ -59,7 +59,7 @@ const Bio = () => {
           
           <p>Most who know me know I&apos;m very content with my own company, but I&apos;m a big fan of a social gathering too, particularly when it involves a pub or two! I&apos;m also a fairly opinionated liberal who sometimes gets a bit too disheartened with the current effectiveness of divisive politics.</p>
 
-          <p>And that&apos;s enough waffle for now... I tend to get a bit carried away when I start writing! Feel free to drop me an <a className='text-pink hover:underline font-medium' href="mailto:hi@ste.digital">email</a> or a follow over on the <a className='text-pink hover:underline font-medium' href="https://twitter.com/Ste_Greig" target="_blank">bird app</a> (it&apos;s still Twitter to me damn it!).</p>
+          <p>And that&apos;s enough waffle for now... I tend to get a bit carried away when I start writing! Feel free to drop me an <a className='text-pink hover:underline font-medium' href="mailto:hi@ste.digital">email</a> or a follow over on <a className='text-pink hover:underline font-medium' href="https://twitter.com/Ste_Greig" target="_blank">Twitter</a>.</p>
         </>
       )}
     </div>
